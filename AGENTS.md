@@ -14,7 +14,7 @@ UNT00 — Un-Nocked Truth. FoundRy tool for logical analysis and argument integr
 [ TODO: Languages, frameworks, key dependencies ]
 
 ## Local Paths
-- **Windows**: `C:\Users\jamie\OKH-Local\Projects\foundry-unt00-un-nocked-truth`
+- **Windows**: `C:\Users\jamie\OKH-Local\04_GitHub_Mirrors\foundry-unt00-un-nocked-truth`
 - **Mac**: `/Volumes/OKH-Local/04_GitHub_Mirrors/foundry-unt00-un-nocked-truth`
 
 ## Key Conventions
