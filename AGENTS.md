@@ -14,7 +14,7 @@ HMT01 — Homestead-R. FoundRy homestead and property management tool.
 [ TODO: Languages, frameworks, key dependencies ]
 
 ## Local Paths
-- **Windows**: `C:\Users\jamie\OKH-Local\Projects\foundry-hmt01-homestead-r`
+- **Windows**: `C:\Users\jamie\OKH-Local\04_GitHub_Mirrors\foundry-hmt01-homestead-r`
 - **Mac**: `/Volumes/OKH-Local/04_GitHub_Mirrors/foundry-hmt01-homestead-r`
 
 ## Key Conventions
