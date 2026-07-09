@@ -14,7 +14,7 @@ GPT-PSR00: PathScrib-R. FoundRy journaling and path-scribing tool.
 [ TODO: Languages, frameworks, key dependencies ]
 
 ## Local Paths
-- **Windows**: `C:\Users\jamie\OKH-Local\Projects\foundry-psr00-pathscrib-r`
+- **Windows**: `C:\Users\jamie\OKH-Local\04_GitHub_Mirrors\foundry-psr00-pathscrib-r`
 - **Mac**: `/Volumes/OKH-Local/04_GitHub_Mirrors/foundry-psr00-pathscrib-r`
 
 ## Key Conventions
