@@ -1,38 +1,91 @@
 # foundry-hmt01-homestead-r
 
-## Project Identity
-- **Suite**: FoundRy
-- **Type**: GPT Tool
-- **GitHub**: https://github.com/OKHP3/foundry-hmt01-homestead-r
-- **Notion Anchor**: https://app.notion.com/p/47ae60c55a71476ea8132098628610fd
-- **Status**: [ TODO: Active / In Development / Archived / On Hold ]
+Canonical agent guidance for the FoundRy HMT01 Homestead-R repository.
 
-## Purpose
-HMT01 — Homestead-R. FoundRy homestead and property management tool.
+## Project identity
 
-## Tech Stack
-[ TODO: Languages, frameworks, key dependencies ]
+- **Suite:** FoundRy
+- **Repository:** `foundry-hmt01-homestead-r`
+- **Remote:** `https://github.com/OKHP3/foundry-hmt01-homestead-r`
+- **Declared type:** GPT tool
+- **Declared purpose:** Homestead and property management
+- **License:** MIT, as recorded in `LICENSE`
+- **Current repository state:** Early-stage prompt and image-asset repository. Recent commits show active maintenance, but no runnable GPT tool implementation is present in this checkout.
 
-## Local Paths
-- **Windows**: `C:\Users\jamie\OKH-Local\04_GitHub_Mirrors\foundry-hmt01-homestead-r`
-- **Mac**: `/Volumes/OKH-Local/04_GitHub_Mirrors/foundry-hmt01-homestead-r`
+The project name and declared purpose are confirmed by the existing project metadata. The early-stage assessment is an evidence-based inference from the tracked files, which currently contain prompts, images, seeded skills, and no application runtime.
 
-## Key Conventions
-[ TODO: Branch strategy, naming conventions, anything Codex should know before touching files ]
+## Mission, vision, and scope
 
-## Related Repos
-- [foundry-unt00-un-nocked-truth](https://github.com/OKHP3/foundry-unt00-un-nocked-truth)
-- [foundry-psr00-pathscrib-r](https://github.com/OKHP3/foundry-psr00-pathscrib-r)
-- [foundry-are00-abrahamic-reference-engine](https://github.com/OKHP3/foundry-are00-abrahamic-reference-engine)
+- **Mission:** Not documented in the repository.
+- **Vision:** Not documented in the repository.
+- **Current scope:** Preserve and develop the creative prompt and visual identity assets associated with HMT01 Homestead-R.
+- **Current non-goals:** Do not infer or implement property-management workflows, data models, integrations, APIs, or a production deployment until the repository gains an explicit specification and implementation evidence.
 
-## OverKill Hill P3 Brand Rules
-- No em dashes in any generated content
-- Preserve standalone punchy lines — do not consolidate into paragraphs
-- ROY principle: understanding produced / explanation invested — verbosity must earn its space
-- AutoCAD version is R10 (locked, not negotiable)
-- [ TODO: Any repo-specific constraints ]
+Treat the project as a creative asset and prompt source unless new repository evidence establishes a runtime or product boundary.
 
----
-*Generated: 2026-06-11 | Source: Notion Routing Hub + Local Scans*
+## Repository layout
 
-## Imported Claude Cowork project instructions
+- `README.md`: Minimal repository landing page. It does not currently document usage or implementation status.
+- `icon-generator-for-hometools.md`: Detailed prompt for a mechanical bird perched on a burning suburban house.
+- `icon-generator-for-hometools-alt.md`: House-focused reverse-engineered prompt variant.
+- `overkill-hill-p³-square-icon-hometools.png`: Tracked 1024 x 1024 visual asset.
+- `overkill-hill-p³-square-icon-hometools-alt-.png`: Tracked 1024 x 1024 alternate visual asset.
+- `.agents/skills/`: Four tracked agent-skill packages. These are repository tooling and guidance, not evidence of the HMT01 product runtime.
+- `LICENSE`: MIT license.
+- `CLAUDE.md`: Compatibility pointer to this file via `@AGENTS.md`.
+
+There are no nested Git repositories or clearly independent application projects in the current tree.
+
+The prior project metadata identifies these related FoundRy repositories:
+
+- `foundry-unt00-un-nocked-truth`: https://github.com/OKHP3/foundry-unt00-un-nocked-truth
+- `foundry-psr00-pathscrib-r`: https://github.com/OKHP3/foundry-psr00-pathscrib-r
+- `foundry-are00-abrahamic-reference-engine`: https://github.com/OKHP3/foundry-are00-abrahamic-reference-engine
+
+Do not assume shared code, interfaces, or release dependencies without checking the related repository directly.
+
+## Technology and runtime
+
+The confirmed technology surface is Markdown, PNG assets, Git, and the seeded `.agents/skills/` guidance. No `package.json`, Python manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. There is therefore no verified local run, build, test, lint, or deployment command.
+
+Do not describe this checkout as a working application. If implementation files are added later, update this section with the verified runtime, entry points, environments, and commands.
+
+## Safe change conventions
+
+- Keep `AGENTS.md` as the canonical project guide. Keep `CLAUDE.md` as a short compatibility pointer unless Claude-specific instructions are genuinely needed.
+- Preserve existing user changes and inspect `git status` before editing.
+- Keep prompt documents and their corresponding visual assets synchronized when changing the intended image identity. Do not regenerate or replace binary assets casually.
+- Preserve the OverKill Hill P3 visual language: blueprint grid, industrial or steampunk treatment, distressed materials, and orange fire accents where the asset or prompt calls for them.
+- Generated content must contain no em dashes.
+- Preserve standalone punchy lines. Do not combine them into paragraphs when editing project-facing content.
+- Follow the ROY principle: explanation and verbosity should earn their space.
+- AutoCAD R10 is an organization-level locked rule, but no CAD files or CAD workflow are present in this repository. Do not add CAD assumptions to HMT01 without evidence.
+- Do not add credentials, secrets, private workspace links, or unsupported claims about product behavior.
+
+## Validation
+
+For guidance or prompt changes, use checks appropriate to the changed files:
+
+```text
+git status --short
+git diff --check
+rg --files -g '!node_modules' -g '!vendor'
+file overkill-hill-p³-square-icon-hometools.png overkill-hill-p³-square-icon-hometools-alt-.png
+```
+
+Review changed Markdown for factual alignment and inspect changed images at their native dimensions when visual identity is affected. No automated test suite exists at present.
+
+## Known gaps and open questions
+
+- The implementation status of the GPT tool is not documented beyond the repository label and purpose.
+- The product mission, target users, vision, workflows, data flows, integrations, and deployment model are unknown.
+- The intended relationship between HMT01 and the tracked seeded skills is not documented.
+- The README does not yet explain the repository's current asset-only state or how the prompts and images are used.
+
+Do not resolve these gaps by invention. Update this guide when repository evidence or owner direction answers them.
+
+## Keeping this guide current
+
+When the repository gains an implementation, specification, workflow, or deployment surface, update this guide in the same change or in a focused follow-up. Recheck paths and commands before documenting them. Keep confirmed facts, inferences, and unknowns clearly separated.
+
+Updated from local repository evidence on 2026-07-13.
