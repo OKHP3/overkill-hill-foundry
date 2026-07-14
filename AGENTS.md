@@ -34,3 +34,5 @@ GPT-PSR00: PathScrib-R. FoundRy journaling and path-scribing tool.
 
 ---
 *Generated: 2026-06-11 | Source: Notion Routing Hub + Local Scans*
+
+## Imported Claude Cowork project instructions
