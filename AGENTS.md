@@ -34,3 +34,5 @@ HMT01 — Homestead-R. FoundRy homestead and property management tool.
 
 ---
 *Generated: 2026-06-11 | Source: Notion Routing Hub + Local Scans*
+
+## Imported Claude Cowork project instructions
