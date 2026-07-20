@@ -1,0 +1,88 @@
+{
+  "reviewed_on": "2026-07-20",
+  "repository_runtime": "documentation-only",
+  "technologies": [
+    {
+      "name": "Python",
+      "role": "runtime for checked-in utility scripts",
+      "in_place_version": "unknown; not pinned",
+      "latest_stable_as_of_review": "3.14.6",
+      "source": "https://www.python.org/downloads/"
+    },
+    {
+      "name": "PyYAML",
+      "role": "imported by skill-creator/scripts/quick_validate.py",
+      "in_place_version": "unknown; imported but not declared",
+      "latest_stable_as_of_review": "6.0.3",
+      "source": "https://pypi.org/project/PyYAML/"
+    },
+    {
+      "name": "Mermaid",
+      "role": "documented process-diagram output format",
+      "in_place_version": "unknown; no renderer or dependency is checked in",
+      "latest_stable_as_of_review": "11.15.0",
+      "source": "https://github.com/mermaid-js/mermaid/releases"
+    },
+    {
+      "name": "PlantUML",
+      "role": "documented diagram syntax and output format",
+      "in_place_version": "unknown; no renderer is checked in",
+      "latest_stable_as_of_review": "1.2026.6",
+      "source": "https://plantuml.com/news"
+    },
+    {
+      "name": "BPMN",
+      "role": "documented process-model output format",
+      "in_place_version": "2.0.2",
+      "latest_stable_as_of_review": "2.0.2",
+      "source": "https://www.omg.org/spec/BPMN/2.0.2/"
+    },
+    {
+      "name": "Markdown/CommonMark",
+      "role": "primary documentation format",
+      "in_place_version": "unknown; no parser is pinned",
+      "latest_stable_as_of_review": "0.31.2",
+      "source": "https://spec.commonmark.org/current/"
+    },
+    {
+      "name": "YAML",
+      "role": "SKILL.md front matter and metadata",
+      "in_place_version": "unknown; parser behavior is environment-provided",
+      "latest_stable_as_of_review": "1.2.2",
+      "source": "https://yaml.org/spec/1.2.2/"
+    },
+    {
+      "name": "JSON",
+      "role": "skill metadata and structured examples",
+      "in_place_version": "unknown; no implementation is pinned",
+      "latest_stable_as_of_review": "RFC 8259 / STD 90",
+      "source": "https://datatracker.ietf.org/doc/html/rfc8259"
+    },
+    {
+      "name": "CSV",
+      "role": "documented structured output format",
+      "in_place_version": "not versioned in this repository",
+      "latest_stable_as_of_review": "no single governing version",
+      "source": "https://www.rfc-editor.org/rfc/rfc4180"
+    },
+    {
+      "name": "Git/GitHub",
+      "role": "source control and repository hosting",
+      "in_place_version": "Git client version not recorded",
+      "latest_stable_as_of_review": "not applicable to repository contents",
+      "source": "https://git-scm.com/"
+    }
+  ],
+  "explicitly_not_present": [
+    "TypeScript",
+    "JavaScript application runtime",
+    "Node.js",
+    "npm",
+    "Vite",
+    "Tailwind CSS",
+    "React",
+    "package.json",
+    "requirements.txt",
+    "pyproject.toml"
+  ]
+}
