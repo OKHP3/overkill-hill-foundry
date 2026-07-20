@@ -26,6 +26,9 @@ Treat the project as a creative asset and prompt source unless new repository ev
 ## Repository layout
 
 - `README.md`: Minimal repository landing page. It does not currently document usage or implementation status.
+- `TECHNOLOGY-INVENTORY.md`: Evidence-based technology inventory, checked stable versions, and update policy.
+- `requirements-dev.txt`: Explicit PyYAML development dependency for the seeded skill validator.
+- `.github/dependabot.yml`: Weekly Dependabot monitoring for Python dependencies and future GitHub Actions.
 - `icon-generator-for-hometools.md`: Detailed prompt for a mechanical bird perched on a burning suburban house.
 - `icon-generator-for-hometools-alt.md`: House-focused reverse-engineered prompt variant.
 - `overkill-hill-p³-square-icon-hometools.png`: Tracked 1024 x 1024 visual asset.
@@ -46,7 +49,7 @@ Do not assume shared code, interfaces, or release dependencies without checking 
 
 ## Technology and runtime
 
-The confirmed technology surface is Markdown, PNG assets, Git, and the seeded `.agents/skills/` guidance. No `package.json`, Python manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. There is therefore no verified local run, build, test, lint, or deployment command.
+The confirmed technology surface is Markdown, PNG assets, Git, the seeded `.agents/skills/` guidance, and a pinned PyYAML development dependency used by the validator. No `package.json`, Python application manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. Dependabot configuration exists for dependency monitoring, but there is no verified local run, build, test, lint, or deployment command.
 
 Do not describe this checkout as a working application. If implementation files are added later, update this section with the verified runtime, entry points, environments, and commands.
 
