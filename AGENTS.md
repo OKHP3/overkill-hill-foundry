@@ -33,7 +33,7 @@ Treat the project as a creative asset and prompt source unless new repository ev
 - `icon-generator-for-hometools-alt.md`: House-focused reverse-engineered prompt variant.
 - `overkill-hill-p³-square-icon-hometools.png`: Tracked 1024 x 1024 visual asset.
 - `overkill-hill-p³-square-icon-hometools-alt-.png`: Tracked 1024 x 1024 alternate visual asset.
-- `.agents/skills/`: Four tracked agent-skill packages. These are repository tooling and guidance, not evidence of the HMT01 product runtime.
+- `.agents/skills/`: Seeded agent-skill packages plus the `thread-extract-ws/` evaluation workspace. These are repository tooling and guidance, not evidence of the HMT01 product runtime.
 - `LICENSE`: MIT license.
 - `CLAUDE.md`: Compatibility pointer to this file via `@AGENTS.md`.
 
@@ -49,7 +49,7 @@ Do not assume shared code, interfaces, or release dependencies without checking 
 
 ## Technology and runtime
 
-The confirmed technology surface is Markdown, PNG assets, Git, the seeded `.agents/skills/` guidance, and a pinned PyYAML development dependency used by the validator. No `package.json`, Python application manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. Dependabot configuration exists for dependency monitoring, but there is no verified local run, build, test, lint, or deployment command.
+The confirmed technology surface is Markdown, PNG assets, Git, the seeded `.agents/skills/` guidance, and a pinned PyYAML development dependency used by the validator. No `package.json`, Python application manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. There is no application entry point or tests directory in this checkout. Dependabot configuration exists for dependency monitoring, but there is no verified local run, build, test, lint, or deployment command.
 
 Do not describe this checkout as a working application. If implementation files are added later, update this section with the verified runtime, entry points, environments, and commands.
 
@@ -91,4 +91,4 @@ Do not resolve these gaps by invention. Update this guide when repository eviden
 
 When the repository gains an implementation, specification, workflow, or deployment surface, update this guide in the same change or in a focused follow-up. Recheck paths and commands before documenting them. Keep confirmed facts, inferences, and unknowns clearly separated.
 
-Updated from local repository evidence on 2026-07-13.
+Updated from local repository evidence on 2026-07-24.
