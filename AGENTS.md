@@ -9,9 +9,9 @@
 
 **Confirmed purpose:** Existing project metadata describes this repository as a FoundRy GPT tool for logical analysis and argument integrity checking.
 
-**Confirmed current state:** The repository contains project guidance, seeded agent skills, two PNG assets, a minimal README, and license metadata. It contains no application source, package manifest, executable entry point, test suite, build configuration, deployment configuration, or documented runtime.
+**Confirmed current state:** The repository contains project guidance, seeded agent skills, two PNG assets, a minimal README, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. It contains no application source, executable entry point, application test suite, build configuration, deployment configuration, or documented product runtime.
 
-**Inferred status:** Scaffold or asset-only stage, with implementation status otherwise unclear. Do not describe the tool as working or production-ready based on this repository alone.
+**Inferred status:** The product remains at scaffold or asset-only stage, while the repository itself is under active maintenance of seeded skills and supporting guidance. Do not describe the tool as working or production-ready based on this repository alone.
 
 **Mission and vision:** The intended mission is inferred from the declared purpose: help a user inspect reasoning and claims for logical or integrity problems. Target users, analysis method, output contract, integrations, and longer-term vision are unknown and require owner input.
 
@@ -31,8 +31,11 @@ Do not infer a product runtime, API contract, model behavior, data flow, deploym
 ## Repository map
 
 - `AGENTS.md`: canonical instructions for agents working in this project.
-- `CLAUDE.md`: compatibility pointer to `AGENTS.md`.
+- `CLAUDE.md`: short compatibility pointer to `AGENTS.md`.
 - `README.md`: currently only the repository title. Expand it when the owner has confirmed product behavior and setup instructions.
+- `TECHNOLOGY-INVENTORY.md`: evidence-backed inventory of the current tooling, dependency, and maintenance state.
+- `requirements.txt`: pins `PyYAML==6.0.3` for seeded skill validation scripts.
+- `.github/dependabot.yml`: weekly Dependabot checks for pip and GitHub Actions dependencies.
 - `.agents/skills/`: local agent skills and their supporting references, assets, scripts, and Claude commands. These are guidance resources, not application code.
 - `chatgpt-image-oct-18,-2025,-09_23_20-pm.png`: 1024 by 1024 RGB PNG asset.
 - `overkill-hill-p³-square-icon-un-nocked-truth.png`: 1024 by 1024 RGB PNG asset.
@@ -43,9 +46,9 @@ No source or executable entry point is currently present.
 
 ## Technology and workflow
 
-**Confirmed tools and formats:** Git, Markdown, plain text, JSON, Python scripts within the seeded skill resources, and PNG assets.
+**Confirmed tools and formats:** Git, Markdown, plain text, JSON, Python scripts within the seeded skill resources, PyYAML for skill validation, and PNG assets. Dependabot is configured for pip and GitHub Actions ecosystems.
 
-**Unknown:** Application language, framework, model or API integration, environment variables, dependency manager, local server command, test command, build command, deployment model, and operational ownership.
+**Unknown:** Application language, framework, model or API integration, environment variables, product interface, local server command, application test command, build command, deployment model, and operational ownership. The repository has a Python dependency manifest for seeded skill tooling, but no product runtime contract.
 
 The seeded skills include guidance for skill discovery, skill creation, Notion conversation capture, and skill cataloging. Read the applicable skill file before changing a skill or its supporting resources. Do not treat skill instructions as evidence that this project implements the described capability.
 
@@ -58,6 +61,8 @@ git status --short --branch
 git diff --check
 git ls-files
 ```
+
+The only declared dependency setup is `python3 -m pip install -r requirements.txt` for the seeded skill validation scripts. No product build, lint, test, or run command is currently available.
 
 For future implementation work, add verified setup, lint, test, build, and deployment commands here and in `README.md`. Until then, report those capabilities as unavailable rather than inventing commands.
 
