@@ -6,7 +6,8 @@
 - **Tool:** GPT-PSR00, PathScrib-R
 - **Repository:** `https://github.com/OKHP3/foundry-psr00-pathscrib-r`
 - **License:** MIT, see [LICENSE](LICENSE)
-- **Current repository status:** Documentation and knowledge assets are present. No executable application or service is checked in.
+- **Current repository status:** Documentation, knowledge assets, Agent Skills, evaluation fixtures, and small Python utilities are present. No executable application or service is checked in.
+- **Lifecycle:** Active maintenance. The latest commits on 2026-07-21 and 2026-07-22 added and hardened Agent Skills and evaluation assets.
 
 ## Purpose and scope
 
@@ -48,8 +49,11 @@ This is a single Git repository. No nested Git repositories were found.
 - `ris_pathscrib-r.md`: procedural examples and output contracts, though the file currently contains duplicated or embedded ledger material as well.
 - `rag_plant_uml_syntax_path_scrib_r.md`: extended PlantUML guidance and format-selection advice.
 - Root-level PDFs: reference casebooks covering process modeling, requirements elicitation, BPMN, Mermaid, governance, measurement, risk, continuous improvement, and related topics.
-- `.agents/skills/`: four local Agent Skills and their supporting assets or scripts.
-- `README.md`: title only. It is not currently a usable project overview.
+- `.agents/skills/`: 16 local Agent Skills and their supporting assets, scripts, and evaluation fixtures. `tcx-ws/` is an evaluation workspace, not an Agent Skill because it has no `SKILL.md`.
+- `.github/workflows/technology-inventory.yml`: scheduled and manually dispatched technology-inventory review.
+- `.github/scripts/check-technology-inventory.py`: checks inventory age and selected release baselines.
+- `TECHNOLOGY.md` and `technology-inventory.json`: technology inventory and its machine-readable source of truth.
+- `README.md`: short project overview and orientation guide.
 - `CLAUDE.md`: a pointer to this file, `@AGENTS.md`.
 
 ## How the documented pieces fit
@@ -79,24 +83,42 @@ The knowledge relationship is documented as:
 - Primary artifacts are Markdown and PDF.
 - The local skill collection follows the Agent Skills convention with `SKILL.md` files and YAML front matter.
 - `okhp3-skill-cataloger` includes a Python catalog and validation script at `.agents/skills/okhp3-skill-cataloger/scripts/gen-skills-readme.py`.
+- The repository includes Python utility scripts for skill packaging, validation, extraction, and evaluation. Dependencies are not declared in a project manifest.
+- GitHub Actions runs the technology-inventory review on a monthly schedule and by manual dispatch. Dependabot is configured for GitHub Actions, pip, and npm, although no pip or npm manifest currently exists.
 - The documented output formats are Mermaid, BPMN, PlantUML, JSON, and CSV.
 
 ### Not present
 
 - No `package.json`, `pyproject.toml`, `requirements.txt`, `Cargo.toml`, `go.mod`, Makefile, Dockerfile, or application source tree.
-- No test suite, lint configuration, build configuration, deployment configuration, or GitHub Actions workflow.
+- No application test suite, lint configuration, build configuration, or deployment configuration.
 - No checked-in PlantUML, BPMN, Mermaid, JSON, or CSV renderer.
 
 Do not invent installation, run, build, test, or deployment commands until an implementation runtime is added and documented.
 
 ## Local skills
 
-The repository currently contains these four skills:
+The repository currently contains 16 Agent Skills:
 
-- `find-skills`: routes requests about discovering or extending skills.
-- `okhp3-notion-capture-router`: routes AI conversations into Notion and reconciles them with GitHub. It must run report-only when private anchors are unavailable.
-- `okhp3-skill-cataloger`: inventories the local skills and validates their metadata.
-- `skill-creator`: creates, improves, and evaluates Agent Skills.
+- `find-skills`
+- `okhp3-chatgpt-project-migration`
+- `okhp3-custom-gpt-builder`
+- `okhp3-custom-gpt-readiness`
+- `okhp3-custom-gpt-skill-conversion-planner`
+- `okhp3-notion-capture-router`
+- `okhp3-skill-cataloger`
+- `okhp3-thread-context-extraction`
+- `okhp3-thread-context-extraction-chatgpt`
+- `okhp3-thread-context-extraction-claude`
+- `okhp3-thread-context-extraction-copilot-m365`
+- `okhp3-thread-context-extraction-gemini`
+- `okhp3-thread-context-extraction-grok`
+- `okhp3-thread-context-extraction-mistral-vibe`
+- `okhp3-thread-context-extraction-perplexity`
+- `skill-creator`
+
+`tcx-ws/` contains thread-context-extraction evaluation history and outputs. It is not counted as a skill because it does not contain `SKILL.md`.
+
+The Notion capture router must run report-only when private anchors are unavailable. The cataloger inventories skills and validates their metadata. The skill-creator package creates, improves, and evaluates Agent Skills. The extraction packages preserve manually supplied AI conversation context for platform-specific and generic workflows.
 
 Validate the skill inventory from the repository root with:
 
@@ -125,8 +147,9 @@ Because there is no application runtime, validation is documentation and metadat
 
 1. Re-read every changed guidance file.
 2. Run the skill cataloger with `--check`.
-3. Run `git diff --check`.
-4. Confirm that referenced paths exist and that no unexpected files changed.
+3. Run the technology inventory check with `python3 .github/scripts/check-technology-inventory.py --max-age-days 90` when network access is available.
+4. Run `git diff --check`.
+5. Confirm that referenced paths exist and that no unexpected files changed.
 
 There is currently no repository-provided test, build, lint, or deployment command to run.
 
@@ -137,7 +160,6 @@ There is currently no repository-provided test, build, lint, or deployment comma
 - `dataledger_hydration_v3.md` refers to `persona_v3.md`, while the tracked file is `dataledger_persona_v3.md`.
 - `ris_pathscrib-r.md` starts as a Parameters Ledger and embeds sections for other ledgers and the RIS material. Its canonical role is unclear.
 - Ledger documents and reference material carry 2025-08-18 or v1.0/v4.2 historical labels, but no current release or versioning policy is documented.
-- `README.md` does not explain the project, its artifacts, or how to use them.
 - The RAG material discusses CI, rendering, and implementation patterns, but no such tooling is checked in.
 
 ### Owner input needed

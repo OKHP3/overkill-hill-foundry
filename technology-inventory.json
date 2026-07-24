@@ -1,5 +1,5 @@
 {
-  "reviewed_on": "2026-07-20",
+  "reviewed_on": "2026-07-24",
   "repository_runtime": "documentation-only",
   "technologies": [
     {
@@ -20,7 +20,7 @@
       "name": "Mermaid",
       "role": "documented process-diagram output format",
       "in_place_version": "unknown; no renderer or dependency is checked in",
-      "latest_stable_as_of_review": "11.15.0",
+      "latest_stable_as_of_review": "11.16.0",
       "source": "https://github.com/mermaid-js/mermaid/releases"
     },
     {
