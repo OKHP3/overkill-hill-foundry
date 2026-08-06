@@ -1,6 +1,6 @@
 # Technology inventory and update policy
 
-Reviewed 2026-07-24.
+Reviewed 2026-08-05.
 
 This repository is documentation-only. It does not contain a TypeScript or JavaScript application, Vite, Tailwind CSS, Node.js package manifest, build system, or deployable service. The inventory therefore distinguishes technologies used by checked-in scripts from formats and standards described by the knowledge assets.
 
@@ -8,9 +8,9 @@ This repository is documentation-only. It does not contain a TypeScript or JavaS
 
 | Technology | Repository use | Version in place | Latest stable found | Authority |
 | --- | --- | --- | --- | --- |
-| Python | Runtime for checked-in utility scripts | Unknown, not pinned | 3.14.6 | [Python downloads](https://www.python.org/downloads/) |
+| Python | Runtime for checked-in utility scripts | Unknown, not pinned | 3.14.7 | [Python downloads](https://www.python.org/downloads/) |
 | PyYAML | Imported by `skill-creator/scripts/quick_validate.py` | Unknown, not declared | 6.0.3 | [PyPI](https://pypi.org/project/PyYAML/) |
-| Mermaid | Documented diagram output | Unknown, no renderer checked in | 11.16.0 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
+| Mermaid | Documented diagram output | Unknown, no renderer checked in | 11.16.1 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
 | PlantUML | Documented diagram syntax and output | Unknown, no renderer checked in | 1.2026.6 | [PlantUML news](https://plantuml.com/news) |
 | BPMN | Documented process-model output | 2.0.2 | 2.0.2 | [OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2/) |
 | Markdown/CommonMark | Primary documentation format | Unknown, parser not pinned | 0.31.2 | [CommonMark](https://spec.commonmark.org/current/) |
@@ -27,7 +27,7 @@ TypeScript, JavaScript application code, Node.js, npm, Vite, Tailwind CSS, React
 
 ## Update plan
 
-1. Keep `technology-inventory.json` as the source of truth for the reviewed baseline and the evidence URL.
+1. Keep `docs/maintenance/technology-inventory.json` as the source of truth for the reviewed baseline and the evidence URL.
 2. Add a versioned Python dependency file when the repository begins executing the Python tools in CI. At minimum it should pin a supported Python line and `PyYAML`.
 3. Use Dependabot for GitHub Actions now and for `pip` or `npm` once those manifests exist. It will open update pull requests rather than silently changing source.
 4. Run the scheduled inventory check monthly. It flags stale review baselines so a maintainer can re-check official release pages and update the inventory with an intentional commit.

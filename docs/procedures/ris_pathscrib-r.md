@@ -20,7 +20,7 @@
 - Alternate: narrative → diagram
 ```
 
-## 3) `dataLedger_persona_v3.md`
+## 3) `docs/ledgers/dataledger_persona_v3.md`
 
 ```markdown
 # PathScrib-R — Persona Ledger (v1.0)
@@ -71,7 +71,7 @@
 🪛 Function-ette = Quick-fix logic
 ```
 
-## 4) `dataLedger_registry_v3.md`
+## 4) `docs/ledgers/dataledger_registry_v3.md`
 
 ```markdown
 # PathScrib-R — Registry Ledger (v1.0)
@@ -91,7 +91,7 @@
 - Agents execute procedures via RIS playbooks
 ```
 
-## 5) `dataLedger_system_v3.md`
+## 5) `docs/ledgers/dataledger_system_v3.md`
 
 ```markdown
 # PathScrib-R — System Ledger (v1.0)

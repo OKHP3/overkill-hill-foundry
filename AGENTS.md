@@ -41,18 +41,16 @@ These are working interpretations of the ledgers, not owner-approved product sta
 
 This is a single Git repository. No nested Git repositories were found.
 
-- `dataledger_persona_v3.md`: documented role, tone, purpose, boundaries, and relationships.
-- `dataledger_registry_v3.md`: declared agents and their relationships.
-- `dataledger_parameters_v3.md`: modes, output formats, QA levels, token limits, and default execution flow.
-- `dataledger_system_v3.md`: declared authority and load order.
-- `dataledger_hydration_v3.md`: hydration schema and rehydration audit record.
-- `ris_pathscrib-r.md`: procedural examples and output contracts, though the file currently contains duplicated or embedded ledger material as well.
-- `rag_plant_uml_syntax_path_scrib_r.md`: extended PlantUML guidance and format-selection advice.
-- Root-level PDFs: reference casebooks covering process modeling, requirements elicitation, BPMN, Mermaid, governance, measurement, risk, continuous improvement, and related topics.
-- `.agents/skills/`: 16 local Agent Skills and their supporting assets, scripts, and evaluation fixtures. `tcx-ws/` is an evaluation workspace, not an Agent Skill because it has no `SKILL.md`.
+- `docs/ledgers/`: the five PathScrib-R ledger specifications.
+- `docs/procedures/ris_pathscrib-r.md`: procedural examples and output contracts, though the file currently contains duplicated or embedded ledger material as well.
+- `docs/maintenance/`: technology inventory documentation and its machine-readable source of truth.
+- `knowledge/casebooks/`: reference casebooks covering process modeling, requirements elicitation, BPMN, Mermaid, governance, measurement, risk, continuous improvement, and related topics.
+- `knowledge/rag/`: RAG implementation, process-modeling, and PlantUML guidance.
+- `.agents/skills/`: 35 local Agent Skills and their supporting assets, scripts, tests, benchmarks, and evaluation fixtures.
+- `skills/okhp3-skill-promotion/`: exact publication mirror of the local promotion skill, generated from `.agents/skills/okhp3-skill-promotion/`.
 - `.github/workflows/technology-inventory.yml`: scheduled and manually dispatched technology-inventory review.
 - `.github/scripts/check-technology-inventory.py`: checks inventory age and selected release baselines.
-- `TECHNOLOGY.md` and `technology-inventory.json`: technology inventory and its machine-readable source of truth.
+- `docs/maintenance/TECHNOLOGY.md` and `docs/maintenance/technology-inventory.json`: technology inventory and its machine-readable source of truth.
 - `README.md`: short project overview and orientation guide.
 - `CLAUDE.md`: a pointer to this file, `@AGENTS.md`.
 
@@ -97,26 +95,45 @@ Do not invent installation, run, build, test, or deployment commands until an im
 
 ## Local skills
 
-The repository currently contains 16 Agent Skills:
+The repository currently contains 35 Agent Skills:
 
-- `find-skills`
+- `okhp3-artifact-validation`
+- `okhp3-as-is-process-capture`
+- `okhp3-brand-style-registry`
+- `okhp3-capture-intake`
 - `okhp3-chatgpt-project-migration`
 - `okhp3-custom-gpt-builder`
 - `okhp3-custom-gpt-readiness`
-- `okhp3-custom-gpt-skill-conversion-planner`
+- `okhp3-decision-model-authoring`
+- `okhp3-elicitation-interviews`
+- `okhp3-equilibrium-review`
+- `okhp3-evidence-standard`
+- `okhp3-future-state-strategy`
+- `okhp3-gpt-skill-conversion-plan`
+- `okhp3-graduation-gate`
+- `okhp3-handoff-packaging`
 - `okhp3-notion-capture-router`
+- `okhp3-outcome-modeling-core`
+- `okhp3-overkill-hill-brand`
+- `okhp3-process-capture`
+- `okhp3-process-gap-analysis`
+- `okhp3-process-intake-and-scope`
+- `okhp3-project-promotion`
+- `okhp3-repl-repo-janitor`
+- `okhp3-repository-janitor`
+- `okhp3-repository-organizer`
+- `okhp3-session-handoff`
 - `okhp3-skill-cataloger`
+- `okhp3-skill-discovery`
+- `okhp3-skill-foundry`
+- `okhp3-skill-promotion`
+- `okhp3-source-backed-research`
 - `okhp3-thread-context-extraction`
-- `okhp3-thread-context-extraction-chatgpt`
-- `okhp3-thread-context-extraction-claude`
-- `okhp3-thread-context-extraction-copilot-m365`
-- `okhp3-thread-context-extraction-gemini`
-- `okhp3-thread-context-extraction-grok`
-- `okhp3-thread-context-extraction-mistral-vibe`
-- `okhp3-thread-context-extraction-perplexity`
-- `skill-creator`
+- `okhp3-thread-extract-chatgpt`
+- `okhp3-thread-extract-claude`
+- `okhp3-triage-and-file`
 
-`tcx-ws/` contains thread-context-extraction evaluation history and outputs. It is not counted as a skill because it does not contain `SKILL.md`.
+Evaluation workspaces and benchmark records live inside the relevant skill packages and are not counted as separate skills unless they contain their own `SKILL.md`.
 
 The Notion capture router must run report-only when private anchors are unavailable. The cataloger inventories skills and validates their metadata. The skill-creator package creates, improves, and evaluates Agent Skills. The extraction packages preserve manually supplied AI conversation context for platform-specific and generic workflows.
 
@@ -157,7 +174,6 @@ There is currently no repository-provided test, build, lint, or deployment comma
 
 ### Risks or inconsistencies
 
-- `dataledger_hydration_v3.md` refers to `persona_v3.md`, while the tracked file is `dataledger_persona_v3.md`.
 - `ris_pathscrib-r.md` starts as a Parameters Ledger and embeds sections for other ledgers and the RIS material. Its canonical role is unclear.
 - Ledger documents and reference material carry 2025-08-18 or v1.0/v4.2 historical labels, but no current release or versioning policy is documented.
 - The RAG material discusses CI, rendering, and implementation patterns, but no such tooling is checked in.

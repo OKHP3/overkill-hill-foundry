@@ -40,7 +40,7 @@ def main() -> int:
     parser.add_argument("--max-age-days", type=int, default=90)
     args = parser.parse_args()
 
-    inventory_path = Path(__file__).parents[2] / "technology-inventory.json"
+    inventory_path = Path(__file__).parents[2] / "docs" / "maintenance" / "technology-inventory.json"
     inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
     reviewed = date.fromisoformat(inventory["reviewed_on"])
     age = (date.today() - reviewed).days
@@ -64,7 +64,7 @@ def main() -> int:
     if problems:
         print(
             f"Technology inventory needs review: {'; '.join(problems)}. "
-            f"Update {inventory_path.name} and TECHNOLOGY.md after checking "
+            f"Update {inventory_path.name} and docs/maintenance/TECHNOLOGY.md after checking "
             "the linked authoritative sources."
         )
         return 1

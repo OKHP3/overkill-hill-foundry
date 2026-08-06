@@ -3,7 +3,7 @@
 ## Hydration Schema (v4.2 Ordered)
 - `hydration_id`: pathscrib-r_init
 - `capsule_state`: genesis
-- `persona_state`: loaded from persona_v3.md
+- `persona_state`: loaded from dataledger_persona_v3.md
 - `system_context`: suffix law + ordering rules
 - `file_inputs`: RAG + RIS casebooks
 - `notes`: "Initialized fresh under Canon Order v4.2"

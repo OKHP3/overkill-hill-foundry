@@ -11,10 +11,12 @@ The ledgers also document a `narrative -> diagram` path. Supported output format
 ## Start here
 
 - [`AGENTS.md`](AGENTS.md): canonical project guidance, repository map, constraints, and validation commands.
-- [`dataledger_persona_v3.md`](dataledger_persona_v3.md): role, tone, boundaries, and relationships.
-- [`dataledger_registry_v3.md`](dataledger_registry_v3.md): conceptual agent registry.
-- [`dataledger_parameters_v3.md`](dataledger_parameters_v3.md): modes, formats, QA levels, and execution flow.
-- [`dataledger_system_v3.md`](dataledger_system_v3.md) and [`dataledger_hydration_v3.md`](dataledger_hydration_v3.md): authority, load order, and hydration state.
-- [`TECHNOLOGY.md`](TECHNOLOGY.md): reviewed technology inventory and update policy.
+- [`docs/ledgers/dataledger_persona_v3.md`](docs/ledgers/dataledger_persona_v3.md): role, tone, boundaries, and relationships.
+- [`docs/ledgers/dataledger_registry_v3.md`](docs/ledgers/dataledger_registry_v3.md): conceptual agent registry.
+- [`docs/ledgers/dataledger_parameters_v3.md`](docs/ledgers/dataledger_parameters_v3.md): modes, formats, QA levels, and execution flow.
+- [`docs/ledgers/dataledger_system_v3.md`](docs/ledgers/dataledger_system_v3.md) and [`docs/ledgers/dataledger_hydration_v3.md`](docs/ledgers/dataledger_hydration_v3.md): authority, load order, and hydration state.
+- [`docs/maintenance/TECHNOLOGY.md`](docs/maintenance/TECHNOLOGY.md): reviewed technology inventory and update policy.
 
-The root PDFs are reference casebooks. The `.agents/skills/` directory contains 16 Agent Skills plus an evaluation workspace. There is no package manifest, application runtime, deployment configuration, or repository-provided application test command.
+The repository map is intentionally small: `docs/` contains project specifications and maintenance documentation, while `knowledge/` contains the process-modeling casebooks and RAG references.
+
+The root PDFs are reference casebooks. The `.agents/skills/` directory contains 35 local Agent Skills and their evaluation assets. The `skills/okhp3-skill-promotion/` directory is an exact publication mirror for the promotion skill, managed from its `.agents/skills/` source. There is no package manifest, application runtime, deployment configuration, or repository-provided application test command.
