@@ -1,0 +1,4 @@
+# Python-generated caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
