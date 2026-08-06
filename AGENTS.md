@@ -10,7 +10,7 @@ Canonical agent guidance for the FoundRy HMT01 Homestead-R repository.
 - **Declared type:** GPT tool
 - **Declared purpose:** Homestead and property management
 - **License:** MIT, as recorded in `LICENSE`
-- **Current repository state:** Early-stage prompt and image-asset repository. Recent commits show active maintenance, but no runnable GPT tool implementation is present in this checkout.
+- **Current repository state:** Early-stage prompt and image-asset repository with a repository-local Agent Skills library. Recent commits show active maintenance, but no runnable GPT tool implementation is present in this checkout.
 
 The project name and declared purpose are confirmed by the existing project metadata. The early-stage assessment is an evidence-based inference from the tracked files, which currently contain prompts, images, seeded skills, and no application runtime.
 
@@ -25,15 +25,12 @@ Treat the project as a creative asset and prompt source unless new repository ev
 
 ## Repository layout
 
-- `README.md`: Minimal repository landing page. It does not currently document usage or implementation status.
-- `TECHNOLOGY-INVENTORY.md`: Evidence-based technology inventory, checked stable versions, and update policy.
+- `README.md`: Repository landing page with current status, content map, start-here links, and implementation boundaries.
+- `docs/TECHNOLOGY-INVENTORY.md`: Evidence-based technology inventory, checked stable versions, and update policy.
 - `requirements-dev.txt`: Explicit PyYAML development dependency for the seeded skill validator.
 - `.github/dependabot.yml`: Weekly Dependabot monitoring for Python dependencies and future GitHub Actions.
-- `icon-generator-for-hometools.md`: Detailed prompt for a mechanical bird perched on a burning suburban house.
-- `icon-generator-for-hometools-alt.md`: House-focused reverse-engineered prompt variant.
-- `overkill-hill-p³-square-icon-hometools.png`: Tracked 1024 x 1024 visual asset.
-- `overkill-hill-p³-square-icon-hometools-alt-.png`: Tracked 1024 x 1024 alternate visual asset.
-- `.agents/skills/`: Seeded agent-skill packages plus the `thread-extract-ws/` evaluation workspace. These are repository tooling and guidance, not evidence of the HMT01 product runtime.
+- `assets/hometools/`: Paired HomeTools prompts and 1024 x 1024 visual assets.
+- `.agents/skills/`: 35 repository-local Agent Skill packages, their references, fixtures, tests, and generated catalog. These are repository tooling and guidance, not evidence of the HMT01 product runtime.
 - `LICENSE`: MIT license.
 - `CLAUDE.md`: Compatibility pointer to this file via `@AGENTS.md`.
 
@@ -73,17 +70,16 @@ For guidance or prompt changes, use checks appropriate to the changed files:
 git status --short
 git diff --check
 rg --files -g '!node_modules' -g '!vendor'
-file overkill-hill-p³-square-icon-hometools.png overkill-hill-p³-square-icon-hometools-alt-.png
+file assets/hometools/overkill-hill-p³-square-icon-hometools.png assets/hometools/overkill-hill-p³-square-icon-hometools-alt-.png
 ```
 
 Review changed Markdown for factual alignment and inspect changed images at their native dimensions when visual identity is affected. No automated test suite exists at present.
 
 ## Known gaps and open questions
 
-- The implementation status of the GPT tool is not documented beyond the repository label and purpose.
+- The implementation status of the GPT tool is not documented beyond the repository label and declared purpose.
 - The product mission, target users, vision, workflows, data flows, integrations, and deployment model are unknown.
-- The intended relationship between HMT01 and the tracked seeded skills is not documented.
-- The README does not yet explain the repository's current asset-only state or how the prompts and images are used.
+- The intended relationship between HMT01 and the repository-local Agent Skills is not documented.
 
 Do not resolve these gaps by invention. Update this guide when repository evidence or owner direction answers them.
 
@@ -91,4 +87,4 @@ Do not resolve these gaps by invention. Update this guide when repository eviden
 
 When the repository gains an implementation, specification, workflow, or deployment surface, update this guide in the same change or in a focused follow-up. Recheck paths and commands before documenting them. Keep confirmed facts, inferences, and unknowns clearly separated.
 
-Updated from local repository evidence on 2026-07-24.
+Updated from local repository evidence on 2026-08-05.
