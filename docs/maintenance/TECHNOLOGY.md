@@ -1,6 +1,6 @@
 # Technology inventory and update policy
 
-Reviewed 2026-08-05.
+Reviewed 2026-09-01.
 
 This repository is documentation-only. It does not contain a TypeScript or JavaScript application, Vite, Tailwind CSS, Node.js package manifest, build system, or deployable service. The inventory therefore distinguishes technologies used by checked-in scripts from formats and standards described by the knowledge assets.
 
@@ -10,8 +10,8 @@ This repository is documentation-only. It does not contain a TypeScript or JavaS
 | --- | --- | --- | --- | --- |
 | Python | Runtime for checked-in utility scripts | Unknown, not pinned | 3.14.7 | [Python downloads](https://www.python.org/downloads/) |
 | PyYAML | Imported by `skill-creator/scripts/quick_validate.py` | Unknown, not declared | 6.0.3 | [PyPI](https://pypi.org/project/PyYAML/) |
-| Mermaid | Documented diagram output | Unknown, no renderer checked in | 11.16.1 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
-| PlantUML | Documented diagram syntax and output | Unknown, no renderer checked in | 1.2026.6 | [PlantUML news](https://plantuml.com/news) |
+| Mermaid | Documented diagram output | Unknown, no renderer checked in | 11.17.2 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
+| PlantUML | Documented diagram syntax and output | Unknown, no renderer checked in | 1.2026.7 | [PlantUML news](https://plantuml.com/news) |
 | BPMN | Documented process-model output | 2.0.2 | 2.0.2 | [OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2/) |
 | Markdown/CommonMark | Primary documentation format | Unknown, parser not pinned | 0.31.2 | [CommonMark](https://spec.commonmark.org/current/) |
 | YAML | `SKILL.md` front matter | Unknown, parser not pinned | 1.2.2 | [YAML 1.2.2](https://yaml.org/spec/1.2.2/) |

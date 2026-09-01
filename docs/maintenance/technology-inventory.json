@@ -1,5 +1,5 @@
 {
-  "reviewed_on": "2026-08-05",
+  "reviewed_on": "2026-09-01",
   "repository_runtime": "documentation-only",
   "technologies": [
     {
@@ -20,14 +20,14 @@
       "name": "Mermaid",
       "role": "documented process-diagram output format",
       "in_place_version": "unknown; no renderer or dependency is checked in",
-      "latest_stable_as_of_review": "11.16.1",
+      "latest_stable_as_of_review": "11.17.2",
       "source": "https://github.com/mermaid-js/mermaid/releases"
     },
     {
       "name": "PlantUML",
       "role": "documented diagram syntax and output format",
       "in_place_version": "unknown; no renderer is checked in",
-      "latest_stable_as_of_review": "1.2026.6",
+      "latest_stable_as_of_review": "1.2026.7",
       "source": "https://plantuml.com/news"
     },
     {
