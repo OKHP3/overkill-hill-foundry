@@ -82,12 +82,12 @@ The knowledge relationship is documented as:
 - The local skill collection follows the Agent Skills convention with `SKILL.md` files and YAML front matter.
 - `okhp3-skill-cataloger` includes a Python catalog and validation script at `.agents/skills/okhp3-skill-cataloger/scripts/gen-skills-readme.py`.
 - The repository includes Python utility scripts for skill packaging, validation, extraction, and evaluation. Dependencies are not declared in a project manifest.
-- GitHub Actions runs the technology-inventory review on a monthly schedule and by manual dispatch. Dependabot is configured for GitHub Actions, pip, and npm, although no pip or npm manifest currently exists.
+- GitHub Actions runs the technology-inventory review on a monthly schedule and by manual dispatch. Dependabot checks GitHub Actions weekly. Root pip/npm jobs were removed because no Python dependency manifest or root npm workspace exists; seven nested skill package manifests declare no dependencies. Add ecosystem coverage at actual manifest directories when dependencies are introduced.
 - The documented output formats are Mermaid, BPMN, PlantUML, JSON, and CSV.
 
 ### Not present
 
-- No `package.json`, `pyproject.toml`, `requirements.txt`, `Cargo.toml`, `go.mod`, Makefile, Dockerfile, or application source tree.
+- No root `package.json`, `pyproject.toml`, `requirements.txt`, `Cargo.toml`, `go.mod`, Makefile, Dockerfile, or application source tree. Nested skill package metadata does not establish an application runtime.
 - No application test suite, lint configuration, build configuration, or deployment configuration.
 - No checked-in PlantUML, BPMN, Mermaid, JSON, or CSV renderer.
 
