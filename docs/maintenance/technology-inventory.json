@@ -11,7 +11,7 @@
     },
     {
       "name": "PyYAML",
-      "role": "imported by skill-creator/scripts/quick_validate.py",
+      "role": "referenced Python validation dependency; no owning dependency manifest is present",
       "in_place_version": "unknown; imported but not declared",
       "latest_stable_as_of_review": "6.0.3",
       "source": "https://pypi.org/project/PyYAML/"
@@ -20,14 +20,14 @@
       "name": "Mermaid",
       "role": "documented process-diagram output format",
       "in_place_version": "unknown; no renderer or dependency is checked in",
-      "latest_stable_as_of_review": "11.17.2",
+      "latest_stable_as_of_review": "12.0.0",
       "source": "https://github.com/mermaid-js/mermaid/releases"
     },
     {
       "name": "PlantUML",
       "role": "documented diagram syntax and output format",
       "in_place_version": "unknown; no renderer is checked in",
-      "latest_stable_as_of_review": "1.2026.7",
+      "latest_stable_as_of_review": "1.2026.8",
       "source": "https://plantuml.com/news"
     },
     {
@@ -71,18 +71,30 @@
       "in_place_version": "Git client version not recorded",
       "latest_stable_as_of_review": "not applicable to repository contents",
       "source": "https://git-scm.com/"
+    },
+    {
+      "name": "Node.js LTS",
+      "role": "bundled helper tests in seven private dependency-free packages",
+      "in_place_version": "unknown; no repository runtime pin",
+      "latest_stable_as_of_review": "24.21.0",
+      "source": "https://nodejs.org/dist/index.json"
+    },
+    {
+      "name": "npm",
+      "role": "bundled helper tests in seven private dependency-free packages",
+      "in_place_version": "unknown; no repository runtime pin",
+      "latest_stable_as_of_review": "12.0.2",
+      "source": "https://registry.npmjs.org/npm/latest"
     }
   ],
   "explicitly_not_present": [
     "TypeScript",
     "JavaScript application runtime",
-    "Node.js",
-    "npm",
     "Vite",
     "Tailwind CSS",
     "React",
-    "package.json",
     "requirements.txt",
     "pyproject.toml"
-  ]
+  ],
+  "release_baselines_checked_on": "2026-09-20"
 }
