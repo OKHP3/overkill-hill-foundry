@@ -1,12 +1,12 @@
 {
-  "reviewed_on": "2026-09-01",
+  "reviewed_on": "2026-10-01",
   "repository_runtime": "documentation-only",
   "technologies": [
     {
       "name": "Python",
       "role": "runtime for checked-in utility scripts",
       "in_place_version": "unknown; not pinned",
-      "latest_stable_as_of_review": "3.14.7",
+      "latest_stable_as_of_review": "3.14.8",
       "source": "https://www.python.org/downloads/"
     },
     {
@@ -83,7 +83,7 @@
       "name": "npm",
       "role": "bundled helper tests in seven private dependency-free packages",
       "in_place_version": "unknown; no repository runtime pin",
-      "latest_stable_as_of_review": "12.0.2",
+      "latest_stable_as_of_review": "12.2.0",
       "source": "https://registry.npmjs.org/npm/latest"
     }
   ],
@@ -96,5 +96,5 @@
     "requirements.txt",
     "pyproject.toml"
   ],
-  "release_baselines_checked_on": "2026-09-20"
+  "release_baselines_checked_on": "2026-10-01"
 }
