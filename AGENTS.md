@@ -88,3 +88,5 @@ Do not resolve these gaps by invention. Update this guide when repository eviden
 When the repository gains an implementation, specification, workflow, or deployment surface, update this guide in the same change or in a focused follow-up. Recheck paths and commands before documenting them. Keep confirmed facts, inferences, and unknowns clearly separated.
 
 Updated from local repository evidence on 2026-08-05.
+
+## Imported Claude Cowork project instructions
