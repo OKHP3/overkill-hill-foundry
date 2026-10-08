@@ -189,3 +189,5 @@ There is currently no repository-provided test, build, lint, or deployment comma
 ## Keeping this guide current
 
 Update this file when the repository gains an implementation runtime, new validation commands, a deployment surface, a canonical ledger revision, or a changed product boundary. Re-check the claims against the files and executable checks before updating the guide.
+
+## Imported Claude Cowork project instructions
