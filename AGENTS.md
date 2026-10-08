@@ -119,3 +119,5 @@ Owner input is needed to resolve:
 - What are the intended input and output contracts for logical analysis?
 - Where should implementation, tests, and deployment configuration live when added?
 - Which related repository or external product context should this tool integrate with?
+
+## Imported Claude Cowork project instructions
