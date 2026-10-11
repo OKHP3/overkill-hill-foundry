@@ -13,7 +13,7 @@ The current source baseline is `74ffadb447f702065e7912ca9fce5c9e8f36a22d`. PRs 4
 ### PR 42 — `@vitejs/plugin-react` 5.2.0 → 6.1.1
 
 - Exact head: `027881927d63eb721757aa6ec7a1d5208c480297`; captured base: `37cb2ea40deffc751926e27208b17eef139b9f95`.
-- **Decision: defer.** The current workspace catalog pins Vite `^7.3.6`; the exact 6.1.1 package declares Vite `^8.0.0` as a peer. Its 6.0.0 release also drops Vite 7 and earlier and removes the plugin's Babel-related options. This is a coordinated Vite-major migration, not a standalone plugin refresh. [6.1.1 package metadata](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/package.json), [plugin React changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md).
+- **Decision: defer.** The current workspace catalog pins Vite `^7.3.6`; the exact 6.1.1 package declares Vite `^8.0.0` as a peer. Its 6.0.0 release also drops Vite 7 and earlier and removes the plugin's Babel-related options. This is a coordinated Vite-major migration, not a standalone plugin refresh. [Version-pinned 6.1.1 package metadata](https://github.com/vitejs/vite-plugin-react/blob/plugin-react%406.1.1/packages/plugin-react/package.json), [plugin React changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md).
 - Captured CI: two `e2e` failures ([run 35572671708](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/35572671708), [run 35572668304](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/35572668304)); typecheck and audit checks passed in both matrices; filename check passed. The Mermaid sync check was skipped. Failure cause is not included in the capture and remains unknown.
 - Next evidence: only reconsider as part of an explicitly scoped Vite 8 migration. Rebase/update to the current main SHA, resolve the Vite/plugin peer range, review config for removed Babel APIs, then require fresh build, typecheck, audit and browser checks. Do not merge this head as-is.
 
@@ -37,7 +37,7 @@ The current source baseline is `74ffadb447f702065e7912ca9fce5c9e8f36a22d`. PRs 4
 - Exact head: `024f82f9d7b2ae225a06be1c4e9921a122809bfe`; captured base: `74ffadb447f702065e7912ca9fce5c9e8f36a22d`.
 - Updates: `react-hook-form` 7.88.0→7.89.0, `wouter` 3.11.0→3.13.0, `orval` 8.33.0→8.39.0, and `@tanstack/react-query` 5.102.8→5.104.0. These stay within their current major lines. Upstream notes for React Hook Form 7.89.0 list a peer-type addition and validation/state fixes; Orval 8.39.0 contains generator features and fixes; TanStack Query's 5.104.0 core entry is a minor change. [React Hook Form changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md), [Orval 8.39.0 release](https://github.com/orval-labs/orval/releases), [TanStack Query changelog](https://github.com/TanStack/query/blob/main/packages/query-core/CHANGELOG.md).
 - **Decision: defer the grouped PR pending an Orval output check.** `lib/api-spec` exposes a `codegen` script that runs Orval and then library typecheck. The captured PR changes the generator version but has no generated-code paths, and its successful generic checks do not establish whether output remains stable or needs regeneration.
-- Captured CI at the current base: both e2e, both typecheck, both audit and filename checks succeeded ([e2e run 37277456820](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277456820), [e2e run 37277448804](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277448804); [typecheck run 37277456863](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277456863), [typecheck run 37277448699](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277448699)). The Mermaid sync check was skipped. The captured run date is 2026-10-05; Orval 8.39.0 was released 2026-09-30, so the three-day Dependabot cooldown and one-day pnpm release-age gates had elapsed for that newest update. [Orval release date and notes](https://github.com/orval-labs/orval/releases).
+- Captured CI at the then-current base: both e2e, both typecheck, both audit and filename checks succeeded ([e2e run 37277456820](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277456820), [e2e run 37277448804](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277448804); [typecheck run 37277456863](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277456863), [typecheck run 37277448699](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277448699)). The Mermaid sync check was skipped. The earlier package-age conclusion was inferred from release notes and is withdrawn: this review does not independently establish registry publication times or satisfaction of every cooldown/exclusion gate. Preserve the configured policies and verify them during any candidate integration.
 - Next evidence: in an isolated candidate checkout, run `pnpm --filter @workspace/api-spec run codegen`; inspect and explain any generated diff, then require library typecheck and fresh e2e/audit checks. Preserve the frozen lockfile and release-age policy.
 
 ### PR 55 — grouped npm patch updates (6 packages)
@@ -73,3 +73,80 @@ this scaffold has no generated migrations, record that limitation and use an
 appropriate config/typecheck/disposable-database check. Do not invent migration
 history or use production credentials. These remain proposed focused checks;
 no dependency update has been merged by this task.
+
+## A25 recovery closeout refresh - October 11, 2026
+
+Codex accepted the owner's closeout handoff in a fresh thread without a goal or
+token ceiling. The fetched publication baseline is
+`6a502342ec30418277e78600f6cee9b3ce8d40c7`. The recovery commit
+`7daaa97f6cca9e6a32429203a79330f38902d9ef` and its branch are preserved. Comparing
+content, rather than requiring recovery-commit ancestry, confirms that both draft
+files were already incorporated through [PR 57](https://github.com/OKHP3/overkill-hill-foundry/pull/57)
+at `8a8147845d65730deb9d4f59e5e73055e6d65db7`; current main adds the coordinator
+verification. This amendment corrects evidence and records the closeout; it does
+not remerge the stopped draft or update dependencies.
+
+### Fresh PR state and tested-commit association
+
+Authenticated GitHub PR and workflow API queries on October 11 confirm that all
+five candidates remain open and unmerged at the exact heads above. PRs 48 and 49
+remain closed without merge. Every candidate base is now older than fetched main.
+The connector's commit-filtered workflow results were cross-checked with the
+authenticated workflow API and checkout logs. The following representative E2E
+runs identify their triggering candidate via `head_sha` and the PR head/base;
+their checkout logs identify the actual synthetic merge commit used by CI.
+
+| PR | Historical E2E run | Result | Checkout SHA actually tested |
+| --- | --- | --- | --- |
+| 42 | [35572671708](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/35572671708) | failure | `a2e7e8af7944be1a558b6d3bec3f93f502dd71f8` |
+| 50 | [36391186274](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/36391186274) | failure | `5d89c3c2bbde7b24c1f881607805e7263903b785` |
+| 51 | [36391213147](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/36391213147) | success | `a3bd76f969d445b4836bf62bcdce87d1be3d2f7f` |
+| 54 | [37277456820](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277456820) | success | `258d2ff9e16c71ea5742aff07880096c819fcb91` |
+| 55 | [37277469129](https://github.com/OKHP3/overkill-hill-foundry/actions/runs/37277469129) | success | `f5d32e81c5e2204233d754672706a3712183d009` |
+
+These are freshly retrieved historical results, not newly executed tests of the
+candidate alone or its integration with October 11 main. The original rollups
+did not prove that association by themselves. A passing result from these old
+bases cannot satisfy the remaining current-main merge gates. No candidate CI was
+rerun and no candidate dependencies were installed during this closeout.
+
+### Decisions and corrected findings
+
+- **42: defer.** Version-pinned upstream 6.1.1 metadata still requires Vite
+  `^8.0.0`; this repository still declares `^7.3.6`. The retrieved failing E2E
+  log now establishes the build failure: plugin React imports `vite/internal`,
+  which Vite 7 does not export (`ERR_PACKAGE_PATH_NOT_EXPORTED`). The broader
+  migration remains separately scoped.
+- **50: defer.** All five Calendar wrappers still supply `classNames.table`.
+  The [upstream migration guide](https://daypicker.dev/upgrading) removes that
+  key in favor of `month_grid`. The retrieved E2E log fails during typecheck
+  with TS2353 on `artifacts/okh-capabilities/src/components/ui/calendar.tsx:86`.
+  The separate typecheck run 36391186374 also records failure associated with
+  the candidate head. A wrapper migration and current-base tests remain needed.
+- **51: conditional candidate only.** Current source still has one
+  `marked.parse(...)` call, in `artifacts/custom-gpt-creator/tests/export-package.e2e.ts`.
+  The [upstream advisory](https://github.com/markedjs/marked/security/advisories/GHSA-6v9c-7cg6-27q7)
+  lists 18.0.0/18.0.1 as affected and 18.0.2 as patched; 18.0.14 is outside that
+  advisory's listed range. That is not a blanket security clearance. Retain the
+  sanitizer boundary documented by [Marked](https://marked.js.org/#security),
+  then update the base and run the export fixture/browser regression.
+- **54: defer.** `lib/api-spec/package.json` still runs Orval followed by library
+  typecheck. This PR contains manifests/lockfile changes without generated client
+  output evidence. Run its codegen in an isolated candidate checkout, review the
+  output diff, and refresh current-base checks before integration. The package-age
+  inference above has been removed; no cooldown claim is substituted.
+- **55: conditional candidate only.** The workspace database scaffold contains
+  no tracked migration history and no dedicated database test script, so
+  `drizzle-kit check` cannot prove this repository's migration behavior. Its
+  config requires `DATABASE_URL`, and its available scripts perform database
+  writes. Require a scoped config/library typecheck and appropriate disposable
+  database or mock smoke before merge. Use migration-history checking only if
+  actual history is supplied; [Drizzle's check documentation](https://orm.drizzle.team/docs/drizzle-kit-check)
+  describes that narrower purpose. No `push`, `push-force`, `migrate`, production
+  credentials, or database write was used here.
+
+The review duty is satisfied by these bounded decisions and explicit follow-up
+gates. No dependency PR is accepted for immediate merge by this report. The
+one-day `minimumReleaseAge: 1440`, its existing exclusions, Dependabot policy,
+and frozen-lockfile workflows remain unchanged. Documentation validation and
+surface closeout evidence are recorded in the [A25 receipt](../receipts/a25.md).
