@@ -61,13 +61,14 @@ test("quota failure keeps the accepted edit available for a later retry", () => 
   try {
     const original = workspace("Persisted");
     assert.equal(saveCapabilityWorkspace(original), true);
+    const savedBytes = values.get(CAPABILITY_WORKSPACE_KEY);
     const blocked = workspace("Retry after quota");
     installStorage(values, () => {
       throw new Error("quota exceeded");
     });
     assert.equal(saveCapabilityWorkspace(blocked), false);
     assert.equal(loadCapabilityWorkspace().workspace.projects[0].name, "Retry after quota");
-    assert.equal(values.get(CAPABILITY_WORKSPACE_KEY), JSON.stringify(original));
+    assert.equal(values.get(CAPABILITY_WORKSPACE_KEY), savedBytes);
 
     installStorage(values);
     assert.equal(saveCapabilityWorkspace(blocked), true);

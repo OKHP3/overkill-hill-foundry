@@ -7,15 +7,38 @@ the builder. See the [product and subtree contract](portable-skill-foundry.md).
 
 ## Run it locally
 
-Use Node 22 or newer and pnpm 10.34.5, as pinned by `packageManager` in
-`package.json`. CI reads that same pin.
+Use Node 22 or newer and the pnpm 10.34.5 pin in `package.json`. With Corepack,
+`corepack pnpm --version` resolves the repository's pin. If dependencies are not
+installed, use `corepack pnpm install --frozen-lockfile`.
+
+POSIX shell preview:
 
 ```bash
-pnpm install --frozen-lockfile
-PORT=20017 BASE_PATH=/custom-gpt-creator/ pnpm --filter @workspace/custom-gpt-creator run dev
+PORT=20023 BASE_PATH=/custom-gpt-creator/ corepack pnpm --filter @workspace/custom-gpt-creator run dev
 ```
 
-Open `http://localhost:20017/custom-gpt-creator/`. The workbench is the home view;
+PowerShell preview:
+
+```powershell
+$env:PORT = "20023"
+$env:BASE_PATH = "/custom-gpt-creator/"
+corepack pnpm --filter @workspace/custom-gpt-creator run dev
+```
+
+To build the same base path for production, set `NODE_ENV` as well:
+
+```bash
+PORT=20023 BASE_PATH=/custom-gpt-creator/ NODE_ENV=production corepack pnpm --filter @workspace/custom-gpt-creator run build
+```
+
+```powershell
+$env:PORT = "20023"
+$env:BASE_PATH = "/custom-gpt-creator/"
+$env:NODE_ENV = "production"
+corepack pnpm --filter @workspace/custom-gpt-creator run build
+```
+
+Open `http://localhost:20023/custom-gpt-creator/`. The workbench is the home view;
 **Open legacy Custom GPT studio** opens the original nine stations at `#creator`.
 The browser Back button and **Capability workbench** link return to the workbench.
 Existing GPT data retains the `cgpt-workspace` key and is never migrated into a
@@ -46,10 +69,13 @@ accounts, fetch source repositories or run evaluations. They require a skill cor
 and host/tool records for structural review. Move a reviewed export into a
 `capabilities/<slug>/` subtree when it is ready for repository integration.
 
-Existing workspace and backup version 1 remain supported: absent conversion fields
-receive defaults on read, and original project kinds/identities remain intact.
-Older application builds cannot read backups containing the new fields; keep an
-original backup if you need to return to an earlier build.
+The current application accepts the version-1 workspace and backup fixtures
+listed in the [dated compatibility evidence](handoffs/2026-10-05-executable-series/evidence/backup-preservation.md).
+When optional conversion fields are absent, it supplies current defaults while
+preserving the fields provided by those fixtures. This does not establish
+compatibility with any older application build: the tested older runtime and
+downgrade behavior are unknown. Before changing application versions, preserve
+the original backup and verify the exact source and target builds.
 
 Projects autosave locally. Duplicate creates a separate draft. Delete project asks for confirmation; export a backup before removing a project you may need again. Download a
 workspace backup before clearing browser data or changing devices. Import
@@ -65,8 +91,13 @@ The existing app loads fonts from Google Fonts; browser storage is specific to t
 origin, so localhost, Pages and Replit do not share a workspace automatically.
 
 If browser storage is unavailable, the application warns that edits remain in
-memory. Download a backup before refreshing. If stored JSON is malformed, its
-original value is preserved so recovery remains possible. Before an intentional edit replaces malformed data, the raw value is retained under a browser storage key beginning `okh-capability-workspace-recovery-`. Import accepts only the
+memory. Download a backup before refreshing. Malformed or oversized stored text
+has a separate raw download labeled unparsed and unvalidated. Each distinct raw
+source retained in this tab has its own download and recovery-copy status, and
+stays available after an intentional edit. The app attempts a separate browser
+storage copy before replacing that source; if the copy cannot be confirmed,
+download it before refreshing or closing. The regular workspace backup contains
+the validated current workspace and excludes these raw sources. Import accepts only the
 known workspace version and validates project identities, field types and size.
 A backup replacement affects capability projects only, not Custom GPT projects.
 
@@ -95,10 +126,10 @@ Run the repository governance sequence, the core tests and the browser journeys:
 python3 scripts/governance-check.py
 python3 scripts/normalize_filenames.py . --recursive --ascii-only --include-dirs
 node --experimental-strip-types --test artifacts/mockup-sandbox/src/lib/capability-workbench.test.ts
-pnpm run typecheck
-pnpm --filter @workspace/custom-gpt-creator exec playwright install chromium
-pnpm --filter @workspace/custom-gpt-creator run test:e2e
-PORT=20017 BASE_PATH=/OverKill-Hill-FoundRy/ NODE_ENV=production pnpm --filter @workspace/custom-gpt-creator run build
+corepack pnpm run typecheck
+corepack pnpm --filter @workspace/custom-gpt-creator exec playwright install chromium
+corepack pnpm --filter @workspace/custom-gpt-creator run test:e2e
+PORT=20023 BASE_PATH=/custom-gpt-creator/ NODE_ENV=production corepack pnpm --filter @workspace/custom-gpt-creator run build
 ```
 
 See the implementation plan for the dated acceptance record. Tests of the

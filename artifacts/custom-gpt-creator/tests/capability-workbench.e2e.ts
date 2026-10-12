@@ -185,7 +185,7 @@ test("reject invalid imports and preserve malformed stored source", async ({
   );
   await page.goto("./");
   await expect(
-    page.getByText(/could not be loaded and was left unchanged/),
+    page.getByRole("status").filter({ hasText: /could not be loaded and was left unchanged/ }),
   ).toBeVisible();
   expect(
     await page.evaluate((key) => localStorage.getItem(key), storeKey),
@@ -217,7 +217,8 @@ test("storage denial retains edits for a recovery download", async ({
   await page
     .getByLabel("Capability name", { exact: true })
     .fill("Recovery draft");
-  await expect(page.getByText(/Storage unavailable/)).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("Unsaved");
+  await expect(page.getByRole("status")).toContainText("lost on refresh or closure");
   const download = page.waitForEvent("download");
   await page
     .getByRole("button", { name: "Download backup", exact: true })

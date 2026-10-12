@@ -42,3 +42,7 @@ their detailed evidence.
 
 Codex owns the isolated dependency and historical review repair candidate. See
 [the accepted task and validation record](2026-09-20-portfolio-maintenance-codex.md).
+
+## Executable equilibrium series - 2026-10-05
+
+Coordinator Codex owns the [28-task dispatch and tracking record](2026-10-05-executable-series/README.md), covering all 48 review findings. Individual acknowledgements and evidence live in that series; pending gates do not count as accepted assignments.

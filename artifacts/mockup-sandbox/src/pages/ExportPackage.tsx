@@ -609,10 +609,12 @@ function renderMarkdownPreview(markdown: string): ReactNode[] {
 
 export default function ExportPackage({ completedSteps: liveCompletedSteps }: { completedSteps?: Set<number> }) {
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState<string | null>(null);
   const [format, setFormat] = useState<"markdown" | "instructions" | "json">("markdown");
   const formatRef = useRef(format);
   const [markdownView, setMarkdownView] = useState<"raw" | "preview">("raw");
   const copyConfirmationTimeoutRef = useRef<number | null>(null);
+  const copyRequestRef = useRef(0);
   const [auditImportMessage, setAuditImportMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const auditImportTriggerRef = useRef<HTMLButtonElement>(null);
   const auditImportFileRef = useRef<HTMLInputElement>(null);
@@ -663,6 +665,8 @@ export default function ExportPackage({ completedSteps: liveCompletedSteps }: { 
     if (nextFormat === format) return;
     // "Copied" applies only to the selected export; changing formats invalidates it.
     formatRef.current = nextFormat;
+    copyRequestRef.current += 1;
+    setCopyError(null);
     clearCopyConfirmation();
     setFormat(nextFormat);
   }, [format, clearCopyConfirmation]);
@@ -677,10 +681,29 @@ export default function ExportPackage({ completedSteps: liveCompletedSteps }: { 
   const copy = useCallback(async () => {
     const copiedFormat = format;
     const copiedContent = content;
-    await navigator.clipboard.writeText(copiedContent);
-    if (formatRef.current !== copiedFormat) return;
+    const requestId = ++copyRequestRef.current;
+    const startingSnapshot = readWorkspaceSnapshot();
+    const isCurrentCopy = () => {
+      const currentSnapshot = readWorkspaceSnapshot();
+      return copyRequestRef.current === requestId && formatRef.current === copiedFormat &&
+        startingSnapshot.workspace.activeProjectId === currentSnapshot.workspace.activeProjectId &&
+        startingSnapshot.serialized === currentSnapshot.serialized;
+    };
+    setCopyError(null);
+    clearCopyConfirmation();
+    try {
+      await navigator.clipboard.writeText(copiedContent);
+    } catch {
+      if (isCurrentCopy()) {
+        setCopied(false);
+        setCopyError("Clipboard access failed. Allow clipboard access and try again, or use Download or select and copy the export manually.");
+      }
+      return;
+    }
+    if (!isCurrentCopy()) return;
 
     clearCopyConfirmation();
+    setCopyError(null);
     setCopied(true);
     copyConfirmationTimeoutRef.current = window.setTimeout(() => {
       setCopied(false);
@@ -992,10 +1015,12 @@ export default function ExportPackage({ completedSteps: liveCompletedSteps }: { 
           </div>
         )}
         <div style={{ marginLeft: "auto", display: "flex", gap: "0.5rem" }}>
-          <button onClick={copy} style={primaryBtn}>{copied ? "✓ Copied!" : "📋 Copy"}</button>
+          <button onClick={copy} aria-describedby={copyError ? "copy-error" : undefined} style={primaryBtn}>{copied ? "✓ Copied!" : "📋 Copy"}</button>
           <button onClick={download} style={secondaryBtn}>⬇ Download .{format === "json" ? "json" : "md"}</button>
         </div>
       </div>
+
+      {copyError && <div id="copy-error" role="alert" style={{ margin: "-0.5rem 0 1rem", color: "var(--color-forge-danger)", fontSize: "0.84rem" }}>{copyError}</div>}
 
       {format === "markdown" && markdownView === "preview" ? (
         <article data-testid="markdown-preview" aria-label="Rendered Markdown preview" style={{

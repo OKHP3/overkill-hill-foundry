@@ -1,0 +1,1878 @@
+{
+  "schema_version": "1.0",
+  "series_id": "foundry-2026-10-05",
+  "updated_at": "2026-10-07T00:15:00.517336+00:00",
+  "repository": "OKHP3/overkill-hill-foundry",
+  "source_review": "docs/reviews/2026-10-04-equilibrium-review.json",
+  "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+  "coordinator_thread_id": "01a1096a-9ad8-7011-9cc5-25c41ff67308",
+  "coordinator_token_ceiling": 20000000,
+  "maximum_new_worker_threads": 30,
+  "reserved_new_task_slots": 0,
+  "spawned_new_worker_threads": 11,
+  "concurrency_limit": 3,
+  "task_count": 28,
+  "finding_count": 48,
+  "worker_budget_control": "Per-thread create_goal requested on dispatch; spawn APIs do not expose a token quota. Goal ceiling is not account capacity allocation.",
+  "tasks": [
+    {
+      "id": "A01",
+      "title": "Current requirements ledger",
+      "finding_ids": [
+        "FND-01"
+      ],
+      "status": "verified",
+      "phase": "requirements-ledger-published",
+      "thread_id": "01a10e1f-ee49-7bc2-80a6-f9e026155973",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": 51693,
+      "base_sha": "aaf41daf882f14907323f34aa9325f05f354285f",
+      "branch": "codex/foundry-series-a01-r2-20261005",
+      "dependencies": [],
+      "allowed_files": [
+        "docs/foundry-requirements-ledger.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a01.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-01",
+          "action": "Create one versioned ledger mapping each requirement to its authority, current behavior, evidence, limitation and acceptance owner. Preserve completed historical scope; label later maturation proposals explicitly.",
+          "done": "Each mandatory requirement has a source and observable closure check; proposed features have an explicit adoption decision. The owner can select a next series without using another product's PRD.",
+          "source": "docs/foundry-implementation-plan.md:28; docs/portable-skill-foundry.md:3",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a01.md",
+      "prompt": "prompts/a01.md",
+      "previous_workers": [
+        {
+          "thread_id": "01a10de7-0e7d-7f03-a469-dc32649b5b88",
+          "implementation": "none",
+          "reason": "Setup budget exhausted and shared metadata sandbox access unavailable",
+          "goal_token_budget": 20000,
+          "status": "budgetLimited",
+          "actual_tokens_used": 25868
+        },
+        {
+          "thread_id": "01a10ded-3187-7961-9fc5-881e14ad91d5",
+          "goal_token_budget": 200000,
+          "implementation": "none; clean clone and all queued messages preserved; no receipt accepted",
+          "status": "dispatch-withdrawn",
+          "reason": "Host SSH approval prevented acknowledgement; replacement assigned separate clone via in-session collaboration"
+        }
+      ],
+      "working_token_target": 20000,
+      "control_surface": "collaboration",
+      "acknowledgement": {
+        "commit": "3355d76af06a2b0febfebad99c2b99f782127df7",
+        "utc": "2026-10-05T22:12:39Z",
+        "published_by": "coordinator",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a01.md"
+      },
+      "agent_identity": "/root/a01_requirements",
+      "candidate_commit": "29fc526b4f268908df860fa38ffab750824c032a",
+      "integration": {
+        "pr": 58,
+        "main_sha": "621ea5893420e91712825c53b849c622b0c99173",
+        "checks": "Both e2e jobs, both typecheck jobs and filename check passed; Pages 37383196429 succeeded; primary Windows source exact parity."
+      }
+    },
+    {
+      "id": "A02",
+      "title": "Concurrent saves and immediate memory recovery",
+      "finding_ids": [
+        "FND-02",
+        "FND-43"
+      ],
+      "status": "integrated",
+      "phase": "source-and-ci-published-human-at-pending",
+      "thread_id": "01a10ded-4b33-71e1-abd7-67d454858324",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 1000000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown after resumption; last exposed observation 33562",
+      "base_sha": "aaf41daf882f14907323f34aa9325f05f354285f",
+      "branch": "codex/foundry-series-a02-r1-20261005",
+      "dependencies": [
+        "A03: clipboard candidate reviewed and receiving thread has completed its preceding goal before published scope transfer",
+        "Root prepares preserved A02 partial candidate in writable isolated clone; no new worker thread needed"
+      ],
+      "allowed_files": [
+        "artifacts/mockup-sandbox/src/lib/capability-workbench.ts",
+        "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx",
+        "artifacts/mockup-sandbox/src/lib/capability-concurrency.test.ts",
+        "artifacts/custom-gpt-creator/tests/capability-concurrency.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a02.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-02",
+          "action": "Add revision-aware save/conflict handling or an explicit single-writer guard. Preserve both versions and offer inspectable recovery; avoid silent last-writer replacement.",
+          "done": "A two-tab regression changes different fields and the same field; stale writes cannot silently discard either saved edit. Recovery export preserves both snapshots and identifies the authoritative revision.",
+          "source": "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:111; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:313",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-43",
+          "action": "Display a persistent accessible unsaved message with a download-newest-backup action and the consequence of refresh/closure. Announce state changes without repeated typing spam.",
+          "done": "Quota/write denial exposes a backup with the latest edits; status clears only after persistence succeeds. Assistive-technology observation confirms the change is discoverable.",
+          "source": "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:145; artifacts/custom-gpt-creator/tests/capability-workbench.e2e.ts:206",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a02.md",
+      "prompt": "prompts/a02.md",
+      "acknowledgement": {
+        "commit": "0e81e8287988dc23ef93c6dad199b3a9f87ce88c",
+        "utc": "2026-10-05T22:07:31Z",
+        "published_by": "coordinator",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a02.md"
+      },
+      "working_token_target": 50000,
+      "blocker": null,
+      "previous_workers": [
+        {
+          "goal_token_budget": 50000,
+          "implementation": "Uncommitted library/page/core-test patch preserved in managed worktree; e2e and implementation checks absent",
+          "acknowledgement": {
+            "commit": "cdc8397b643821bcd2eaa5fc32a065e19cc01f2f",
+            "utc": "2026-10-05T21:11:15.5305281Z",
+            "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a02.md"
+          },
+          "thread_id": "01a10de7-1a4d-7ad0-852e-a8297318bc3f",
+          "actual_tokens_used": 50653,
+          "status": "budgetLimited"
+        }
+      ],
+      "reuse_worker_of": "A03",
+      "candidate_commit": "10541ff8125928868882678687532e1a0e2b8ab5",
+      "handoff_commit": "83ac23c231dd21255e8df39fee2bf7cd023f2cdb",
+      "validation": {
+        "coordinator": "81 core tests PASS; full workspace typecheck/build PASS; 61 Chromium PASS, 3 opt-in fixture-refresh SKIP",
+        "changes_after_handback": "Stable recovery live announcement and exact-byte retention assertion; two existing regression selectors updated to the new accessible status. Required final-head CI pending.",
+        "limitations": "Real screen-reader observation remains A09; browsers without Web Locks retain editable memory and backup but cannot persist.",
+        "latest_delta": "Project-order preservation regression failed on90a0bc0, repaired;82core and13focused Chromium PASS; final-head CI pending."
+      },
+      "integration": {
+        "pr": 59,
+        "head_sha": "e3be322fc66b44bc42e5378f54ce4561db773fe7",
+        "main_sha": "e26381266527d70e348cc5fb49e7c0039db4a3c3",
+        "checks": "Both e2e jobs, both typecheck jobs and filename check passed on final head; human AT remains A09."
+      },
+      "host_counters": {
+        "as_of": "2026-10-05T22:30:04.626Z",
+        "scope": "whole thread including prior duties where reused; distinct from goal meter",
+        "input_tokens": 14115073,
+        "cached_input_tokens": 13671168,
+        "output_tokens": 71156,
+        "total_tokens": 14186229,
+        "noncached_input_plus_output": 515061,
+        "limitation": "Cumulative reprocessed cached context is included in total. These host counters do not reconstruct the completed or blocked goal meter."
+      }
+    },
+    {
+      "id": "A03",
+      "title": "Clipboard rejection and controlled copy races",
+      "finding_ids": [
+        "FND-03",
+        "FND-21"
+      ],
+      "status": "verified",
+      "phase": "protected-main-and-pages-verified",
+      "thread_id": "01a10ded-4b33-71e1-abd7-67d454858324",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a03-r1-20261005",
+      "dependencies": [],
+      "allowed_files": [
+        "artifacts/mockup-sandbox/src/pages/ExportPackage.tsx",
+        "artifacts/custom-gpt-creator/tests/clipboard-recovery.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a03.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-03",
+          "action": "Catch clipboard failure, clear any stale success state, provide an accessible failure message and retain the download/manual-copy route. Avoid exposing copied content in diagnostics.",
+          "done": "Denied permission and unavailable clipboard cases show actionable feedback without unhandled errors; retry succeeds and exact download bytes remain unchanged.",
+          "source": "artifacts/mockup-sandbox/src/pages/ExportPackage.tsx:677",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-21",
+          "action": "Create controlled delayed clipboard cases for format changes, repeated formats, project switches, content changes and overlapping requests. Keep the failed root stale-project probe labeled inconclusive.",
+          "done": "Only the latest successful copy of the relevant project/revision can show confirmation. Rejections and old timers cannot mislabel a new export. Implement a request/revision guard only if the cases expose a failure.",
+          "source": "artifacts/mockup-sandbox/src/pages/ExportPackage.tsx:613; artifacts/custom-gpt-creator/tests/export-package.e2e.ts:242",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a03.md",
+      "prompt": "prompts/a03.md",
+      "previous_workers": [
+        {
+          "thread_id": "01a10de7-29df-7fe3-98c3-69a5e9666141",
+          "implementation": "none",
+          "reason": "Setup budget exhausted and shared metadata sandbox access unavailable",
+          "goal_token_budget": 30000,
+          "status": "budgetLimited"
+        }
+      ],
+      "working_token_target": 30000,
+      "acknowledgement": {
+        "commit": "15163ca208d21175913bb76826fe3e033623e702",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a03.md",
+        "utc": "2026-10-05T21:17:35Z",
+        "published_by": "coordinator",
+        "limitation": "Initial source edits preceded confirmed publication; receipt now shared before further work"
+      },
+      "coordinator_review": {
+        "test_sha256": "604489013070a3888782d66c05d2032e815f2abf16f1f76f4b8e52301c35f5b8",
+        "browser": "PASS: 4 focused Chromium cases (9.6 seconds), including reproduced stale rejection repaired by root",
+        "source_sha256": "beb87ead6fba9aba309136acf2e5156fa224102a0e246b30e2c75f62dee63adc",
+        "evidence": "docs/handoffs/2026-10-05-executable-series/coordinator-review.md",
+        "typecheck": "PASS final Creator typecheck and build; prior workspace build and75core/55browser cases passed on preceding source",
+        "limitation": "Mocked Chromium evidence; real native clipboard and human assistive technology remain unverified"
+      },
+      "additional_goal_allocations": [
+        200000,
+        50000
+      ],
+      "integration": {
+        "pr": 57,
+        "head": "4dcd46ed08b0d9d418b19bbbc879e1fa7f74c2eb",
+        "main": "8a8147845d65730deb9d4f59e5e73055e6d65db7",
+        "pages_run": 37381492327,
+        "limitation": "Source/CI/Pages verified; real native clipboard and human AT remain outside this task"
+      }
+    },
+    {
+      "id": "A04",
+      "title": "Backup contract, original preservation and Windows commands",
+      "finding_ids": [
+        "FND-24",
+        "FND-47",
+        "FND-48"
+      ],
+      "status": "integrated",
+      "phase": "tested-contract-published-with-version-limits",
+      "thread_id": "01a10e1f-ee49-7bc2-80a6-f9e026155973",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown actual; configured 200000 goal reached its limit after committed deliverables",
+      "base_sha": "8a8147845d65730deb9d4f59e5e73055e6d65db7",
+      "branch": "codex/foundry-series-a04-20261005",
+      "dependencies": [
+        "A01: coordinator-reviewed ledger; original preservation inventory may start immediately",
+        "A01 receiving thread finished preceding goal and must acknowledge this scope before implementation"
+      ],
+      "allowed_files": [
+        "docs/workbench-backup-migration-design.md",
+        "docs/capability-workbench.md",
+        "docs/handoffs/2026-10-05-executable-series/evidence/backup-preservation.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a04.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-24",
+          "action": "Record current fields/defaulting and compatibility behavior in a dated addendum. Before introducing an incompatible format, define adapter dispatch, exact source retention, dry-run and rollback.",
+          "done": "Historical backups preserve all supplied fields; unknown schemas fail without writes. Simulated write/readback failure retains recoverable originals. Do not build speculative adapters before a real format requires them.",
+          "source": "docs/workbench-backup-migration-design.md:9; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:99",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-47",
+          "action": "Add clearly labeled PowerShell environment setup beside POSIX commands or document a tested existing portable launcher. Record OS/shell/runtime/base path and a receiving host acknowledgement in the compact handoff.",
+          "done": "A clean Windows/PowerShell receiver launches the exact preview/base path and build from the documented commands, verifies export/recovery and acknowledges the exact source and scope.",
+          "source": "docs/capability-workbench.md:15; docs/agent-collaboration.md:54",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-48",
+          "action": "Immediately preserve available pre-upgrade originals and current exports before recovery/schema edits. Record which originals exist and which are unavailable. Then record a version matrix and exercise current acceptance of old backups plus explicit older-build rejection of new fields without mutation.",
+          "done": "Rollback can recover the original project using its compatible original backup. New conversion fields remain preserved in the current export; unsupported backward imports fail visibly and never mutate the stored workspace.",
+          "source": "docs/capability-workbench.md:49; docs/workbench-backup-migration-design.md:3",
+          "conditional_dependencies": "Immediately preserve and identify any existing pre-upgrade originals before recovery/schema changes; do not invent missing old backups. FND-24\u00e2\u20ac\u201c25 supply later matrix/transfer evidence before broader rollback claims."
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a04.md",
+      "prompt": "prompts/a04.md",
+      "working_token_target": 25000,
+      "reuse_worker_of": "A01",
+      "control_surface": "collaboration",
+      "agent_identity": "/root/a01_requirements",
+      "acknowledgement": {
+        "commit": "f2981eeadadc695be9373e7a1625abf17c8e5ff6",
+        "utc": "2026-10-05T22:24:08Z",
+        "published_by": "coordinator",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a04.md"
+      },
+      "candidate_commit": "074e758d1c98fc32ffd706ca1a65c1d27e019863",
+      "implementation_commit": "93d9236c1b86ed90b2cf557af80200bc5d0709b8",
+      "validation": "13 parser cases, four selected browser cases, PowerShell preview/build and required repository checks passed at8a81478; root relays missing receipt after explicit handback. Older runtime and owner originals unavailable.",
+      "integration": {
+        "pr": 59,
+        "main_sha": "e26381266527d70e348cc5fb49e7c0039db4a3c3",
+        "limitations": "Four tracked examples are not owner originals; dated source and Windows parser/browser/command evidence only; old runtime unavailable."
+      },
+      "follow_up": "Coordinator pinned-parser pair6d48317/e263812 passed four legacy acceptance/current-export rejection cases on Node24.11.1, without storage writes. Source-module only; actual old runtime and owner originals unknown.",
+      "host_counters": {
+        "as_of": "2026-10-05T22:44:29.356Z",
+        "scope": "whole thread including prior duties where reused; distinct from goal meter",
+        "input_tokens": 12017565,
+        "cached_input_tokens": 11740416,
+        "output_tokens": 61864,
+        "total_tokens": 12079429,
+        "noncached_input_plus_output": 339013,
+        "limitation": "Cumulative reprocessed cached context is included in total. These host counters do not reconstruct the completed or blocked goal meter."
+      }
+    },
+    {
+      "id": "A05",
+      "title": "Stale import confirmation and current backup escape",
+      "finding_ids": [
+        "FND-22",
+        "FND-45"
+      ],
+      "status": "integrated",
+      "phase": "source-and-ci-published-origin-at-gates-pending",
+      "thread_id": "01a10e45-a27a-79b0-bb3f-ab412e285b5d",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 500000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown after acceptance-only goal completed at19619; implementation usage not exposed",
+      "base_sha": "e26381266527d70e348cc5fb49e7c0039db4a3c3",
+      "branch": "codex/foundry-series-a05-20261005",
+      "dependencies": [
+        "A02: reviewed concurrent save implementation",
+        "A04: current backup field contract"
+      ],
+      "allowed_files": [
+        "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx",
+        "artifacts/mockup-sandbox/src/lib/capability-workbench.ts",
+        "artifacts/custom-gpt-creator/tests/import-confirmation.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a05.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-22",
+          "action": "Freeze an import prompt, make an intervening edit in the same tab and in another tab, then confirm. Verify whether the replacement guard detects changed authoritative state and preserves recovery bytes.",
+          "done": "The user sees the real overwrite scope, can cancel, and cannot unknowingly replace intervening work. Both prior and imported states remain recoverable if conflict occurs.",
+          "source": "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:437; docs/workbench-backup-migration-design.md:36",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-45",
+          "action": "Add an accessible Download current backup action and inspectable project counts/names if useful. Preserve the current replacement contract; defer automatic merge/undo machinery until demonstrated need.",
+          "done": "The user can preserve current valid projects before replacement, cancel without changes and restore the exported prior workspace. Legacy GPT data remains isolated.",
+          "source": "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:435; docs/capability-workbench.md:54",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a05.md",
+      "prompt": "prompts/a05.md",
+      "working_token_target": 40000,
+      "budget_reason": "A04 committed its bounded docs at a200000 limit before final bookkeeping;500000 allows a focused coding/test duty without new host setup, while40000 remains a working target and no retry/model escalation is automatic.",
+      "agent_identity": "/root/a05_import_confirmation",
+      "control_surface": "collaboration",
+      "acknowledgement": {
+        "commit": "ee25b4233891f7f3804ae0c0fc8bcf53fb6012a0",
+        "utc": "2026-10-05T22:53:52Z",
+        "published_by": "coordinator",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a05.md"
+      },
+      "usage_observation": "19619 is the acceptance checkpoint; implementation total pending handback.",
+      "candidate_commit": "4202a45cf7e4c53897221f4e887b9f311377260d",
+      "handoff_commit": "1fb2d80560f9421ecbf4b0cdf5efd68b99c8075d",
+      "coordinator_source_commit": "fcd4df2",
+      "validation": {
+        "coordinator": "82 core PASS; full workspace typecheck PASS;11 focused Chromium PASS, final6 import cases PASS; governance/filename/whitespace PASS",
+        "limits": "Actual AT remains A09; cross-origin transfer A07; full final-head protected CI required",
+        "changes_after_handback": "Actual saved bytes/revision separated from live draft and import; failed imports retain prior memory; current-backup escape is inside confirmation; queued obsolete writers invalidated on successful replacement",
+        "final_ci": "Exact85c32fa protected browser/typecheck/filename SUCCESS; E2E37388107750 reports67 PASS,3opt-in SKIP plus1fixture-drift PASS"
+      },
+      "integration": {
+        "pr": 61,
+        "head_sha": "85c32fa7681a4fabbcafc6be62a01e9fa525d805",
+        "main_sha": "0df2217f3612324cd8af2d835cfaab1467cddb73",
+        "checks": "Both browser jobs, both typecheck jobs and filename check SUCCESS on exact final head; source/CI published; real AT and origin transfer remain separate.",
+        "pages_run": 37388404716,
+        "pages_status": "SUCCESS at exact0df2217; assetindex-DLAaQZ3-.js contains import recovery/current-backup/persisted-revision and clipboard markers",
+        "host_receipts": "Windows and Replit directly clean at exact0df2217 with0/0; Notion readback confirms release61 and roster13; Replit connector remains separately unauthenticated"
+      },
+      "host_counters": {
+        "as_of": "2026-10-05T23:08:31.575Z",
+        "scope": "whole thread including prior duties where reused; distinct from goal meter",
+        "input_tokens": 6394923,
+        "cached_input_tokens": 6266368,
+        "output_tokens": 29378,
+        "total_tokens": 6424301,
+        "noncached_input_plus_output": 157933,
+        "limitation": "Cumulative reprocessed cached context is included in total. These host counters do not reconstruct the completed or blocked goal meter."
+      }
+    },
+    {
+      "id": "A06",
+      "title": "Exact malformed-source recovery export",
+      "finding_ids": [
+        "FND-44"
+      ],
+      "status": "integrated",
+      "phase": "protected source and exact Pages release verified; human-original limits retained",
+      "thread_id": "01a10e63-7336-7172-a89f-f3587f61477a",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 500000,
+      "absolute_token_ceiling": 2000000,
+      "usage": 204006,
+      "base_sha": "0df2217f3612324cd8af2d835cfaab1467cddb73",
+      "branch": "codex/foundry-series-a06-20261005",
+      "dependencies": [
+        "A02: immediate memory recovery; relinquished page/library scope",
+        "A04: original preservation inventory",
+        "A05: replacement-confirmation writer has handed back the shared page/library files"
+      ],
+      "allowed_files": [
+        "artifacts/mockup-sandbox/src/pages/capability-workbench.tsx",
+        "artifacts/mockup-sandbox/src/lib/capability-workbench.ts",
+        "artifacts/custom-gpt-creator/tests/raw-recovery.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a06.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-44",
+          "action": "Provide a distinct raw recovery export labeled unparsed/unvalidated, separate from the current workspace backup. Keep raw material as data and preserve it across an intentional edit.",
+          "done": "Seed malformed text, export exact original bytes before and after an edit, and confirm ordinary backup still contains validated current project data. If recovery-key writes fail, retain download access without pretending durable recovery exists.",
+          "source": "artifacts/mockup-sandbox/src/lib/capability-workbench.ts:289; artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:398",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a06.md",
+      "prompt": "prompts/a06.md",
+      "working_token_target": 30000,
+      "agent_identity": "/root/a06_raw_recovery",
+      "acknowledgement": {
+        "commit": "b0b69ffa32842392db93af693c9828c59a556372",
+        "published_by": "coordinator",
+        "confirmed_utc": "2026-10-05T23:28Z"
+      },
+      "candidate_commit": "f9a9c3bc06c0835a77f218e6f262761eb39ed3e3",
+      "handoff_commit": "cf0458367bc97435ad47aaefd213601a493e078b",
+      "additional_goal_allocations": [
+        200000
+      ],
+      "correction_acknowledgement": {
+        "commit": "9ad311a500d35e2a6075f0006e0ede7f0f222899",
+        "published_by": "coordinator",
+        "confirmed_utc": "2026-10-05T23:48Z",
+        "goal_token_budget": 200000,
+        "usage_at_acceptance": 1689
+      },
+      "correction_usage": 96666,
+      "known_completed_goal_usage_sum": 300672,
+      "publication": {
+        "pr": 62,
+        "head_sha": "18c6d3c439c8e17003af5ab3963893a00653fbf3",
+        "main_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c",
+        "ci_e2e": 37391530673,
+        "ci_cases": 71,
+        "optional_skips": 3,
+        "pages_run": 37391811383,
+        "live_asset": "index-DtWzygSY.js"
+      }
+    },
+    {
+      "id": "A07",
+      "title": "Transfer and rollback across actual browser origins",
+      "finding_ids": [
+        "FND-25"
+      ],
+      "status": "verified",
+      "phase": "actual runtime acceptance verified; protected checkpoint tracked by integration branch PR",
+      "thread_id": "01a10e63-7336-7172-a89f-f3587f61477a",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 500000,
+      "absolute_token_ceiling": 2000000,
+      "usage": 189417,
+      "base_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c",
+      "branch": "codex/foundry-series-a07-20261005",
+      "dependencies": [
+        "A04: field/version contract",
+        "A05 and A06: candidate frozen; original backups preserved",
+        "A06: completed duty and acknowledged transfer; new goal within cumulative1200000 allocation"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/origin-transfer.md",
+        "artifacts/custom-gpt-creator/tests/origin-transfer.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a07.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-25",
+          "action": "Transfer a disposable public-safe capability backup from Pages to a clean Replit/local context, then back. Include old-format fields and new portability fields; preserve unrelated legacy GPT projects.",
+          "done": "Field-level/hash comparisons match allowed originals, recovery is inspectable and the separate cgpt-workspace is unchanged. Document origin separation and how to recover without account sync.",
+          "source": "docs/capability-workbench.md:64; docs/capability-workbench-maturation.md:78",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a07.md",
+      "prompt": "prompts/a07.md",
+      "working_token_target": 30000,
+      "reuse_worker_of": "A06",
+      "agent_identity": "/root/a06_raw_recovery",
+      "checkout": "C:/Users/jamie/OKH-Local/04_GitHub_Mirrors/overkill-hill-foundry/.local/agent-series/a07",
+      "acknowledgement": {
+        "commit": "2512cc83afdc746b6a37369d2ad049f0331d862b",
+        "published_by": "coordinator",
+        "confirmed_utc": "2026-10-06T00:06:43.717652+00:00"
+      },
+      "worker_handoff_commit": "331032a78c7b59852f33a31e3be02424b67baa62",
+      "evidence": "docs/handoffs/2026-10-05-executable-series/evidence/origin-transfer.md",
+      "known_completed_goal_usage_sum_for_thread": 490089,
+      "integration": {
+        "branch": "codex/foundry-series-verification-20261005",
+        "application_source_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c",
+        "publication_receipt": "Exact protected merge/check/Pages receipts are recorded in this branch PR and the project Notion record; this ledger does not invent the resulting merge SHA."
+      }
+    },
+    {
+      "id": "A08",
+      "title": "Firefox and WebKit acceptance",
+      "finding_ids": [
+        "FND-26"
+      ],
+      "status": "verified",
+      "phase": "actual runtime acceptance verified; protected checkpoint tracked by integration branch PR",
+      "thread_id": "01a10e99-7a3e-7d50-b4c5-042532cebd3c",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 500000,
+      "absolute_token_ceiling": 2000000,
+      "usage": 101439,
+      "base_sha": "91925c8d87f0cb5387ff4100e44c41097573fe4f",
+      "branch": "codex/foundry-series-a08-20261005",
+      "dependencies": [
+        "A02: reviewed saves",
+        "A07: backup transfer candidate"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/non-chromium.md",
+        "artifacts/custom-gpt-creator/tests/non-chromium.e2e.ts",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a08.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-26",
+          "action": "Choose one meaningful create-to-export/recovery journey in each intended supported browser, starting with the audience's next required browser. Record exact browser/device and source revision.",
+          "done": "Persistence, imports, Unicode export/download, navigation and recovery behave as specified; failures are reproduced and fixed. Do not claim all-browser support from one run.",
+          "source": "artifacts/custom-gpt-creator/playwright.config.ts:1; docs/capability-workbench-maturation.md:53",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a08.md",
+      "prompt": "prompts/a08.md",
+      "working_token_target": 25000,
+      "agent_identity": "/root/a08_non_chromium",
+      "checkout": "C:\\Users\\jamie\\OKH-Local\\04_GitHub_Mirrors\\overkill-hill-foundry\\.local\\agent-series\\a08",
+      "acknowledgement": {
+        "commit": "d9eae294fea4a5bda947a1ec51683e8bbe9b64e9",
+        "published_by": "coordinator",
+        "confirmed_utc": "2026-10-06T00:29:38Z"
+      },
+      "integration": {
+        "branch": "codex/foundry-series-verification-20261005",
+        "application_source_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c",
+        "publication_receipt": "Exact protected merge/check/Pages receipts are recorded in this branch PR and the project Notion record; this ledger does not invent the resulting merge SHA."
+      },
+      "worker_handoff_commit": "a2d44536b533225f336c8824143fbb13ea68dbb2",
+      "candidate_commit": "4885a594f5334daa2f91c5386a6d37929fcb1e37",
+      "evidence": "docs/handoffs/2026-10-05-executable-series/evidence/non-chromium.md"
+    },
+    {
+      "id": "A09",
+      "title": "Keyboard and real assistive technology acceptance",
+      "finding_ids": [
+        "FND-27"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a09-20261005",
+      "dependencies": [
+        "A03: failure feedback candidate",
+        "Named human tester and actual assistive technology availability"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/accessibility.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a09.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-27",
+          "action": "Define a bounded FoundRy journey with real assistive technology, keyboard navigation, focus recovery, announcements and 200%/400% zoom. Keep unrelated website acceptance under its owner.",
+          "done": "An actual tester records interaction, focus and announcements for import errors, replacement prompts, stage changes, selected files and clipboard failure. Repair reproduced failures; trees alone do not certify spoken behavior.",
+          "source": "docs/capability-workbench-maturation.md:53; artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:428",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a09.md",
+      "prompt": "prompts/a09.md",
+      "working_token_target": 20000,
+      "preparation": "Coordinator prepared evidence/accessibility.md checklist; no tester or spoken-behavior receipt, so external gate remains pending. Closure retry adds explicit A08 worker reuse; named human and actual AT evidence remain required.",
+      "reuse_worker_of": "A08"
+    },
+    {
+      "id": "A10",
+      "title": "Existing-source selection, rights and import parity",
+      "finding_ids": [
+        "FND-06",
+        "FND-07",
+        "FND-08"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a10-20261005",
+      "dependencies": [
+        "A01: ledger",
+        "Owner identifies exact source/destination when an existing source is reused; newly authored exemplar bypasses this import task"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/source-import.md",
+        "capabilities/OWNER-SELECTED-SLUG/origin/**",
+        "registry/capability-migrations.json",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a10.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-06",
+          "action": "Name one exact source repository/export, regional owner, pinned revision, destination slug and import method. Enter a planned record before moving bytes.",
+          "done": "The record resolves an actual source and destination without guessing. Sibling FoundRys, MurderBird and unrelated children remain under their own ownership.",
+          "source": "registry/capability-migrations.json:5; docs/portable-skill-foundry.md:90",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-07",
+          "action": "Review the chosen source's license, attribution, privacy/conflict constraints and complete history before a public subtree import. Preserve restricted originals privately and select a reviewed snapshot when history is unsuitable.",
+          "done": "Signed, dated source dispositions explain permitted files and withheld material. The chosen method does not expose private historical bytes and does not invent publication permission.",
+          "source": "docs/portable-skill-foundry.md:96; AGENTS.md:126",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-08",
+          "action": "Preserve recoverable originals, generate file/hash inventories and exclusions, execute the selected import on one branch and compare destination bytes with the pinned source.",
+          "done": "Each included asset resolves to exact source bytes; exclusions are explained, licenses retained and links repaired. Recovery works before marking imported or considering source archival.",
+          "source": "docs/portable-skill-foundry.md:102; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:587",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a10.md",
+      "prompt": "prompts/a10.md",
+      "working_token_target": 40000
+    },
+    {
+      "id": "A11",
+      "title": "Build one source-safe intent-to-use exemplar",
+      "finding_ids": [
+        "FND-04",
+        "FND-09",
+        "FND-46"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a11-20261005",
+      "dependencies": [
+        "A01: requirements ledger",
+        "A16: custodian freezes unseen task/rubric before optimization",
+        "A10 only if reusing/importing existing source"
+      ],
+      "allowed_files": [
+        "capabilities/repository-handoff-exemplar/**",
+        "examples/workbench/repository-handoff-exemplar/**",
+        "docs/handoffs/2026-10-05-executable-series/evidence/exemplar.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a11.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-04",
+          "action": "Choose one measurable repository-handoff task and newly authored owner-cleared source, or complete FND-06\u00e2\u20ac\u201c08 first when reusing/importing existing material. Build through FoundRy, export permitted bytes, run one intended environment only after its necessary contract/adapter boundaries are checked, and record assistance and manual work.",
+          "done": "A versioned project, exported source, expected rubric, observed output, host/version and friction record demonstrate one useful result. Report limitations; one case does not establish universal usefulness.",
+          "source": "docs/capability-workbench-maturation.md:119; examples/workbench/skill-example/README.md:5",
+          "conditional_dependencies": "Choose source and freeze task first; complete discovery/read-order/evidence-return acceptance subtasks before closing this epic. Existing-source reuse requires FND-06\u00e2\u20ac\u201c08 as applicable; tools require FND-14\u00e2\u20ac\u201c16. One run closes multiple criteria, never multiple capability counts."
+        },
+        {
+          "finding_id": "FND-09",
+          "action": "Assign behavior IDs and source locations, then map each to procedure, reference, script, adapter, explicit drop or blocker. Record retrieval, memory, auth and escalation changes with impact and mitigation.",
+          "done": "Every material behavior has a disposition and observable case. Owner acceptance of remaining losses is explicit; omitted or blocked behavior is never labeled preserved.",
+          "source": "docs/portable-skill-foundry.md:70; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:432",
+          "conditional_dependencies": "Rights/provenance review FND-07 applies to reused source; FND-08 only to actual import. Newly authored cleared material may establish its direct source baseline without a repository migration."
+        },
+        {
+          "finding_id": "FND-46",
+          "action": "For the first exemplar, give a short read order for root contract and skill files, supported installation layout, input example, manual-use alternative, unavailable-reference handling and result-return instructions. Have a receiver follow it without inherited chat context.",
+          "done": "The receiver identifies the source revision, necessary constraints and fallback limitations, performs the task, returns observed evidence and removes temporary packaging. Manual mode is not labeled native host support.",
+          "source": "artifacts/mockup-sandbox/src/lib/capability-workbench.ts:561; docs/portable-skill-foundry.md:31",
+          "conditional_dependencies": "Draft after selecting the FND-04 source/task, before the recipient run. Manual fallback may precede native host discovery; reuse the exemplar receipt."
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a11.md",
+      "prompt": "prompts/a11.md",
+      "working_token_target": 50000
+    },
+    {
+      "id": "A12",
+      "title": "Recipient discovery and actual skill outcome",
+      "finding_ids": [
+        "FND-11",
+        "FND-32"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a12-20261005",
+      "dependencies": [
+        "A11: frozen exported candidate and manual-use contract"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/skill-recipient.md",
+        "capabilities/repository-handoff-exemplar/tests/recipient/**",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a12.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-11",
+          "action": "Install the exemplar in the chosen host's supported layout and give it a task requiring an I/O rule recorded only in the contract. If it fails, embed necessary fields or add discoverable portable references.",
+          "done": "The actual installed package preserves and discovers required I/O and boundaries without reviewer assistance. Record the exact layout and host revision; this remains a hypothesis until tested.",
+          "source": "artifacts/mockup-sandbox/src/lib/capability-workbench.ts:567; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:643",
+          "conditional_dependencies": "Use the exemplar selected in FND-04; it need not have passed its final runtime acceptance yet."
+        },
+        {
+          "finding_id": "FND-32",
+          "action": "Run trigger/non-trigger and repository-handoff cases on a named actual host using its supported skill discovery layout, with public-safe source.",
+          "done": "The host discovers the skill, produces the required handoff and respects scope on a non-trigger. Versioned evidence explains assistance and failure; installation is separate from performance.",
+          "source": "examples/workbench/skill-example/README.md:17",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a12.md",
+      "prompt": "prompts/a12.md",
+      "working_token_target": 30000
+    },
+    {
+      "id": "A13",
+      "title": "Behavior preservation, hostile source boundary and references",
+      "finding_ids": [
+        "FND-10",
+        "FND-12",
+        "FND-17"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a13-20261005",
+      "dependencies": [
+        "A11: source-behavior map and frozen candidate",
+        "A14 only for tool-dependent cases; pin necessary references before dependent tests"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/behavior-preservation.md",
+        "capabilities/repository-handoff-exemplar/tests/boundaries/**",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a13.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-10",
+          "action": "Freeze matched inputs and expected outcomes. Execute at least a semantic-preservation case, a platform-loss/tool case and a boundary case against the source and converted method where available.",
+          "done": "Source and target observations, revisions, host versions and results are retained. Unavailable source baselines stay unverified; failures produce specific work rather than a parity claim.",
+          "source": "docs/portable-skill-foundry.md:73; artifacts/custom-gpt-creator/tests/capability-workbench.e2e.ts:12",
+          "conditional_dependencies": "If tools are required, run FND-14\u00e2\u20ac\u201c16 before corresponding behavioral cases. If references are necessary, FND-17 becomes a P1 prerequisite. Manual fallback is narrower evidence, never adapter equivalence."
+        },
+        {
+          "finding_id": "FND-12",
+          "action": "Review the exemplar's authority chain and escalation/cancellation rules. Run a fixture with conflicting instructions in source material and verify they remain data.",
+          "done": "The host follows the approved method, ignores unauthorized source instructions, stops at the action boundary and records an honest refusal or escalation. No browser injection defect is inferred from this missing host evidence.",
+          "source": "docs/portable-skill-foundry.md:70; .agents/skills/okhp3-gpt-skill-conversion-plan/SKILL.md:40",
+          "conditional_dependencies": "Run before broad preservation approval; host/tool execution follows FND-14\u00e2\u20ac\u201c15 controls when applicable."
+        },
+        {
+          "finding_id": "FND-17",
+          "action": "Pin one necessary reference and review reuse rights. Choose an allowed source snapshot or an explicit retrieval contract, preserving attribution. Run normal and stale/unavailable reference cases.",
+          "done": "The method uses the correct revision when available and reports a bounded gap when unavailable. It never invents missing knowledge; catalog search is not required to close this case.",
+          "source": "examples/workbench/skill-example/provenance.md:8; docs/portable-skill-foundry.md:57",
+          "conditional_dependencies": "Elevate to P1 and complete before any dependent preservation/outcome test when the selected method requires the reference."
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a13.md",
+      "prompt": "prompts/a13.md",
+      "working_token_target": 40000
+    },
+    {
+      "id": "A14",
+      "title": "One adapter with least permissions and lifecycle receipts",
+      "finding_ids": [
+        "FND-14",
+        "FND-15",
+        "FND-16"
+      ],
+      "status": "conditional",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a14-20261005",
+      "dependencies": [
+        "A11: documented tool need and frozen core",
+        "Exact host/tool contract; denial and absence tests before side effects"
+      ],
+      "allowed_files": [
+        "capabilities/repository-handoff-exemplar/adapters/**",
+        "capabilities/repository-handoff-exemplar/tests/adapter/**",
+        "docs/handoffs/2026-10-05-executable-series/evidence/adapter-lifecycle.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a14.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-14",
+          "action": "Choose one host/version after defining the exemplar's required tools. Design its auth, least permissions and side-effect boundary before installation; build a reproducible isolated wrapper around the canonical skill with source digest, wrapper revision and dependencies.",
+          "done": "An implemented installable candidate has an inspectable tool contract and reproducible wrapper. Useful side-effect execution and verified-support labels remain gated by FND-15\u00e2\u20ac\u201c16; unsupported hosts remain unverified.",
+          "source": "artifacts/mockup-sandbox/src/lib/capability-workbench.ts:609; docs/portable-skill-foundry.md:76",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-15",
+          "action": "Document auth method, minimum scopes, read/write effects, confirmation and cancellation boundaries. Test absent tool and denied auth before a permitted side-effect case; retain public-safe logs.",
+          "done": "The adapter requests only necessary permission, does not fabricate success, does not retry unauthorized writes and offers a bounded fallback. Credentials stay out of source and reports.",
+          "source": "artifacts/mockup-sandbox/src/lib/capability-workbench.ts:619; docs/portable-skill-foundry.md:76",
+          "conditional_dependencies": "The permission contract is designed before installation; complete denial/absence tests before any useful side effect."
+        },
+        {
+          "finding_id": "FND-16",
+          "action": "Exercise one actual install, useful behavior, failure recovery and removal at a pinned source revision. Check for residual configuration or credentials and record only non-sensitive results.",
+          "done": "The compatibility record contains host/version/date/source/wrapper, fixtures and observed results. Removal is reproducible; installable/support labels change only for the verified scope.",
+          "source": "docs/portable-skill-foundry.md:78; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:621",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a14.md",
+      "prompt": "prompts/a14.md",
+      "working_token_target": 50000
+    },
+    {
+      "id": "A15",
+      "title": "Observed results, revision binding and stale invalidation",
+      "finding_ids": [
+        "FND-13",
+        "FND-18",
+        "FND-19"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a15-20261005",
+      "dependencies": [
+        "A11: candidate and saved project revision",
+        "A12/A13: observed results; structured records adopted only if needed"
+      ],
+      "allowed_files": [
+        "capabilities/repository-handoff-exemplar/docs/results/**",
+        "docs/handoffs/2026-10-05-executable-series/evidence/revision-results.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a15.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-13",
+          "action": "Complete a manual return loop: record the tested canonical source revision, changed instructions, expected/actual results, environment and public-safe evidence references in the saved project; reopen and export it.",
+          "done": "The saved project, tested repository method and reported results refer to the same revision. Differences between authored draft and verified external package are explicit; recurring friction may justify later automation.",
+          "source": "docs/capability-workbench-maturation.md:148; artifacts/mockup-sandbox/src/pages/capability-workbench.tsx:795",
+          "conditional_dependencies": "May consume the actual newly authored FND-04 trial instead of a GPT-conversion case. This is an acceptance subtask before closing FND-04, with the same canonical result IDs."
+        },
+        {
+          "finding_id": "FND-18",
+          "action": "Define trusted result producers and an evidence schema tied to package digest, environment, expected/observed result and log reference. Integrate only the necessary prototype with UI, storage and export.",
+          "done": "Failed/absent results cannot produce validated status; changed behavior makes prior results stale. External caller assertions remain assertions unless execution evidence is authenticated.",
+          "source": "docs/capability-workbench-maturation.md:122; artifacts/mockup-sandbox/src/lib/coop-result.ts:22",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-19",
+          "action": "Select behavior-relevant package files, calculate a reproducible fingerprint and explain metadata-only changes. Apply it to result records and display stale evidence after source edits.",
+          "done": "Byte/path changes affecting behavior invalidate the previous result; harmless ordering changes do not. Backup/export/reopen preserve the binding and the UI cannot imply fresh verification.",
+          "source": "artifacts/mockup-sandbox/src/lib/coop-fingerprint.ts:1; docs/capability-workbench-maturation.md:122",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a15.md",
+      "prompt": "prompts/a15.md",
+      "working_token_target": 35000
+    },
+    {
+      "id": "A16",
+      "title": "Independent unseen-task custody and user acceptance",
+      "finding_ids": [
+        "FND-05"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a16-20261005",
+      "dependencies": [
+        "Phase 1 may start after A01: custodian freezes task/rubric without optimizer exposure",
+        "Phase 2 requires frozen A11 candidate plus A12/A13/A15 receipts and consenting representative user"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/user-acceptance.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a16.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-05",
+          "action": "Freeze an external task/rubric with a named custodian before execution, obtain appropriate tester consent and use a rights-cleared task. Retain raw private task/output privately where needed, publish only permitted redacted/hash receipts, and record all help, failure and recovery.",
+          "done": "A private/raw or public-safe receipt preserves task identity, frozen rubric, expected/observed outputs and assistance. Mark any used/disclosed holdout consumed. Failures stay visible; broad outcome approval remains deferred until decisive evidence exists.",
+          "source": "docs/capability-workbench-maturation.md:12; docs/foundry-implementation-plan.md:30",
+          "conditional_dependencies": "Independent custodian freezes the task/rubric before implementation optimization; execution follows the frozen candidate from FND-04."
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a16.md",
+      "prompt": "prompts/a16.md",
+      "working_token_target": 25000
+    },
+    {
+      "id": "A17",
+      "title": "Revision history decision and recoverable diff",
+      "finding_ids": [
+        "FND-20"
+      ],
+      "status": "conditional",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a17-20261005",
+      "dependencies": [
+        "A02: conflict safety",
+        "A11: actual exemplar demonstrates need; explicitly adopt or defer"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/revision-history-decision.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a17.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-20",
+          "action": "Use the real exemplar's editing/recovery friction to decide whether a bounded revision history is useful. If adopted, preserve inspectable prior versions and safely display differences.",
+          "done": "A user can identify and recover the correct previous method; Unicode/hostile text stays data. Storage/backup limits and migration behavior are tested rather than assumed.",
+          "source": "artifacts/mockup-sandbox/src/lib/coop-project-diff.ts:1; docs/capability-workbench-maturation.md:120",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a17.md",
+      "prompt": "prompts/a17.md",
+      "working_token_target": 20000
+    },
+    {
+      "id": "A18",
+      "title": "Conflict-aware merge import decision",
+      "finding_ids": [
+        "FND-23"
+      ],
+      "status": "verified",
+      "phase": "defer-decision-published; conditional feature remains deferred",
+      "thread_id": "01a10e63-ac51-77a3-8392-f5bd09710af8",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": 72720,
+      "base_sha": "0df2217f3612324cd8af2d835cfaab1467cddb73",
+      "branch": "codex/foundry-series-a18-20261005",
+      "dependencies": [
+        "A05: stale replacement evidence; explicitly adopt or defer merge import"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/merge-import-decision.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a18.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-23",
+          "action": "If real transfer use requires merging, define identity-collision choices, capacity limits and explicit preview/cancel/commit behavior. Integrate the planner without silently changing the replacement contract.",
+          "done": "Conflicting IDs, renamed projects and capacity overflow yield deterministic reviewable plans. Commit is atomic, cancellations leave state untouched and backups retain original data.",
+          "source": "artifacts/mockup-sandbox/src/lib/coop-import-plan.ts:1; docs/capability-workbench-maturation.md:120",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a18.md",
+      "prompt": "prompts/a18.md",
+      "working_token_target": 20000,
+      "agent_identity": "/root/a18_merge_decision",
+      "acknowledgement": {
+        "commit": "0d3393d63bdad3340fafabe017de7f5d37c1deee",
+        "published_by": "coordinator",
+        "confirmed_utc": "2026-10-05T23:28Z"
+      },
+      "candidate_commit": "b8481259abfc96e6760e147a610be396ffa7c972",
+      "decision": {
+        "result": "defer",
+        "duty": "conditional decision complete",
+        "finding": "FND-23 remains deferred; no merge feature adopted",
+        "trigger": "Observed actual-origin/representative task requires combining projects beyond safe replacement"
+      },
+      "publication": {
+        "pr": 62,
+        "main_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c"
+      }
+    },
+    {
+      "id": "A19",
+      "title": "Structured contract decision",
+      "finding_ids": [
+        "FND-28"
+      ],
+      "status": "conditional",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a19-20261005",
+      "dependencies": [
+        "A11: real outcome need",
+        "A04: backup evolution contract"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/structured-contract-decision.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a19.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-28",
+          "action": "Choose a concrete constraint the exemplar needs to validate, preserve free-text compatibility and define structured fields that serve that constraint. Integrate UI/storage/export only within that scope.",
+          "done": "Older projects roundtrip, invalid structured inputs produce actionable errors and the intended outcome uses the constraints. Structure alone never becomes behavioral validation.",
+          "source": "artifacts/mockup-sandbox/src/lib/coop-contract.ts:1; docs/capability-workbench-maturation.md:120",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a19.md",
+      "prompt": "prompts/a19.md",
+      "working_token_target": 15000
+    },
+    {
+      "id": "A20",
+      "title": "Canonical Skillz selection decision",
+      "finding_ids": [
+        "FND-29"
+      ],
+      "status": "conditional",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a20-20261005",
+      "dependencies": [
+        "A13: reference dependency evidence; need established",
+        "Read-only Skillz reference; no sibling writes",
+        "Reuse A05 only after completed duty/goal; A25 goal reached its limit and will not be silently reset."
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/skillz-selection-decision.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a20.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-29",
+          "action": "Measure selection/pinning friction from the exemplar. If justified, read the canonical catalog with a pinned source and bounded stale/unavailable handling, preserving attribution.",
+          "done": "Exports can be reproduced from the selected revision; removal or change of a catalog entry preserves the recorded reference. FoundRy does not become a second catalog source of truth.",
+          "source": "docs/capability-workbench-maturation.md:121; artifacts/mockup-sandbox/src/lib/coop-skill-reference.ts:1",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a20.md",
+      "prompt": "prompts/a20.md",
+      "working_token_target": 15000,
+      "reuse_worker_of": "A05"
+    },
+    {
+      "id": "A21",
+      "title": "Bounded external-agent handoff",
+      "finding_ids": [
+        "FND-30"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a21-20261005",
+      "dependencies": [
+        "A11: exemplar acceptance closed by A12/A13/A15",
+        "Owner-run recipient execution or specifically authorized tool route"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/external-handoff.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a21.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-30",
+          "action": "Start with a user-run handoff from the chosen package. Name one task owner, file scope, canonical revision, action/cost limits and evidence-return contract. Only consider an execution adapter after a useful manual trial.",
+          "done": "One task is implemented and checked reproducibly, with cancellation, inspectable changes, recovery and recorded costs. No credentials or generic backend are required merely to trial the handoff.",
+          "source": "artifacts/mockup-sandbox/src/lib/coop-agent-handoff.ts:1; docs/capability-workbench-maturation.md:123",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a21.md",
+      "prompt": "prompts/a21.md",
+      "working_token_target": 20000
+    },
+    {
+      "id": "A22",
+      "title": "Prompt and controlled workflow outcomes",
+      "finding_ids": [
+        "FND-31",
+        "FND-33"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a22-20261005",
+      "dependencies": [
+        "A11: accepted real exemplar; use its source and rubric",
+        "No implicit tool execution authorization"
+      ],
+      "allowed_files": [
+        "examples/workbench/repository-handoff-prompt/**",
+        "examples/workbench/repository-handoff-workflow/**",
+        "docs/handoffs/2026-10-05-executable-series/evidence/prompt-workflow.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a22.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-31",
+          "action": "Use a public-safe real source document and a fixed rubric to evaluate action items, owners, evidence references, unsupported assumptions and boundary handling in a named environment.",
+          "done": "Observed output and deviations are retained with model/date/source/package revision. The result is distinguished from its authored expectation and does not imply universal model reliability.",
+          "source": "examples/workbench/prompt-example/README.md:13",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-33",
+          "action": "Execute one useful human-controlled workflow with actual receipts, including a failing gate and recovery. Name the owner of each action and retain explicit approvals where required.",
+          "done": "Observed steps and outputs demonstrate the workflow's intended result and stop correctly on failure. A human-run workflow is labeled as such; no execution engine is inferred.",
+          "source": "examples/workbench/workflow-example/docs/synthetic-walkthrough.md:3",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a22.md",
+      "prompt": "prompts/a22.md",
+      "working_token_target": 35000
+    },
+    {
+      "id": "A23",
+      "title": "Useful bounded software starter outcome",
+      "finding_ids": [
+        "FND-34"
+      ],
+      "status": "queued",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a23-20261005",
+      "dependencies": [
+        "A11: accepted real exemplar; exact JSON inspector or one stated bespoke requirement"
+      ],
+      "allowed_files": [
+        "examples/workbench/repository-handoff-software/**",
+        "docs/handoffs/2026-10-05-executable-series/evidence/software-outcome.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a23.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-34",
+          "action": "Choose that exact inspector outcome or implement one separately specified missing requirement. Run documented local/browser commands with valid, malformed and hostile text cases.",
+          "done": "A real intended user can use the tool and its result matches the chosen acceptance. VM smoke checks remain scoped evidence, while business logic and browser usability have their own observations.",
+          "source": "examples/workbench/software-example/smoke-check.mjs:9; artifacts/mockup-sandbox/src/lib/capability-workbench.ts:650",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a23.md",
+      "prompt": "prompts/a23.md",
+      "working_token_target": 30000
+    },
+    {
+      "id": "A24",
+      "title": "Replit authentication and per-release surface receipts",
+      "finding_ids": [
+        "FND-35",
+        "FND-36"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a24-20261005",
+      "dependencies": [
+        "Owner completes visible authentication if required; never bypass passkey",
+        "Root authorizes specific release SHA before runtime/production operations; existing synchronization job checkpoint first",
+        "Reuse A08 only after its duty and goal are complete; A01/A04 host goal reached its limit, so no reset or assumed resume."
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/release-receipts.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a24.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-35",
+          "action": "Have the owner complete the visible existing-account authentication flow, then verify connector read access and the separate Source Control connection. Preserve current scopes; do not bypass passkeys or repeatedly reconcile clean Git history.",
+          "done": "A bounded connector read succeeds and Source Control reports the intended GitHub account. A sanctioned topic-branch write can be verified when needed; clean 0/0 is not used as an auth receipt.",
+          "source": "docs/handoffs/2026-10-04-production-reconciliation.md:45",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-36",
+          "action": "Append dated exact-SHA receipts and a clear index to current evidence without rewriting historical conclusions. Use deployment, local, Replit, connector and Notion status separately.",
+          "done": "A reader can find the current deployed revision and tests without treating an old pending paragraph as current. Future source changes invalidate only affected receipts.",
+          "source": "docs/capability-workbench-maturation.md:105; docs/handoffs/2026-09-20-portfolio-maintenance-codex.md:69",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a24.md",
+      "prompt": "prompts/a24.md",
+      "working_token_target": 20000,
+      "reuse_worker_of": "A08"
+    },
+    {
+      "id": "A25",
+      "title": "Separate dependency PR reviews",
+      "finding_ids": [
+        "FND-37"
+      ],
+      "status": "verified",
+      "phase": "review-report-published-with-defer-gates",
+      "thread_id": "01a10dfc-1df9-7000-a689-cae3ce696ea3",
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a25-20261005",
+      "dependencies": [
+        "Refresh actual open PR list; do not reuse stale numbers",
+        "One dependency PR at a time; root integration owner"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/dependency-prs.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a25.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-37",
+          "action": "Review PRs 42 and 48\u00e2\u20ac\u201c51 against current compatibility and advisories. Integrate only tested useful changes through the existing protections; retain minimum-age and lockfile policy.",
+          "done": "Each accepted update has migration notes and meaningful build/browser/governance evidence; rejected or deferred changes have a reason. No blanket latest-version upgrade is treated as completion.",
+          "source": ".github/dependabot.yml:1; docs/technology-update-plan.md:1",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a25.md",
+      "prompt": "prompts/a25.md",
+      "working_token_target": 30000,
+      "acknowledgement": {
+        "utc": "2026-10-05T21:33:25.3969977Z",
+        "commit": "6a9eac55365558612aaf1472393efc539f5a6005",
+        "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a25.md",
+        "published_by": "coordinator"
+      },
+      "blocker": "Review report returned at goal budget limit; parent validation/publication pending before any objective completion or reuse",
+      "reviewed_report": "docs/handoffs/2026-10-05-executable-series/evidence/dependency-prs.md",
+      "coordinator_review": {
+        "checked_at": "2026-10-05T22:08:14.431234+00:00",
+        "result": "Report reviewed; exact open heads refreshed; closed PR48/49 and immutable plugin metadata resolved in dated addendum",
+        "publication": "First-results PR pending",
+        "limitation": "No dependency update or candidate-local compatibility tests performed; all conditional merge gates retained"
+      },
+      "integration": {
+        "pr": 57,
+        "main": "8a8147845d65730deb9d4f59e5e73055e6d65db7",
+        "limitation": "Five dependency decisions published; no candidate update merged or local compatibility tests claimed"
+      }
+    },
+    {
+      "id": "A26",
+      "title": "Protected ReFolDec evaluation and review-package operation",
+      "finding_ids": [
+        "FND-38",
+        "FND-39"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a26-20261005",
+      "dependencies": [
+        "Named independent fixture custodian; authorized private fixture available",
+        "Exact frozen candidate and exposure history; no raw private data in Git or public output"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/protected-evaluation.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a26.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-38",
+          "action": "Name the maintainer fixture custodian and separate evaluation owner; freeze candidate hash and rubric. Use a genuinely optimizer/developer-unseen external fixture and record exposure history. Keep fixture contents private, execute the approved runtime and return only public-safe result receipts.",
+          "done": "The result records candidate/runtime hashes, evaluator, custody/exposure status, rubric and pass/fail without leaking fixture content. Used/disclosed cases are consumed; historical evidence does not become current protected approval.",
+          "source": "examples/release-candidates/release-checklist.md:59",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-39",
+          "action": "Once the maintainer fixture is available, run the workflow from main, verify failure behavior and cleanup, then inspect the actual uploaded archive against its source inventory.",
+          "done": "The archive contains only allowed skill files, the temporary fixture is removed on success/failure and protected content is absent. Packaging success is not runtime evaluation or public release approval.",
+          "source": ".github/workflows/refoldec-review-package.yml:24",
+          "conditional_dependencies": "Requires maintainer fixture availability/custody and frozen candidate; leak-scan packaging is independent of FND-38 behavioral evaluation."
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a26.md",
+      "prompt": "prompts/a26.md",
+      "working_token_target": 40000
+    },
+    {
+      "id": "A27",
+      "title": "ReFolDec release decision and permitted publication",
+      "finding_ids": [
+        "FND-40"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a27-20261005",
+      "dependencies": [
+        "A26: independent behavior and leak-scan receipts",
+        "Graduation gates; owner-approved capability publication surface and explicit release approval"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/refoldec-release.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a27.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-40",
+          "action": "After current protected evaluation and source/license/privacy checks, update the capability decision record and confirm its approved publication surface. Publish only within that explicit scope and verify the served artifact.",
+          "done": "The exact candidate has an owner-approved decision, approved destination and independent published-byte/version receipt. No public performance or graduation claim precedes the gates.",
+          "source": "examples/release-candidates/release-checklist.md:63; AGENTS.md:137",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a27.md",
+      "prompt": "prompts/a27.md",
+      "working_token_target": 30000
+    },
+    {
+      "id": "A28",
+      "title": "Additional host and sibling adoption decisions",
+      "finding_ids": [
+        "FND-41",
+        "FND-42"
+      ],
+      "status": "external-gate",
+      "phase": "not-dispatched",
+      "thread_id": null,
+      "host": "local Codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "low",
+      "goal_token_budget": 200000,
+      "absolute_token_ceiling": 2000000,
+      "usage": "unknown",
+      "base_sha": "74ffadb447f702065e7912ca9fce5c9e8f36a22d",
+      "branch": "codex/foundry-series-a28-20261005",
+      "dependencies": [
+        "A14: exact host lifecycle evidence for additional-host evaluation",
+        "A11: demonstrated improvement; sibling owner authorization before sibling mutation"
+      ],
+      "allowed_files": [
+        "docs/handoffs/2026-10-05-executable-series/evidence/host-sibling-decisions.md",
+        "docs/handoffs/2026-10-05-executable-series/receipts/a28.md"
+      ],
+      "exclusions": [
+        "Other task receipts and root ledger",
+        "Unassigned application files, lockfiles and workflows",
+        "Sibling repositories, personal browser stores, credentials and private fixtures",
+        "Publication or merging by workers"
+      ],
+      "acceptance": [
+        {
+          "finding_id": "FND-41",
+          "action": "Select the next host only after the first exemplar/adapter works. Verify its current official package format, method/tool support and manual fallback, then rerun relevant outcome and removal cases.",
+          "done": "The matrix lists verified, partial, unsupported and untested hosts with dated receipts. Shared source portability does not imply equivalent runtime behavior.",
+          "source": "docs/portable-skill-foundry.md:29",
+          "conditional_dependencies": null
+        },
+        {
+          "finding_id": "FND-42",
+          "action": "When a shared need is demonstrated, prepare a compact pinned-source handoff with explicit file scope and validation for the receiving owner; reconcile universal rules upstream.",
+          "done": "The receiving host acknowledges the handoff and its own tests pass. Source parity is verified per repository; no private sibling material is imported and no silent rule fork is created.",
+          "source": "docs/foundry-mentoring-model.md:1; docs/agent-collaboration.md:1",
+          "conditional_dependencies": null
+        }
+      ],
+      "retry_bound": "Two failed attempts on the same cause; return exact error and partial patch for escalation. No automatic model escalation or extra agents.",
+      "integration_owner": "Coordinator thread 01a1096a-9ad8-7011-9cc5-25c41ff67308",
+      "receipt": "docs/handoffs/2026-10-05-executable-series/receipts/a28.md",
+      "prompt": "prompts/a28.md",
+      "working_token_target": 20000
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "D01",
+      "title": "Delayed clipboard rejection after project change mislabels failure",
+      "deduplicated_into": "A03 / FND-21",
+      "owner": "coordinator after handback",
+      "status": "verified-source-ci-pages",
+      "reproduction": "Controlled clipboard promise rejects after cgpt-workspace.activeProjectId changes; expected no copy-error, observed one alert",
+      "resolution": "Use same project/content/format/request predicate for both success and rejection",
+      "checks": "Final clipboard implementation published by PR57; protected checks PASS; Pages 37381492327 SUCCESS at 8a81478; native clipboard and human AT remain unclaimed."
+    },
+    {
+      "id": "D02",
+      "title": "Ordinary save progress would repeatedly announce during typing",
+      "deduplicated_into": "A02 / FND-43",
+      "owner": "coordinator after explicit handback",
+      "status": "verified-source-and-final-ci",
+      "reproduction": "Candidate toggles the polite status text between Saving locally and Saved locally for each ordinary edit.",
+      "resolution": "Keep progress readable with aria-live off; announce stable recovery transitions in a separate polite region.",
+      "checks": "Chromium MutationObserver sees zero live-region changes during ordinary typing and one persistent message during repeated denied writes; full suite 61 PASS, 3 opt-in SKIP; real AT remains A09.",
+      "publication": "PR59 final e3be322 merged to e263812; actual human AT remains pending."
+    },
+    {
+      "id": "D03",
+      "title": "Stale saves could silently replace an imported project order",
+      "deduplicated_into": "A02 / FND-02",
+      "owner": "coordinator after handback",
+      "status": "verified-source-and-final-ci",
+      "reproduction": "At reviewed head90a0bc0, persist two projects, save the reversed imported order, then save a field edit from the old order; expected rejection but observed saved=true.",
+      "resolution": "Compare project arrays in their original order while ignoring updatedAt alone.",
+      "checks": "New core regression reproduced failure before fix; final82core and13focused cases passed. Final PR59 CI passed61 cases with3 optional skips at e3be322; PR62 later passed71 cases with3 optional skips and includes the retained ordering regression.",
+      "publication": "PR59 final e3be322 merged to e263812; actual human AT remains pending."
+    },
+    {
+      "id": "D04",
+      "title": "Import recovery mislabeled current draft as saved authority and lost its exact revision",
+      "deduplicated_into": "A05 / FND-22",
+      "owner": "coordinator after explicit handback",
+      "status": "verified-source-and-final-ci",
+      "reproduction": "Normal storage event updates clean tab after confirmation opens; candidate4202a45 export uses constant import-confirmation-current and omits saved revision bytes. Controlled case failed before correction.",
+      "resolution": "Separate import recovery schema records actual persisted bytes/revision or unavailable/unvalidated status, current draft and imported snapshot. Current snapshot is refreshed at download.",
+      "checks": "6 final import cases and5 concurrency cases PASS; sourcefcd4df2; real AT not claimed.",
+      "publication": "PR61 final85c32fa merged to main0df2217 after protected checks"
+    },
+    {
+      "id": "D05",
+      "title": "Denied replacement import displaced the prior workspace in module memory",
+      "deduplicated_into": "A05 / FND-22",
+      "owner": "coordinator after explicit handback",
+      "status": "verified-source-and-final-ci",
+      "reproduction": "With original e263812 library, denied import followed immediately by studio/workbench navigation shows Rejected import instead of Prior draft; controlled regression failed. Exact log preserved locally.",
+      "resolution": "Replacement save retains the current draft on failure; ordinary save behavior stays unchanged. Successful replacement invalidates obsolete queued saves under the lock.",
+      "checks": "Final denied-import and lock-wait regressions PASS atfcd4df2. No owner projects used.",
+      "publication": "PR61 final85c32fa merged to main0df2217 after protected checks"
+    },
+    {
+      "id": "D06",
+      "title": "A second malformed source was overwritten without any recovery copy",
+      "deduplicated_into": "A06 / FND-44",
+      "owner": "A06 correction handback; coordinator integration complete",
+      "status": "corrected and published through protected PR62",
+      "reproduction": "Fresh5d47484 module; load malformedA, deliberately repair it, externally replace active key with distinct malformedB, then save another valid edit. Both saves succeed; A is preserved, B absent from all storage values and active key.",
+      "expected": "Preserve every raw original that a deliberate repair replaces and offer its exact download independently of storage-copy confirmation.",
+      "source_sha": "5d47484659e8323186980d116f50278600a222cc",
+      "corrected_candidate": "f9a9c3bc06c0835a77f218e6f262761eb39ed3e3",
+      "main_sha": "ded3d5fad6c415ce8894025ca4057be9928f068c"
+    }
+  ],
+  "replacement_worker_slots": 4,
+  "coordinator_tasks": [
+    {
+      "status": "implemented-with-measurement-gap",
+      "closure": "Future workers request200000 ceilings and smaller work targets; actual usage remains reported independently; future whole-duty goals remain active through acceptance-only pause; A05 implementation usage remains unknown rather than retroactively counted",
+      "evidence": "A01 initial get_goal reported budgetLimited at25868 of20000; A03 reported goal budget reached before implementation; A05 marked a500000 goal complete at19619 before implementation, so continuation was not metered by that completed goal",
+      "owner": "coordinator",
+      "id": "C01",
+      "title": "Calibrate setup budgets and verify actual goal controls"
+    },
+    {
+      "status": "implemented",
+      "closure": "Root publishes receiver acknowledgement before implementation, provides fetched base and validates frozen candidate; worker does no unnecessary network approval requests",
+      "evidence": "Child sandbox denied Git SSH/shared metadata and registry downloads; parent successfully published exact accepted claims and ran typecheck/browser probes",
+      "owner": "coordinator",
+      "id": "C02",
+      "title": "Centralize authorized Git publication and installed-environment validation"
+    },
+    {
+      "id": "C03",
+      "title": "Preserve generated package cache and exclude it from source commits",
+      "owner": "coordinator",
+      "status": "implemented",
+      "evidence": "Pinned offline worker bootstrap produced primary .pnpm-store/; source inventory showed it untracked",
+      "closure": "Scoped ignore preserves cache bytes and prevents accidental staging; no cache deleted"
+    },
+    {
+      "id": "C04",
+      "title": "Count supplemental reviewers and separate archive evidence from publication evidence",
+      "owner": "coordinator",
+      "status": "implemented",
+      "evidence": "One read-only closure review exposed missing supplemental-agent accounting; A02/FND-43 actual AT remains not run.",
+      "closure": "Checker includes supplemental reviewers and duplicate identities; future A09 reuses A08 within its cumulative ceiling. Original next-series scope supports coordinator archive after protected publication and independent GitHub/Replit Git/Notion receipts; all product acceptance gates remain pending.",
+      "receipt": "docs/handoffs/2026-10-06-origin-main-reconciliation.md"
+    }
+  ],
+  "preexisting_review_agents": [
+    "/root/equilibrium_evidence",
+    "/root/equilibrium_outcome",
+    "/root/equilibrium_safety"
+  ],
+  "supplemental_review_agents": [
+    "/root/closure_scope_review"
+  ]
+}
