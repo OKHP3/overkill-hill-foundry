@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Home() {
+  const [markFailed, setMarkFailed] = useState(false);
   const swatches = [
     { color: "#0f172a", label: "Forge BG" },
     { color: "#1c3a34", label: "Teal" },
@@ -71,15 +73,18 @@ export default function Home() {
           }}
         />
 
-        {/* Card body — horizontal split */}
-        <div style={{ display: "flex", minHeight: "260px" }}>
+        {/* Keep the desktop split; stack panels before mobile content is clipped. */}
+        <div
+          className="flex flex-col min-[560px]:flex-row"
+          style={{ minHeight: "260px" }}
+        >
           {/* Left — forge mark panel */}
           <div
+            className="w-full border-b min-[560px]:w-[200px] min-[560px]:border-b-0 min-[560px]:border-r"
             style={{
-              width: "200px",
               flexShrink: 0,
               background: "linear-gradient(160deg, #1c3a34 0%, #0f2620 100%)",
-              borderRight: "1px solid #2a3a4a",
+              borderColor: "#2a3a4a",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -128,30 +133,43 @@ export default function Home() {
                     "0 0 24px rgba(196,106,44,0.2)",
                   ],
                 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 style={{
                   position: "absolute",
                   inset: 0,
                   borderRadius: "14px",
                 }}
               />
-              <img
-                src="/forge-icon.png"
-                alt="Forge mark"
-                style={{
-                  width: "62px",
-                  height: "62px",
-                  objectFit: "contain",
-                  position: "relative",
-                  zIndex: 2,
-                }}
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                  (e.target as HTMLImageElement).parentElement!.textContent = "⚙";
-                  (e.target as HTMLImageElement).parentElement!.style.fontSize =
-                    "2.2rem";
-                }}
-              />
+              {markFailed ? (
+                <span
+                  role="img"
+                  aria-label="Forge mark"
+                  style={{
+                    position: "relative",
+                    zIndex: 2,
+                    fontSize: "2.2rem",
+                  }}
+                >
+                  <span aria-hidden="true">⚙</span>
+                </span>
+              ) : (
+                <img
+                  src={`${import.meta.env.BASE_URL}forge-icon.png`}
+                  alt="Forge mark"
+                  style={{
+                    width: "62px",
+                    height: "62px",
+                    objectFit: "contain",
+                    position: "relative",
+                    zIndex: 2,
+                  }}
+                  onError={() => setMarkFailed(true)}
+                />
+              )}
             </motion.div>
 
             {/* Brand name */}
@@ -202,6 +220,7 @@ export default function Home() {
           <div
             style={{
               flex: 1,
+              minWidth: 0,
               padding: "1.5rem 1.5rem 1.25rem",
               display: "flex",
               flexDirection: "column",
@@ -256,7 +275,8 @@ export default function Home() {
                 marginTop: "-0.45rem",
               }}
             >
-              Structured practitioner workflow from brief to ship — no generic prompt gymnastics.
+              Structured practitioner workflow from brief to ship — no generic
+              prompt gymnastics.
             </motion.div>
 
             {/* Forge attributes — monospace data plate style */}
@@ -283,6 +303,7 @@ export default function Home() {
                   key={key}
                   style={{
                     display: "flex",
+                    flexWrap: "wrap",
                     gap: "0.75rem",
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: "0.62rem",
