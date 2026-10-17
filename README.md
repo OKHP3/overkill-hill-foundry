@@ -22,6 +22,12 @@
 [![Pages deployment](https://github.com/OKHP3/overkill-hill-foundry/actions/workflows/pages.yml/badge.svg)](https://github.com/OKHP3/overkill-hill-foundry/actions/workflows/pages.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-1c3a34.svg)](LICENSE)
 
+> 🚧 **Under construction. On purpose.**
+> FoundRy is built in public. Custom GPTs, mega-prompts and meta-prompts are being
+> taken apart and rebuilt here as portable Agent Skills, plugins and connectors, one
+> commit at a time. Expect scaffolding and rough edges. "Active" means maintained,
+> not tested or certified.
+
 Bring the idea. Work the contract. Keep the source.
 
 FoundRy is the OverKill Hill P³ capability workbench: a browser-local workshop for

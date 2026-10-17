@@ -1,3 +1,7 @@
+# Build-in-public banner - 2026-10-17
+
+- Add an under-construction, build-in-public notice to the README so visitors from public profiles see the same maturity framing before the workbench details.
+
 # Portable skill FoundRy - 2026-09-27
 
 - Refocus the workbench on portable Agent Skills and host-specific plugin/connector packaging, retaining the GPT studio and browser data.
