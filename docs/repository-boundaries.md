@@ -4,7 +4,7 @@ This note routes work across the OverKill Hill public site, FoundRy, and
 MurderBird Uncaged so each project has a clear source of truth.
 
 | Repository or surface | Owns |
-|---|---|---|
+|---|---|
 | [`OKHP3/OverKill-Hill`](https://github.com/OKHP3/OverKill-Hill) | OverKill Hill public brand, portfolio, and editorial stories |
 | [`OKHP3/OverKill-Hill-FoundRy`](https://github.com/OKHP3/OverKill-Hill-FoundRy) | OverKill-region governance relay and capability workbench |
 | [`OKHP3/murderbird-uncaged`](https://github.com/OKHP3/murderbird-uncaged) | MurderBird creative assets and interactive application |
