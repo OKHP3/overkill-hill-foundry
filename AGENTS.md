@@ -46,7 +46,7 @@ Do not assume shared code, interfaces, or release dependencies without checking 
 
 ## Technology and runtime
 
-The confirmed technology surface is Markdown, PNG assets, Git, the seeded `.agents/skills/` guidance, and a pinned PyYAML development dependency used by the validator. No `package.json`, Python application manifest, container file, build configuration, test configuration, deployment configuration, or CI workflow is present. There is no application entry point or tests directory in this checkout. Dependabot configuration exists for dependency monitoring, but there is no verified local run, build, test, lint, or deployment command.
+The confirmed technology surface is Markdown, PNG assets, Git, the seeded `.agents/skills/` guidance and tooling, and a pinned PyYAML development dependency used by the validator. Skill packages also contain scripts, package manifests, and tests. No HMT01 application manifest, entry point, build configuration, test suite, deployment configuration, or CI workflow is present. Dependabot configuration exists for dependency monitoring, but there is no verified HMT01 application run, build, test, lint, or deployment command. Consult an individual skill's documentation for its tooling and validation commands.
 
 Do not describe this checkout as a working application. If implementation files are added later, update this section with the verified runtime, entry points, environments, and commands.
 
@@ -73,7 +73,7 @@ rg --files -g '!node_modules' -g '!vendor'
 file assets/hometools/overkill-hill-p³-square-icon-hometools.png assets/hometools/overkill-hill-p³-square-icon-hometools-alt-.png
 ```
 
-Review changed Markdown for factual alignment and inspect changed images at their native dimensions when visual identity is affected. No automated test suite exists at present.
+Review changed Markdown for factual alignment and inspect changed images at their native dimensions when visual identity is affected. No HMT01 application test suite exists at present; some repository-local skills have their own tests.
 
 ## Known gaps and open questions
 
