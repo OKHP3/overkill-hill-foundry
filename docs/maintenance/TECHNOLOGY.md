@@ -1,6 +1,6 @@
 # Technology inventory and update policy
 
-Original inventory reviewed 2026-09-01. Executable-helper scope and six publisher release baselines checked 2026-10-01.
+Original inventory reviewed 2026-09-01. Executable-helper scope reviewed 2026-10-01. Six publisher release baselines checked 2026-10-26.
 
 This repository is documentation-only. It does not contain a TypeScript or JavaScript application, Vite, Tailwind CSS, root application package manifest, application build system, or deployable service. The inventory therefore distinguishes technologies used by checked-in scripts from formats and standards described by the knowledge assets.
 
@@ -8,18 +8,18 @@ This repository is documentation-only. It does not contain a TypeScript or JavaS
 
 | Technology | Repository use | Version in place | Latest stable found | Authority |
 | --- | --- | --- | --- | --- |
-| Python | Runtime for checked-in utility scripts | Unknown, not pinned | 3.14.8 | [Python downloads](https://www.python.org/downloads/) |
+| Python | Runtime for checked-in utility scripts | Unknown, not pinned | 3.15.2 | [Python downloads](https://www.python.org/downloads/) |
 | PyYAML | Referenced validation dependency; no owning manifest | Unknown, not declared | 6.0.3 | [PyPI](https://pypi.org/project/PyYAML/) |
-| Mermaid | Documented diagram output | Unknown, no renderer checked in | 12.0.0 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
-| PlantUML | Documented diagram syntax and output | Unknown, no renderer checked in | 1.2026.8 | [PlantUML news](https://plantuml.com/news) |
+| Mermaid | Documented diagram output | Unknown, no renderer checked in | 12.2.0 | [Mermaid releases](https://github.com/mermaid-js/mermaid/releases) |
+| PlantUML | Documented diagram syntax and output | Unknown, no renderer checked in | 1.2026.9 | [PlantUML news](https://plantuml.com/news) |
 | BPMN | Documented process-model output | 2.0.2 | 2.0.2 | [OMG BPMN 2.0.2](https://www.omg.org/spec/BPMN/2.0.2/) |
 | Markdown/CommonMark | Primary documentation format | Unknown, parser not pinned | 0.31.2 | [CommonMark](https://spec.commonmark.org/current/) |
 | YAML | `SKILL.md` front matter | Unknown, parser not pinned | 1.2.2 | [YAML 1.2.2](https://yaml.org/spec/1.2.2/) |
 | JSON | Metadata and structured examples | Unknown, implementation not pinned | RFC 8259 / STD 90 | [IETF RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) |
 | CSV | Documented structured output | Not versioned here | No single governing version | [RFC 4180](https://www.rfc-editor.org/rfc/rfc4180) |
 | Git/GitHub | Source control and hosting | Git client not recorded | Not applicable to repository contents | [Git](https://git-scm.com/) |
-| Node.js LTS | Bundled helper tests in seven private dependency-free packages | Unknown, no repository runtime pin | 24.21.0 | [Node.js release data](https://nodejs.org/dist/index.json) |
-| npm | Bundled helper tests in seven private dependency-free packages | Unknown, no repository runtime pin | 12.2.0 | [npm registry](https://registry.npmjs.org/npm/latest) |
+| Node.js LTS | Bundled helper tests in seven private dependency-free packages | Unknown, no repository runtime pin | 24.22.1 | [Node.js release data](https://nodejs.org/dist/index.json) |
+| npm | Bundled helper tests in seven private dependency-free packages | Unknown, no repository runtime pin | 12.2.1 | [npm registry](https://registry.npmjs.org/npm/latest) |
 
 The Python and PyYAML values are release baselines, not claims about the local workstation. The repository currently records no installed runtime versions. Mermaid and PlantUML are referenced knowledge technologies only. They are not dependencies of this repository.
 
@@ -39,4 +39,4 @@ The automation is deliberately review-oriented. Automatically upgrading diagram 
 
 ## Maintenance reconciliation
 
-The six monitored publisher baselines include Node.js LTS 24.21.0 and npm 12.2.0 for bundled helper tooling. Python 3.14.8 is the current release baseline. These are release observations, not installed versions or application dependencies. The checker returns an incomplete result when a publisher lookup or parser fails. The workflow runs four evidence-boundary regressions before checking live sources. The old local inventory branch is superseded: main already contains its useful fixes and removes root dependency updater jobs that had no manifests.
+The six monitored publisher baselines include Node.js LTS 24.22.1 and npm 12.2.1 for bundled helper tooling. Python 3.15.2 is the release baseline checked on 2026-10-26. These are release observations, not installed versions or application dependencies. The checker returns an incomplete result when a publisher lookup or parser fails. The workflow runs four evidence-boundary regressions before checking live sources. The old local inventory branch is superseded: main already contains its useful fixes and removes root dependency updater jobs that had no manifests.

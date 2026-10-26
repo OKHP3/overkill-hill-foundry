@@ -6,7 +6,7 @@
       "name": "Python",
       "role": "runtime for checked-in utility scripts",
       "in_place_version": "unknown; not pinned",
-      "latest_stable_as_of_review": "3.14.8",
+      "latest_stable_as_of_review": "3.15.2",
       "source": "https://www.python.org/downloads/"
     },
     {
@@ -20,14 +20,14 @@
       "name": "Mermaid",
       "role": "documented process-diagram output format",
       "in_place_version": "unknown; no renderer or dependency is checked in",
-      "latest_stable_as_of_review": "12.0.0",
+      "latest_stable_as_of_review": "12.2.0",
       "source": "https://github.com/mermaid-js/mermaid/releases"
     },
     {
       "name": "PlantUML",
       "role": "documented diagram syntax and output format",
       "in_place_version": "unknown; no renderer is checked in",
-      "latest_stable_as_of_review": "1.2026.8",
+      "latest_stable_as_of_review": "1.2026.9",
       "source": "https://plantuml.com/news"
     },
     {
@@ -76,14 +76,14 @@
       "name": "Node.js LTS",
       "role": "bundled helper tests in seven private dependency-free packages",
       "in_place_version": "unknown; no repository runtime pin",
-      "latest_stable_as_of_review": "24.21.0",
+      "latest_stable_as_of_review": "24.22.1",
       "source": "https://nodejs.org/dist/index.json"
     },
     {
       "name": "npm",
       "role": "bundled helper tests in seven private dependency-free packages",
       "in_place_version": "unknown; no repository runtime pin",
-      "latest_stable_as_of_review": "12.2.0",
+      "latest_stable_as_of_review": "12.2.1",
       "source": "https://registry.npmjs.org/npm/latest"
     }
   ],
@@ -96,5 +96,5 @@
     "requirements.txt",
     "pyproject.toml"
   ],
-  "release_baselines_checked_on": "2026-10-01"
+  "release_baselines_checked_on": "2026-10-26"
 }

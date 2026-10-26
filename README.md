@@ -19,4 +19,4 @@ The ledgers also document a `narrative -> diagram` path. Supported output format
 
 The repository map is intentionally small: `docs/` contains project specifications and maintenance documentation, while `knowledge/` contains the process-modeling casebooks and RAG references.
 
-The root PDFs are reference casebooks. The `.agents/skills/` directory contains 35 local Agent Skills and their evaluation assets. The `skills/okhp3-skill-promotion/` directory is an exact publication mirror for the promotion skill, managed from its `.agents/skills/` source. There is no package manifest, application runtime, deployment configuration, or repository-provided application test command.
+The PDFs in `knowledge/` include reference casebooks and RAG material. The `.agents/skills/` directory contains 35 local Agent Skills and their evaluation assets. The `skills/okhp3-skill-promotion/` directory is an exact publication mirror for the promotion skill, managed from its `.agents/skills/` source. There is no root application package manifest, application runtime, deployment configuration, or repository-provided application test command.

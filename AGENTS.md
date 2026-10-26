@@ -7,7 +7,7 @@
 - **Repository:** `https://github.com/OKHP3/foundry-psr00-pathscrib-r`
 - **License:** MIT, see [LICENSE](LICENSE)
 - **Current repository status:** Documentation, knowledge assets, Agent Skills, evaluation fixtures, and small Python utilities are present. No executable application or service is checked in.
-- **Lifecycle:** Active maintenance. The latest commits on 2026-07-21 and 2026-07-22 added and hardened Agent Skills and evaluation assets.
+- **Lifecycle:** Active maintenance. Recent history includes technology inventory maintenance and agent guidance updates through 2026-10-08.
 
 ## Purpose and scope
 
@@ -135,7 +135,7 @@ The repository currently contains 35 Agent Skills:
 
 Evaluation workspaces and benchmark records live inside the relevant skill packages and are not counted as separate skills unless they contain their own `SKILL.md`.
 
-The Notion capture router must run report-only when private anchors are unavailable. The cataloger inventories skills and validates their metadata. The skill-creator package creates, improves, and evaluates Agent Skills. The extraction packages preserve manually supplied AI conversation context for platform-specific and generic workflows.
+The Notion capture router must run report-only when private anchors are unavailable. The cataloger inventories skills and validates their metadata. The skill-foundry package supports skill creation and improvement. The extraction packages preserve manually supplied AI conversation context for platform-specific and generic workflows.
 
 Validate the skill inventory from the repository root with:
 
@@ -168,7 +168,7 @@ Because there is no application runtime, validation is documentation and metadat
 4. Run `git diff --check`.
 5. Confirm that referenced paths exist and that no unexpected files changed.
 
-There is currently no repository-provided test, build, lint, or deployment command to run.
+There is no repository-provided application test, build, lint, or deployment command. The technology-inventory workflow runs `python3 .github/scripts/test_technology_inventory.py` for its own regression tests.
 
 ## Known gaps and open questions
 
@@ -184,7 +184,7 @@ There is currently no repository-provided test, build, lint, or deployment comma
 - Confirm whether the repository is intentionally documentation-only and identify the future runtime or integration surface, if any.
 - Decide which file is canonical for RIS procedures and whether the duplicated ledger content should be split or retired.
 - Confirm the authoritative ledger versions, load order, and status for the project.
-- Decide whether the root PDFs are source references, generated deliverables, or both.
+- Decide whether the PDFs in `knowledge/` are source references, generated deliverables, or both.
 
 ## Keeping this guide current
 
