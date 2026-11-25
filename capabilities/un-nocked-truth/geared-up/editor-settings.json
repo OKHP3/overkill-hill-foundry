@@ -1,0 +1,32 @@
+{
+  "source": {
+    "type": "Legacy Custom GPT editor",
+    "editorUrl": "https://chatgpt.com/gpts/editor/g-68f43c2a2dc481919f46904943cbefac",
+    "checkedOn": "2026-11-24",
+    "captureScope": "Partial editor record. Excerpts carry the original one-based line and starter positions."
+  },
+  "identity": {
+    "gptId": "g-68f43c2a2dc481919f46904943cbefac",
+    "displayName": "Geared-Up: Archery for Anyone",
+    "ecosystemCode": "01",
+    "ecosystemCodeSource": "Un-Nocked Truth ecosystem map in Notion"
+  },
+  "description": "",
+  "instructions": {
+    "originalUnicodeCodePoints": 0,
+    "sourceWasBlank": true,
+    "excerpts": []
+  },
+  "conversationStarters": {
+    "originalCount": 0,
+    "excerpts": []
+  },
+  "knowledgeUploadCount": 0,
+  "configuredCustomActionCount": 0,
+  "capabilities": {
+    "Web search": true,
+    "Apps": false,
+    "Image generation": true,
+    "Code interpreter and data analysis": true
+  }
+}

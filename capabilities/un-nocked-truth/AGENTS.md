@@ -9,7 +9,7 @@
 
 The Un-Nocked Truth capability owns the four Archery for Anyone GPT components listed in `capability.json`. The imported repository metadata also describes an earlier proposal for logical analysis and argument integrity checking.
 
-**Confirmed current state:** The repository contains project guidance, 35 local Agent Skill packages, three reusable project prompts, one publication mirror, two PNG assets, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. It contains no application source, executable product entry point, product test suite, product build configuration, deployment configuration, or documented product runtime.
+**Confirmed current state:** The repository contains project guidance, 35 local Agent Skill packages, three reusable project prompts, one publication mirror, four component editor records, six restored Word originals, two PNG assets, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. It contains no application source, executable product entry point, product test suite, product build configuration, deployment configuration, or documented product runtime.
 
 **Inferred status:** The product remains at scaffold or asset-only stage, while the repository itself is an active Agent Skills incubation, evaluation, migration, and promotion workspace. Do not describe the tool as working or production-ready based on this repository alone.
 
@@ -17,11 +17,11 @@ The Un-Nocked Truth capability owns the four Archery for Anyone GPT components l
 
 ## Scope and boundaries
 
-This directory is a capability within the OverKill Hill FoundRy repository. Each Archery for Anyone component has a direct child directory with a `source.json` identity record.
+This directory is a capability within the OverKill Hill FoundRy repository. Each Archery for Anyone component has a direct child directory with a `source.json` identity record, an `editor-settings.json` record and a README describing the transfer.
 
 Current repository scope is limited to:
 
-- Project identity, component routing records and agent guidance.
+- Project identity, component routing and editor records, shared authoring documents, design provenance and agent guidance.
 - Local Agent Skills under `.agents/skills/`, including evaluation and benchmark evidence where present.
 - Reusable project prompts under `.agents/prompts/`.
 - The publication mirror under `skills/okhp3-skill-promotion/`.
@@ -35,6 +35,7 @@ Do not infer a product runtime, API contract, model behavior, data flow, deploym
 - `AGENTS.md`: canonical instructions for agents working in this project.
 - `CLAUDE.md`: short compatibility pointer to `AGENTS.md`.
 - `README.md`: repository orientation, current workspace status, map, and product boundary.
+- [Shared project asset guide](docs/project-assets.md) with links to the 13 original documents, the two logo designs and four design references.
 - `docs/technology-inventory.md`: evidence-backed inventory of the current tooling, dependency, and maintenance state.
 - `requirements.txt`: pins `PyYAML==6.0.3` for seeded skill validation scripts.
 - `.github/dependabot.yml`: weekly Dependabot checks for pip and GitHub Actions dependencies.

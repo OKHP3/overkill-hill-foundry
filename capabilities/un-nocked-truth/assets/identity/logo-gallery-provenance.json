@@ -1,0 +1,37 @@
+{
+  "source": {
+    "project": "GPT-UNT00: Un-NOCKed Truth",
+    "projectId": "g-p-68f422ca801881919facbd6b88a5c4e0",
+    "conversation": "Un-NOCKed Truth - Logo",
+    "role": "Original generated design gallery for the shared Archery for Anyone suite.",
+    "verifiedOn": "2026-11-24"
+  },
+  "comparison": {
+    "method": "Original download bytes and decoded pixels matched the corresponding retained PNGs.",
+    "format": "PNG",
+    "width": 1024,
+    "height": 1024,
+    "colorMode": "RGB",
+    "pixelHashInput": "Decoded 8-bit RGB pixel bytes, ordered by row from top left."
+  },
+  "images": [
+    {
+      "sourceTitle": "Arco En Llamas y Cuervo",
+      "sourceFilename": "Arco En Llamas y Cuervo.png",
+      "file": "overkill-hill-p3-square-icon-un-nocked-truth.png",
+      "description": "A dark raven perches on a flaming target beside the orange OverKill Hill P³ wordmark.",
+      "bytes": 2380365,
+      "sha256": "ed07c2ecad66312758541a8508bbe71e7fd8947136f4016f79630702b58d30b1",
+      "pixelSha256": "acbbea55254719cc92c4c045159c4105750f9a8f372b09568a9fec034a56c55f"
+    },
+    {
+      "sourceTitle": "Flaming Target on Vintage Grid",
+      "sourceFilename": "Flaming Target on Vintage Grid.png",
+      "file": "chatgpt-image-oct-18-2025-09-23-20-pm.png",
+      "description": "A flaming target and the orange OverKill Hill P³ wordmark sit against a dark vintage grid.",
+      "bytes": 1714230,
+      "sha256": "6e2a80824cb75a01b4c1deda2634d8a17571b45dbdb75103d3e5be46e5c5d940",
+      "pixelSha256": "1324f0ebe7596bfe09cf8aab4abef741302da0e9452b22373d207e61062f7cec"
+    }
+  ]
+}
