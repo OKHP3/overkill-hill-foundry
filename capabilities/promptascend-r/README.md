@@ -170,3 +170,9 @@ PromptAscend-Rᵧ is a **threshold guardian** in the Found-Rᵧ — it does not 
 | [`gpt-auditor/`](../gpt-auditor/) | GPT Auditor validates finished GPTs; PromptAscend-Rᵧ validates the promptcrafter |
 | [`tonestrik-ry/`](../tonestrik-ry/) | ToneStrik-Rᵧ audits tone post-build; PromptAscend-Rᵧ grades tone on the Jedi Path |
 | [`telleprompt-ry/`](../telleprompt-ry/) | TellEPrompt-Rᵧ analyzes what a prompt intends to do in execution context; PromptAscend-Rᵧ assesses the prompt as an artifact |
+
+## Native plugin
+
+The [plugin package](adapters/chatgpt-plugin/) contains the migrated instructions and knowledge files. The [release record](origin/native-plugin.json) links the package to the original GPT editor and records the verified hashes.
+
+The [original release archive](adapters/chatgpt-plugin.tgz) preserves the Plugin Creator download, including its original filenames. Its SHA-256 checksum is in the release record.

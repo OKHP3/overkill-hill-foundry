@@ -1,0 +1,4 @@
+interface:
+  default_prompt: Can you audit this prompt and return YAML + Markdown?
+  display_name: TellEPrompt‑Rᵧ — OverKill Hill P³
+  short_description: 'The Declarative Prompt Interpreter – exports and ingests prompt '

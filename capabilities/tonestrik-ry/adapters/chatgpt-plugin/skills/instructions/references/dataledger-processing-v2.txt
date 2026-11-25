@@ -1,0 +1,4 @@
+# dataLedger_processing_v2.txt
+# Phase: ⚒️ Anvil-R (Phase 3 – Prompt Shaping & Function Loading)
+# Purpose: Store shaping-phase instructions, embedded function templates, and WIP GPT output logic.
+

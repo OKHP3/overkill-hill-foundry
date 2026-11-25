@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-688a6b04358481919447ddfaf50a00b2",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-688a6b04358481919447ddfaf50a00b2",
+    "name": "PhenoMould‑R — OverKill Hill P³",
+    "description": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool‑ettes, Functions, and Function‑ettes with lifecycle precision.",
+    "previous_visibility": "Everyone",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "native_skill_contains_verbatim_text": true,
+      "sha256_utf8": "8e8b82453ced2c6513150d8ee46612e7ba55e33c61bd8f0fbc9b0d14f122f998",
+      "character_count": 7931
+    },
+    "conversation_starters": [
+      "“Cast a GPT that speaks in my voice and tone.”",
+      "“Can you simulate how this GPT would respond?”",
+      "“I need a Tool‑ette that manages creative momentum.”",
+      "“What suffix applies to this idea?”",
+      "“Fork this Function into a full Function‑ette.”",
+      "“Audit this prompt’s tone for drift and overlay gaps.”",
+      "“Create a hydration block with canonical metadata.”",
+      "“Make this GPT PME-ready and CanonSeal-locked.”",
+      "“What dataLedger_v3 file does this logic belong in?”",
+      "“Can you re-cast this tool with ForgeDialect.A1 overlay?”",
+      "“Preview this GPT’s onboarding tone and density.”",
+      "“This tool helped me — where can I donate to support?”"
+    ],
+    "starters_text_sha256_utf8": "6528d6255b9a5d2f4b4b42b72b64e1e125d1dea456c4870423146aa642dff3b3",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The captured editor exposed the toggle states in order without their labels.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": [
+      "PhenoMould-R Capabilities.md",
+      "dehydration manifest v3.0.md",
+      "GPT Interrogation Agent v1.0.md",
+      "OverKill Hill P³ Square.png",
+      "dataLedger_hydration_v3.md",
+      "dataLedger_system_v3.md",
+      "dataLedger_parameters_v3.md",
+      "dataLedger_narrative_v3.md",
+      "dataLedger_persona_v3.md",
+      "dataLedger_registry_v3.md",
+      "gpt_manifest_PhenoMould-R.yaml"
+    ]
+  },
+  "release": {
+    "plugin_id": "plugin_679d3df7b8a48191b1c6821babdde122",
+    "release_id": "pluginrel_298b64613cac81919dca75dea5f57923",
+    "version": "0.3.1+bundle.ff892adcee4db41600befe2ab58e607e",
+    "created_at": "2026-11-25T02:07:37.713810Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 3136229,
+    "archive_sha256": "dc0d82d58e4a7dec052f96a9d36d3cb8eaaf27345ae8822454fd1f291928866c",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "096d81b496cafc8eca520f4459117446464eaecdc02bb64db2ea611d347fb2fa",
+        "package_path": "plugin.json",
+        "package_sha256": "096d81b496cafc8eca520f4459117446464eaecdc02bb64db2ea611d347fb2fa",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "93deaa99bc2157c3e22fd8790381d625a7f2097016d82361df1aa22dbc941b00",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "93deaa99bc2157c3e22fd8790381d625a7f2097016d82361df1aa22dbc941b00",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "8d14965dd7dc6b29db1a398bc4aafab2e74ffcaa2b8ca27905928fce10a06786",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "8d14965dd7dc6b29db1a398bc4aafab2e74ffcaa2b8ca27905928fce10a06786",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "215855fdbb443fcf4efb2c87c75465fbbc74afe5daf5a0ef9a721d779fa0c5f1",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "adec41f04841855fc907bb47d8d3e8bade9cf14a40c33da15fd72861a9891a74",
+        "handling": "Original upload names and order preserved. Paths point to repository-safe filenames."
+      },
+      {
+        "release_path": "skills/instructions/references/GPT Interrogation Agent v1.0.md",
+        "release_sha256": "169cfee75cb4a6dcd11f920c91f22bd73909281828192f00d6e4290c4bc2263d",
+        "package_path": "skills/instructions/references/gpt-interrogation-agent-v1-0.md",
+        "package_sha256": "169cfee75cb4a6dcd11f920c91f22bd73909281828192f00d6e4290c4bc2263d",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/OverKill Hill P³ Square.png",
+        "release_sha256": "6c6cf2775a8956cc9f96e0fa1ec590c49ad55feedfca862a7ae9d353b74068d6",
+        "package_path": "skills/instructions/references/overkill-hill-p3-square.png",
+        "package_sha256": "6c6cf2775a8956cc9f96e0fa1ec590c49ad55feedfca862a7ae9d353b74068d6",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PhenoMould-R Capabilities.md",
+        "release_sha256": "c7a819c853d76bf535c6767850a82023256285bf361107d38dad525989bb33d7",
+        "package_path": "skills/instructions/references/phenomould-r-capabilities.md",
+        "package_sha256": "c7a819c853d76bf535c6767850a82023256285bf361107d38dad525989bb33d7",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+        "release_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+        "package_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_narrative_v3.md",
+        "release_sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+        "package_path": "skills/instructions/references/dataledger-narrative-v3.md",
+        "package_sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+        "release_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+        "package_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_persona_v3.md",
+        "release_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+        "package_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_registry_v3.md",
+        "release_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+        "package_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_system_v3.md",
+        "release_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "package_path": "skills/instructions/references/dataledger-system-v3.md",
+        "package_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dehydration manifest v3.0.md",
+        "release_sha256": "fd570add3dbfb9d1010164d93dba03ede61c2f773bee33843812659da907699f",
+        "package_path": "skills/instructions/references/dehydration-manifest-v3-0.md",
+        "package_sha256": "fd570add3dbfb9d1010164d93dba03ede61c2f773bee33843812659da907699f",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/gpt_manifest_PhenoMould-R.yaml",
+        "release_sha256": "bfdab6c28b96696a334f949e725c063d39e00e47f87d98f86ea70f4e634013ff",
+        "package_path": "skills/instructions/references/gpt-manifest-phenomould-r.yaml",
+        "package_sha256": "bfdab6c28b96696a334f949e725c063d39e00e47f87d98f86ea70f4e634013ff",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "01f01c5d798f261838950a8b9cb56825e80408bac0ef0dd9b144150e012f6166",
+      "source": "Plugin Creator release file readback."
+    },
+    "default_prompts": [
+      "“Cast a GPT that speaks in my voice and tone.”",
+      "“Can you simulate how this GPT would respond?”",
+      "“I need a Tool‑ette that manages creative momentum.”"
+    ],
+    "exact_archive": "adapters/chatgpt-plugin.tgz"
+  },
+  "knowledge": [
+    {
+      "editor_filename": "GPT Interrogation Agent v1.0.md",
+      "native_path": "skills/instructions/references/GPT Interrogation Agent v1.0.md",
+      "package_path": "skills/instructions/references/gpt-interrogation-agent-v1-0.md",
+      "sha256": "169cfee75cb4a6dcd11f920c91f22bd73909281828192f00d6e4290c4bc2263d",
+      "source_review": {
+        "git_path": "custom-gpts/proto/gpt-auditor/gpt-interrogation-agent-v1-0.md",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "OverKill Hill P³ Square.png",
+      "native_path": "skills/instructions/references/OverKill Hill P³ Square.png",
+      "package_path": "skills/instructions/references/overkill-hill-p3-square.png",
+      "sha256": "6c6cf2775a8956cc9f96e0fa1ec590c49ad55feedfca862a7ae9d353b74068d6",
+      "source_review": {
+        "review": "The owner supplied this OverKill Hill P³ square logo with the GPT. Visual review confirmed the branded bird and computer artwork. The PNG contains no embedded attribution or personal metadata."
+      }
+    },
+    {
+      "editor_filename": "PhenoMould-R Capabilities.md",
+      "native_path": "skills/instructions/references/PhenoMould-R Capabilities.md",
+      "package_path": "skills/instructions/references/phenomould-r-capabilities.md",
+      "sha256": "c7a819c853d76bf535c6767850a82023256285bf361107d38dad525989bb33d7",
+      "source_review": {
+        "git_path": "custom-gpts/proto/phenomould-ry/phenomould-ry-v2-0-capabilities.md",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_hydration_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+      "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+      "sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_hydration_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_narrative_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_narrative_v3.md",
+      "package_path": "skills/instructions/references/dataledger-narrative-v3.md",
+      "sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_narrative_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_parameters_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+      "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+      "sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_parameters_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_persona_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_persona_v3.md",
+      "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+      "sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_persona_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_registry_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_registry_v3.md",
+      "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+      "sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_registry_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_system_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_system_v3.md",
+      "package_path": "skills/instructions/references/dataledger-system-v3.md",
+      "sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_system_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dehydration manifest v3.0.md",
+      "native_path": "skills/instructions/references/dehydration manifest v3.0.md",
+      "package_path": "skills/instructions/references/dehydration-manifest-v3-0.md",
+      "sha256": "fd570add3dbfb9d1010164d93dba03ede61c2f773bee33843812659da907699f",
+      "source_review": {
+        "git_path": "foundry/Misc Prompts/dehydration manifest v3.0.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "gpt_manifest_PhenoMould-R.yaml",
+      "native_path": "skills/instructions/references/gpt_manifest_PhenoMould-R.yaml",
+      "package_path": "skills/instructions/references/gpt-manifest-phenomould-r.yaml",
+      "sha256": "bfdab6c28b96696a334f949e725c063d39e00e47f87d98f86ea70f4e634013ff",
+      "source_review": {
+        "git_path": "foundry/PhenoMould-Ry/gpt_manifest_PhenoMould-R.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    }
+  ],
+  "verification": {
+    "source_upload_count": 11,
+    "native_index_count": 11,
+    "unrepresented_duplicate_occurrences": {},
+    "unexpected_index_occurrences": {},
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Per-file evidence is recorded under knowledge. The native release supplies the owner-directed editor instructions and icon."
+}

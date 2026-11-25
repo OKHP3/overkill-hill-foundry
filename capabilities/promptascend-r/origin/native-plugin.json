@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-68895c7070848191871bcd61e5dd338a",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-68895c7070848191871bcd61e5dd338a",
+    "name": "PromptAscend‑R — OverKill Hill P³",
+    "description": "Rate your promptcraft mastery using three distinct metaphors: Jedi discipline, chess strategy, or recursive civilization building. Prompt Ascend‑Rᵧ evaluates your skill level, explains your rank, and offers symbolic insights as you climb — with unreachable final tiers to keep you striving forever.",
+    "previous_visibility": "Only me",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "native_skill_contains_verbatim_text": true,
+      "sha256_utf8": "e9354178a95e813679aca4b1363dc685018a66a23eb7c687f3a9131224f0bcae",
+      "character_count": 2920
+    },
+    "conversation_starters": [],
+    "starters_text_sha256_utf8": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The captured editor exposed the toggle states in order without their labels.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": [
+      "dataLedger_registry_v3.md",
+      "dataLedger_hydration_v3.md",
+      "dataLedger_narrative_v3.md",
+      "dataLedger_parameters_v3.md",
+      "dataLedger_persona_v3.md",
+      "dataLedger_system_v3.md",
+      "PromptAscendR_hydration_seed.yaml",
+      "promptascend_hydration_seed.yaml",
+      "gpt_manifest.yaml",
+      "badge_manifest.json",
+      "PromptAscendR_gpt_manifest.yaml",
+      "PromptAscend-R v3.0.md",
+      "PromptAscend-R v3.0 Functionalities.md",
+      "badge_manifest.json",
+      "PromptAscendR_gpt_manifest.yaml",
+      "promptascend_hydration_seed.yaml",
+      "gpt_manifest.yaml",
+      "promptascend_prizes_manifest.yaml",
+      "PromptAscendR_hydration_seed.yaml"
+    ]
+  },
+  "release": {
+    "plugin_id": "plugin_77429d5add108191b628eda82d82eb31",
+    "release_id": "pluginrel_c163ad7c32688191930855082e4ff92a",
+    "version": "0.4.1+bundle.1044875ccbfbe3984394331e9c9f72b5",
+    "created_at": "2026-11-25T02:10:24.571535Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 635444,
+    "archive_sha256": "81c3e8f2876ad094522168b12241458242068500d8efb0483b47f90466afbee1",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "de171f02ce3f22f475ad2da1518866558011d5c115450696a50a28e7887eee84",
+        "package_path": "plugin.json",
+        "package_sha256": "de171f02ce3f22f475ad2da1518866558011d5c115450696a50a28e7887eee84",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "a2a1464e2e6026c841e0a951e30afa9a637a98e3a260bd4f0034e08ce09985ac",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "a2a1464e2e6026c841e0a951e30afa9a637a98e3a260bd4f0034e08ce09985ac",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "a7300cb3dc9199c9b605aa8a8135cd475ebfc4aaf1eb94c32f0d08ce79924c99",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "a7300cb3dc9199c9b605aa8a8135cd475ebfc4aaf1eb94c32f0d08ce79924c99",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "2923b09b752cb8de733ebfed6716232ba641cfa01a661473a65da111b78d5817",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "87e307d9b7f175f6e6bf3b0d7bb1ddcc81d00ccf1dc92d317ea46654ec3ece68",
+        "handling": "Original upload names and order preserved. Paths point to repository-safe filenames."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscend-R v3.0 Functionalities.md",
+        "release_sha256": "fc926b6a25fa68491610cc4e0c0f8186a679f839118c68c64b3ed01363821643",
+        "package_path": "skills/instructions/references/promptascend-r-v3-0-functionalities.md",
+        "package_sha256": "fc926b6a25fa68491610cc4e0c0f8186a679f839118c68c64b3ed01363821643",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscend-R v3.0.md",
+        "release_sha256": "4576eb6fc4889d186dba83efea5e775555e8d10ebf036bc13228b671f5bbd1c8",
+        "package_path": "skills/instructions/references/promptascend-r-v3-0.md",
+        "package_sha256": "4576eb6fc4889d186dba83efea5e775555e8d10ebf036bc13228b671f5bbd1c8",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscendR_gpt_manifest.yaml",
+        "release_sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+        "package_path": "skills/instructions/references/promptascendr-gpt-manifest.yaml",
+        "package_sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscendR_gpt_manifest_1.yaml",
+        "release_sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+        "package_path": "skills/instructions/references/promptascendr-gpt-manifest-1.yaml",
+        "package_sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscendR_hydration_seed.yaml",
+        "release_sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+        "package_path": "skills/instructions/references/promptascendr-hydration-seed.yaml",
+        "package_sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/PromptAscendR_hydration_seed_1.yaml",
+        "release_sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+        "package_path": "skills/instructions/references/promptascendr-hydration-seed-1.yaml",
+        "package_sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/badge_manifest.json",
+        "release_sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+        "package_path": "skills/instructions/references/badge-manifest.json",
+        "package_sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/badge_manifest_1.json",
+        "release_sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+        "package_path": "skills/instructions/references/badge-manifest-1.json",
+        "package_sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+        "release_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+        "package_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_narrative_v3.md",
+        "release_sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+        "package_path": "skills/instructions/references/dataledger-narrative-v3.md",
+        "package_sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+        "release_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+        "package_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_persona_v3.md",
+        "release_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+        "package_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_registry_v3.md",
+        "release_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+        "package_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_system_v3.md",
+        "release_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "package_path": "skills/instructions/references/dataledger-system-v3.md",
+        "package_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/gpt_manifest.yaml",
+        "release_sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+        "package_path": "skills/instructions/references/gpt-manifest.yaml",
+        "package_sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/gpt_manifest_1.yaml",
+        "release_sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+        "package_path": "skills/instructions/references/gpt-manifest-1.yaml",
+        "package_sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/promptascend_hydration_seed.yaml",
+        "release_sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+        "package_path": "skills/instructions/references/promptascend-hydration-seed.yaml",
+        "package_sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/promptascend_hydration_seed_1.yaml",
+        "release_sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+        "package_path": "skills/instructions/references/promptascend-hydration-seed-1.yaml",
+        "package_sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/promptascend_prizes_manifest.yaml",
+        "release_sha256": "c40c6584131f471ed389a0ae38116c8dc8a124c68f2813407806616a711abe2c",
+        "package_path": "skills/instructions/references/promptascend-prizes-manifest.yaml",
+        "package_sha256": "c40c6584131f471ed389a0ae38116c8dc8a124c68f2813407806616a711abe2c",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "4c77461b6b62ddf36800f3d6b454ebd31bc11bf171a5db1bd540b040d773ade9",
+      "source": "Plugin Creator release file readback."
+    },
+    "default_prompts": [],
+    "exact_archive": "adapters/chatgpt-plugin.tgz"
+  },
+  "knowledge": [
+    {
+      "editor_filename": "PromptAscend-R v3.0 Functionalities.md",
+      "native_path": "skills/instructions/references/PromptAscend-R v3.0 Functionalities.md",
+      "package_path": "skills/instructions/references/promptascend-r-v3-0-functionalities.md",
+      "sha256": "fc926b6a25fa68491610cc4e0c0f8186a679f839118c68c64b3ed01363821643",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/PromptAscend-R v3.0 Functionalities.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "PromptAscend-R v3.0.md",
+      "native_path": "skills/instructions/references/PromptAscend-R v3.0.md",
+      "package_path": "skills/instructions/references/promptascend-r-v3-0.md",
+      "sha256": "4576eb6fc4889d186dba83efea5e775555e8d10ebf036bc13228b671f5bbd1c8",
+      "source_review": {
+        "git_path": "custom-gpts/proto/promptascend-r/promptascend-r-v3-0.md",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "PromptAscendR_gpt_manifest.yaml",
+      "native_path": "skills/instructions/references/PromptAscendR_gpt_manifest.yaml",
+      "package_path": "skills/instructions/references/promptascendr-gpt-manifest.yaml",
+      "sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/PromptAscendR_gpt_manifest.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "PromptAscendR_gpt_manifest.yaml",
+      "native_path": "skills/instructions/references/PromptAscendR_gpt_manifest_1.yaml",
+      "package_path": "skills/instructions/references/promptascendr-gpt-manifest-1.yaml",
+      "sha256": "5e1d9cd742647acd01750ffb8425dc8b674a8d87783013100053eaaa56edad10",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/PromptAscendR_gpt_manifest.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "PromptAscendR_hydration_seed.yaml",
+      "native_path": "skills/instructions/references/PromptAscendR_hydration_seed.yaml",
+      "package_path": "skills/instructions/references/promptascendr-hydration-seed.yaml",
+      "sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/PromptAscendR_hydration_seed.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "PromptAscendR_hydration_seed.yaml",
+      "native_path": "skills/instructions/references/PromptAscendR_hydration_seed_1.yaml",
+      "package_path": "skills/instructions/references/promptascendr-hydration-seed-1.yaml",
+      "sha256": "2813640ffbb3301a11af4a2570a382c8afd88e2069c0d29bddab5ded6b702f31",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/PromptAscendR_hydration_seed.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "badge_manifest.json",
+      "native_path": "skills/instructions/references/badge_manifest.json",
+      "package_path": "skills/instructions/references/badge-manifest.json",
+      "sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+      "source_review": {
+        "git_path": "custom-gpts/proto/promptascend-r/badge_manifest.json",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "badge_manifest.json",
+      "native_path": "skills/instructions/references/badge_manifest_1.json",
+      "package_path": "skills/instructions/references/badge-manifest-1.json",
+      "sha256": "2e38a94bbfc3104711758e0d510d22af4ec11a602767187c8936be28a7294bdd",
+      "source_review": {
+        "git_path": "custom-gpts/proto/promptascend-r/badge_manifest.json",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_hydration_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+      "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+      "sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_hydration_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_narrative_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_narrative_v3.md",
+      "package_path": "skills/instructions/references/dataledger-narrative-v3.md",
+      "sha256": "c3967eaf7f0613c07dba3c17d0478693533e2b95d9a5136d5e6e3c6711646719",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_narrative_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_parameters_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+      "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+      "sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_parameters_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_persona_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_persona_v3.md",
+      "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+      "sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_persona_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_registry_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_registry_v3.md",
+      "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+      "sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_registry_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_system_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_system_v3.md",
+      "package_path": "skills/instructions/references/dataledger-system-v3.md",
+      "sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/dataLedger_system_v3.md",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "gpt_manifest.yaml",
+      "native_path": "skills/instructions/references/gpt_manifest.yaml",
+      "package_path": "skills/instructions/references/gpt-manifest.yaml",
+      "sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/gpt_manifest.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "gpt_manifest.yaml",
+      "native_path": "skills/instructions/references/gpt_manifest_1.yaml",
+      "package_path": "skills/instructions/references/gpt-manifest-1.yaml",
+      "sha256": "d792810d34036a8a5428f8bd40c8f8e9628666873a8d376aebff059bee64f6c7",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/gpt_manifest.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "promptascend_hydration_seed.yaml",
+      "native_path": "skills/instructions/references/promptascend_hydration_seed.yaml",
+      "package_path": "skills/instructions/references/promptascend-hydration-seed.yaml",
+      "sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/promptascend_hydration_seed.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "promptascend_hydration_seed.yaml",
+      "native_path": "skills/instructions/references/promptascend_hydration_seed_1.yaml",
+      "package_path": "skills/instructions/references/promptascend-hydration-seed-1.yaml",
+      "sha256": "512112a84165a190655209ae9fb06d8c215ee8f4fca5eeb1fa35eeaa276b755f",
+      "source_review": {
+        "git_path": "foundry/PromptAscend-R/promptascend_hydration_seed.yaml",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "promptascend_prizes_manifest.yaml",
+      "native_path": "skills/instructions/references/promptascend_prizes_manifest.yaml",
+      "package_path": "skills/instructions/references/promptascend-prizes-manifest.yaml",
+      "sha256": "c40c6584131f471ed389a0ae38116c8dc8a124c68f2813407806616a711abe2c",
+      "source_review": {
+        "git_path": "custom-gpts/proto/promptascend-r/promptascend_prizes_manifest.yaml",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    }
+  ],
+  "verification": {
+    "source_upload_count": 19,
+    "native_index_count": 19,
+    "unrepresented_duplicate_occurrences": {},
+    "unexpected_index_occurrences": {},
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Per-file evidence is recorded under knowledge. The native release supplies the owner-directed editor instructions and icon."
+}

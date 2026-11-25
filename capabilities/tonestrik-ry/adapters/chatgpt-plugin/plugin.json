@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "ToneStrik‑Rᵧ is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME‑ready prompts across Forge lifecycle phases.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Developer Tools",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "Can you segment logic and payload in this prompt for PME readiness?",
+          "Audit this prompt for drift, tone, and suffix compliance.",
+          "Does this variant follow ForgeDialect.A1 without tone collapse?"
+        ],
+        "developerName": "cardholder",
+        "displayName": "ToneStrik‑Rᵧ — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "ToneStrik‑Rᵧ is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME‑ready prompts across Forge lifecycle phases.",
+        "shortDescription": "ToneStrik‑Rᵧ is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME‑ready promp"
+      }
+    }
+  },
+  "name": "gpt-179fe70ffa7774e8c4e982e81892cdfa",
+  "version": "0.6.1+bundle.48381688999fa46772725a5e716f4d14"
+}

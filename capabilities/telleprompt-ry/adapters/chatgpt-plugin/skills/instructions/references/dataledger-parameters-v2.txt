@@ -1,0 +1,10 @@
+# dataLedger_parameters_v2.txt
+# Purpose: Holds Found-Rᵧ-wide GPT behavior preferences, limits, model instructions
+
+!PARAM
+ID: max_tools_per_gpt
+Value: 5
+
+!PARAM
+ID: overlay_required
+Value: true

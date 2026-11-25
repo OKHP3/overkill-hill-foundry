@@ -1,0 +1,10 @@
+# dataLedger_processing_v2.txt
+# Purpose: Stores active clauses, function drafts, tool blueprints in development (Phase 2–3 state)
+# Phases: 🧱 Cast-R, ⚒️ Anvil-R
+
+!CLAUSE: !PME_READY
+ID: Fn.Foundry.CrossCast.1.0.0
+Summary: Function to recontextualize logic from one Tool-R into another domain
+DeclaredBy: ThreadKeep-Rehydrator
+Status: In-Progress
+TargetPhase: Anvil-R

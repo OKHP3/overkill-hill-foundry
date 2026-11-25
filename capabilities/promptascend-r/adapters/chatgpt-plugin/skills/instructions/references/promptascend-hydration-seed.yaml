@@ -1,0 +1,20 @@
+project: "OverKill Hill P\xB3"
+registry_file: dataLedger_registry_v3.md
+runtime_parameters_file: dataLedger_parameters_v3.md
+status:
+- seeded
+- hydration_ready
+system_logic_file: dataLedger_system_v3.md
+tier_logic:
+  difficulty_curve: logarithmic
+  lowest_tier_accessible: true
+  scales:
+  - Jedi
+  - Chess
+  - Lexashev
+  unreachable_tiers:
+  - The Silent Kyber
+  - Oracle of Endgame
+  - Lexicognitive Singularity
+tool: "PromptAscend\u2011R\u1D67"
+version: 1.0.0

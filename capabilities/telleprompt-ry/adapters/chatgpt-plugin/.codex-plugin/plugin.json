@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Developer Tools",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Can you audit this prompt and return YAML + Markdown?",
+      "Here\u2019s a promptchain. Export each step and the full schema.",
+      "What\u2019s the name and invocation style of this prompt?"
+    ],
+    "developerName": "cardholder",
+    "displayName": "TellEPrompt\u2011R\u1d67 \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "The Declarative Prompt Interpreter \u2013 exports and ingests prompt logic with zero drift. Supports YAML + Markdown schemas, promptchain analysis, and canonical rehydration. Dual modes: eXpt\u2011R (export) and iNpt\u2011R (intake). Part of The GPT Found\u2011R\u1d67 system.",
+    "shortDescription": "The Declarative Prompt Interpreter \u2013 exports and ingests prompt logic with zero drift. Supports YAML + Markdown schemas, promptchain analysis, and canonical rehydration. Dual modes: eXpt\u2011R (export) and iNpt\u2011R (intake). Part of The GPT Found"
+  },
+  "name": "gpt-4e7d355da2afb7cd9ab4aa7070b2f4da",
+  "version": "0.12.1+bundle.efcd7ec28e9ecff7ed108443decd0c73",
+  "description": "The Declarative Prompt Interpreter \u2013 exports and ingests prompt logic with zero drift. Supports YAML + Markdown schemas, promptchain analysis, and canonical rehydration. Dual modes: eXpt\u2011R (export) and iNpt\u2011R (intake). Part of The GPT Found\u2011R\u1d67 system.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

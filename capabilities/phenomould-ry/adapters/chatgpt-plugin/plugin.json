@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool‑ettes, Functions, and Function‑ettes with lifecycle precision.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "“Cast a GPT that speaks in my voice and tone.”",
+          "“Can you simulate how this GPT would respond?”",
+          "“I need a Tool‑ette that manages creative momentum.”"
+        ],
+        "developerName": "cardholder",
+        "displayName": "PhenoMould‑R — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool‑ettes, Functions, and Function‑ettes with lifecycle precision.",
+        "shortDescription": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool‑ettes, Functions, and"
+      }
+    }
+  },
+  "name": "gpt-afb012f530b5b20867f077f641f19536",
+  "version": "0.3.1+bundle.ff892adcee4db41600befe2ab58e607e"
+}

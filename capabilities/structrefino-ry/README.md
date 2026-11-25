@@ -190,3 +190,9 @@ StructRefino-Rᵧ is the **forge bench** of the Found-Rᵧ pipeline — where GP
 | [`gpt-auditor/`](../gpt-auditor/) | GPT Auditor performs full GPT compliance review; StructRefino-Rᵧ scaffolds and prepares what will be audited |
 | [`gpt-crucible/`](../gpt-crucible/) | GPT Crucible is a Cast-R phase builder; StructRefino-Rᵧ refines and exports what Crucible initiates |
 | [`dataledgers/`](../../dataledgers/) | StructRefino-Rᵧ routes all outputs to the 8 canonical ledgers and requires ledger-compliance on every export |
+
+## Native plugin
+
+The [plugin package](adapters/chatgpt-plugin/) contains the migrated instructions and knowledge files. The [release record](origin/native-plugin.json) links the package to the original GPT editor and records the verified hashes.
+
+The [original release archive](adapters/chatgpt-plugin.tgz) preserves the Plugin Creator download, including its original filenames. Its SHA-256 checksum is in the release record.

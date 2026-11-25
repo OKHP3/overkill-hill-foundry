@@ -1,0 +1,9 @@
+# dataLedger_ideation_v2.txt
+# Purpose: Stores raw, unshaped GPT concepts, speculative functions, symbolic metaphors, and undeveloped use cases.
+# Phase: 🪨 Mine-R (Phase 1 – Ideation & Concept Mining)
+
+!CLAUSE: !IDEA_STAGE
+ID: Idea.Metaphor.DieplateForge
+Summary: Consider use of “Dieplate” as the symbolic fixture for tone templating and GPT stamping
+ThreadOrigin: Found-Rᵧ Core Genesis
+CandidatePhase: Cast-R

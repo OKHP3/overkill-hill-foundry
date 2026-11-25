@@ -1,0 +1,24 @@
+ecosystem: "OverKill Hill P\xB3"
+rendering_instructions:
+  color_mode: symbolic:gold:silver:bronze
+  font: Orbitron or Overpass Mono
+  shape: roundrect or shield
+scales:
+  Chess:
+    emoji: "\u265F"
+    unreachable: "\u265F\uFE0F\U0001F300"
+  Jedi:
+    emoji: "\U0001F6E1"
+    unreachable: "\U0001F48E"
+  Lexashev:
+    emoji: "\U0001FA90"
+    unreachable: "\U0001FA90\u267E"
+tiers:
+  badge_export_enabled: true
+  export_formats:
+  - SVG
+  - PNG
+  - text-icon
+  unreachable_style: glow/pulse
+tool: "PromptAscend\u2011R"
+version: '1.0'

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "Rate your promptcraft mastery using three distinct metaphors: Jedi discipline, chess strategy, or recursive civilization building. Prompt Ascend‑Rᵧ evaluates your skill level, explains your rank, and offers symbolic insights as you climb — with unreachable final tiers to keep you striving forever.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [],
+        "developerName": "cardholder",
+        "displayName": "PromptAscend‑R — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Rate your promptcraft mastery using three distinct metaphors: Jedi discipline, chess strategy, or recursive civilization building. Prompt Ascend‑Rᵧ evaluates your skill level, explains your rank, and offers symbolic insights as you climb — with unreachable final tiers to keep you striving forever.",
+        "shortDescription": "Rate your promptcraft mastery using three distinct metaphors: Jedi discipline, chess strategy, or recursive civilization building. Prompt Ascend‑Rᵧ evaluates your skill level, explains your rank, and offers symbolic insights as you climb — "
+      }
+    }
+  },
+  "name": "gpt-c38118d82786c16f35ba4a6733156949",
+  "version": "0.4.1+bundle.1044875ccbfbe3984394331e9c9f72b5"
+}

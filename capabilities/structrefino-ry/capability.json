@@ -3,5 +3,7 @@
   "slug": "structrefino-ry",
   "status": "imported",
   "source": "origin/source.json",
-  "entryPoint": "README.md"
+  "entryPoint": "README.md",
+  "nativePlugin": "adapters/chatgpt-plugin/plugin.json",
+  "nativeReleaseEvidence": "origin/native-plugin.json"
 }

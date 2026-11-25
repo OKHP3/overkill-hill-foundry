@@ -202,3 +202,9 @@ TellEPrompt-Rᵧ is the **declarative memory layer** of the Found-Rᵧ pipeline 
 | [`canonsweep-r/`](../canonsweep-r/) | CanonSweep-R performs compliance audits; TellEPrompt-Rᵧ produces the declarative exports that are audited |
 | [`dataledgers/`](../../dataledgers/) | TellEPrompt-Rᵧ's knowledge base consists of all 8 v2 dataLedger files; every output routes to one or more of them |
 | [`gpt-crucible/`](../gpt-crucible/) | GPT Crucible operates at Cast-R; TellEPrompt-Rᵧ formalizes and registers what Crucible initiates |
+
+## Native plugin
+
+The [plugin package](adapters/chatgpt-plugin/) contains the migrated instructions and knowledge files. The [release record](origin/native-plugin.json) links the package to the original GPT editor and records the verified hashes.
+
+The [original release archive](adapters/chatgpt-plugin.tgz) preserves the Plugin Creator download, including its original filenames. Its SHA-256 checksum is in the release record.

@@ -121,3 +121,9 @@ Any cast that fails a gate is returned for correction, not published.
 | `phenomould-ry-v2-0-capabilities.md` | v2.0 capability narrative (knowledge file) |
 | `phenomould-ry-v2-0-build-out.md` | v2.0 ChatGPT Builder UI configuration record |
 | `gpt_manifest_phenomould-r.yaml` | Machine-readable canonical registration for v2.0 |
+
+## Native plugin
+
+The [plugin package](adapters/chatgpt-plugin/) contains the migrated instructions and knowledge files. The [release record](origin/native-plugin.json) links the package to the original GPT editor and records the verified hashes.
+
+The [original release archive](adapters/chatgpt-plugin.tgz) preserves the Plugin Creator download, including its original filenames. Its SHA-256 checksum is in the release record.
