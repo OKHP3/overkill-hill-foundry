@@ -34,7 +34,7 @@ hosted_capabilities:
     visibility: public
     local_path: capabilities/un-nocked-truth
     former_repository: OKHP3/foundry-unt00-un-nocked-truth
-    relationship: Consolidated FoundRy capability
+    relationship: Consolidated FoundRy capability hosting the Archery for Anyone GPT components
 repositories:
   - name: OverKill-Hill
     type: site

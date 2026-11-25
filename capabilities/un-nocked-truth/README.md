@@ -1,8 +1,18 @@
-# foundry-unt00-un-nocked-truth
+# Un-Nocked Truth
 
-## Current status
+## Archery for Anyone
 
-This repository is an OKHP3 FoundRy workspace containing local Agent Skills,
+This FoundRy capability is the project home for four Archery for Anyone GPTs.
+Each component directory records its original ChatGPT name and ID.
+
+- [Un-NOCKed Truth](un-nocked-truth/)
+- [Geared-Up](geared-up/)
+- [Dialed-In](dialed-in/)
+- [Hunted-Down](hunted-down/)
+
+## Imported repository
+
+The former `foundry-unt00-un-nocked-truth` repository contributed local Agent Skills,
 skill-evaluation evidence, migration prompts, and supporting identity assets.
 
 The historical project identity is UNT00, Un-Nocked Truth, described in project
@@ -35,7 +45,7 @@ production-ready.
 
 ## Boundaries
 
-Product audience, runtime, model or API integration, input and output contract,
-deployment target, and operational ownership remain `TBD`. Evaluation records
-and benchmark files are retained as evidence until their provenance and
-replacement status are explicitly reviewed.
+For the earlier argument-integrity concept, audience, runtime, model or API
+integration, input and output contract, deployment target, and operational
+ownership remain open. Evaluation records and benchmark files are retained as
+evidence until their provenance and replacement status are explicitly reviewed.

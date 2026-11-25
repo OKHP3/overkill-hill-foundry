@@ -7,7 +7,7 @@
 **Repository:** https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/un-nocked-truth
 **License:** MIT, Copyright 2026 OverKill Hill P³
 
-**Confirmed purpose:** Existing project metadata describes this repository as a FoundRy GPT tool for logical analysis and argument integrity checking.
+The Un-Nocked Truth capability owns the four Archery for Anyone GPT components listed in `capability.json`. The imported repository metadata also describes an earlier proposal for logical analysis and argument integrity checking.
 
 **Confirmed current state:** The repository contains project guidance, 35 local Agent Skill packages, three reusable project prompts, one publication mirror, two PNG assets, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. It contains no application source, executable product entry point, product test suite, product build configuration, deployment configuration, or documented product runtime.
 
@@ -17,11 +17,11 @@
 
 ## Scope and boundaries
 
-This repository is the project root and the only Git repository found within it. No nested project or nested instruction scope was found.
+This directory is a capability within the OverKill Hill FoundRy repository. Each Archery for Anyone component has a direct child directory with a `source.json` identity record.
 
 Current repository scope is limited to:
 
-- Root-level project identity and agent guidance.
+- Project identity, component routing records and agent guidance.
 - Local Agent Skills under `.agents/skills/`, including evaluation and benchmark evidence where present.
 - Reusable project prompts under `.agents/prompts/`.
 - The publication mirror under `skills/okhp3-skill-promotion/`.
