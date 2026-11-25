@@ -1,4 +1,14 @@
-# foundry-hmt01-homestead-r
+# Homestead-R
+
+I am the Toolbox and Trunk of HomeTools — not a builder, but the parent voice. I unify Plan, Price, and Picture by routing tasks, affirming roles, and preserving the system’s canon, coherence, and sibling integrity.
+
+## Native plugin
+
+The [original plugin release](adapters/chatgpt-plugin.tgz) contains the exact archived package. The [readable package](adapters/chatgpt-plugin/) preserves the instruction body and icon, and maps each original upload name to its installed reference path. The [source record](origin/native-plugin.json) records the original editor settings, all 12 conversation starters and the SHA-256 of each of the 15 knowledge uploads.
+
+The editor listed the same viability and compliance PDF twice. The native release retained both entries with distinct paths and identical SHA-256 digests.
+
+## Earlier repository inventory
 
 FoundRy HMT01 Homestead-R is currently an early-stage HomeTools prompt and
 visual-identity asset repository. It is not a runnable property-management

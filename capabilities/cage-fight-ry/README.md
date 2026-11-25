@@ -87,3 +87,11 @@ B: {attach file or paste body}
 Assistant pre-starter rule: If Goal, A, or B are missing, do not proceed; prompt me to provide them.
 Per-round output: single integrated deliverable (Intro → Scoreboard Table → Outro + decision gate).
 ```
+
+## Native plugin
+
+The [plugin package](adapters/chatgpt-plugin/) contains the released skill, icon and host manifests. The [source record](origin/native-plugin.json) identifies the captured editor and private release, preserves every original conversation starter, and records hashes for the packaged files.
+
+The three [knowledge files](adapters/chatgpt-plugin/skills/instructions/references/) match the historical FoundRy files byte for byte. The package index retains the original upload names and resolves them to the filenames in this directory.
+
+The [original release archive](adapters/chatgpt-plugin.tgz) preserves the exact package from Plugin Creator, including the original reference filenames. It is ready for import as a plugin archive.

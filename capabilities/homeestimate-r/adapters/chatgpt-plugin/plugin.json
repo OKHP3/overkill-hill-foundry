@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "Generates detailed material takeoffs and cost estimates for single-family homes. Provides itemized lists (lumber, concrete, roofing, siding, drywall, fixtures, etc.), cost breakdowns, and ranges. Iterates quickly and hands off floorplans or visuals to siblings.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "Estimate materials for a 2,000 sqft 3-bed, 2-bath ranch",
+          "How many 2x4s and sheets of OSB for a 1,500 sqft home?",
+          "Give me a cost breakdown for a 1-story 3-car garage home"
+        ],
+        "developerName": "cardholder",
+        "displayName": "HomeEstimate-R — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Generates detailed material takeoffs and cost estimates for single-family homes. Provides itemized lists (lumber, concrete, roofing, siding, drywall, fixtures, etc.), cost breakdowns, and ranges. Iterates quickly and hands off floorplans or visuals to siblings.",
+        "shortDescription": "Generates detailed material takeoffs and cost estimates for single-family homes. Provides itemized lists (lumber, concrete, roofing, siding, drywall, fixtures, etc.), cost breakdowns, and ranges. Iterates quickly and hands off floorplans or"
+      }
+    }
+  },
+  "name": "gpt-292d94cefc908368e044b2d877485776",
+  "version": "0.24.1+bundle.553a82135525eae1b681588dd9e09f4a"
+}

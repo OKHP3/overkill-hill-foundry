@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-69761edbd5688191b543e904b59023bb",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-69761edbd5688191b543e904b59023bb",
+    "name": "PromptForge",
+    "description": "Structured prompt-engineering workbench for compiling and validating reusable prompt assets.",
+    "previous_visibility": "Everyone",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "location": "Markdown body following the YAML front matter",
+      "sha256_utf8": "a0927f39ffbd23be006c6a50ee0ad5d41e9c5388421ee9f690f4ff418676668d",
+      "character_count": 7861
+    },
+    "conversation_starters": [
+      "Compile a full Prompt Asset Package for a recurring task",
+      "Refactor this existing prompt to the PromptForge house standard",
+      "Lint and score this prompt package; patch critical issues",
+      "Design a Meta Prompt that compiles standardized Mega Prompts",
+      "Create an eval pack with adversarial tests for this prompt",
+      "Convert this informal prompt into a safe, versioned Mega Prompt",
+      "Generate a strict JSON-output variant of this prompt asset",
+      "Produce a lite token-efficient variant of this Mega Prompt",
+      "Harden this prompt against injection and instruction conflicts",
+      "Create migration notes for reasoning vs non-reasoning models",
+      "Design a guided interview Meta Prompt for vague user requests",
+      "Review this prompt for hallucination risk and unsupported claims"
+    ],
+    "starters_text_sha256_utf8": "5384d8dfad9b841451e8f9e800f78f63aac6ce8ce09b7edc8f093c39a65409a2",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The captured controls expose ordered toggle states; their labels were unavailable.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": []
+  },
+  "release": {
+    "plugin_id": "plugin_ec59d369755c8191a440f440df553ff5",
+    "release_id": "pluginrel_2fece4c166e48191a3f05beaa77417f2",
+    "version": "0.8.1+bundle.8f4c8721c4662acd2e701376fbec9ec5",
+    "created_at": "2026-11-25T01:44:11.948297Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 666763,
+    "archive_sha256": "7816c6f210316984c6dfe2bf6b1ca133b6da3560a9002300b30b1e456441de25",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "6c01d30d43cb7223889f9fbe12f3315a4fb13c75522121a7e5e47222885b1483",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "6c01d30d43cb7223889f9fbe12f3315a4fb13c75522121a7e5e47222885b1483",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "3961e3f0019f1b07bbc6a03b2f79baef23dee697847722050f6dd27118eb6a44",
+        "package_path": "plugin.json",
+        "package_sha256": "3961e3f0019f1b07bbc6a03b2f79baef23dee697847722050f6dd27118eb6a44",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "e168f922d3069555afab06b4dd267b461774214b0294a2f04d34297eb8f1fc43",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "e168f922d3069555afab06b4dd267b461774214b0294a2f04d34297eb8f1fc43",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "3682cdfe7ebf2ac3c524ac3c08daaf40a11df0c8302eabdba8b2d7ae5525991a",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "3682cdfe7ebf2ac3c524ac3c08daaf40a11df0c8302eabdba8b2d7ae5525991a",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "46943e3bc2c5c154419a16fa3cc930f441031e401eb98fb6b96fbc1f25aae081",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "46943e3bc2c5c154419a16fa3cc930f441031e401eb98fb6b96fbc1f25aae081",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "04fb3f0eb3764230dd0524522cd53970c9fde7916b30dc79fecf949fbcb4003c",
+      "source": "Plugin Creator file readback for this release. This file is present in the Creator file listing."
+    },
+    "default_prompts": [
+      "Compile a full Prompt Asset Package for a recurring task",
+      "Refactor this existing prompt to the PromptForge house standard",
+      "Lint and score this prompt package; patch critical issues"
+    ]
+  },
+  "knowledge": [],
+  "verification": {
+    "source_checks": [
+      "Editor instructions occur verbatim in the packaged skill body.",
+      "Compared the editor upload names with the native knowledge index and verified each archived file digest.",
+      "Read the native release, metadata and file list from the owned plugin."
+    ],
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Owner-directed migration of the captured GPT and its native release. The icon is the native release asset. The editor and native knowledge index list zero knowledge uploads."
+}

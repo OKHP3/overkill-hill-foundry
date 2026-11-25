@@ -1,0 +1,4 @@
+interface:
+  default_prompt: 'Comparison: File A = […], vs File B = […]. Goal = [define goal]'
+  display_name: Cage Fight-Rᵧ — OverKill Hill P³
+  short_description: Iteratively compares, scores, and hybridizes (A vs B) or optimiz

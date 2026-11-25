@@ -1,0 +1,4 @@
+interface:
+  default_prompt: Estimate materials for a 2,000 sqft 3-bed, 2-bath ranch
+  display_name: HomeEstimate-R — OverKill Hill P³
+  short_description: Generates detailed material takeoffs and cost estimates for sing

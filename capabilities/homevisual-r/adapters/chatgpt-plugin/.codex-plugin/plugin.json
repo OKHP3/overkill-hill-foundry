@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Creativity",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Can you show my house with white-painted brick and dark trim?",
+      "Here\u2019s a photo with scribbles\u2014can you visualize the changes I marked?",
+      "What would this house look like with a larger front window instead of two small ones?"
+    ],
+    "developerName": "cardholder",
+    "displayName": "HomeVisual-R \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "Photorealistic home design visualizer for exterior repainting, trim, windows, doors, roofs, and features, plus interior wall, cabinet, and countertop recolors. Identifies architectural styles, interprets user sketches or scribbles, and generates before-and-after images for clear comparisons.",
+    "shortDescription": "Photorealistic home design visualizer for exterior repainting, trim, windows, doors, roofs, and features, plus interior wall, cabinet, and countertop recolors. Identifies architectural styles, interprets user sketches or scribbles, and gene"
+  },
+  "name": "gpt-76d3d2eb641bc6d12ca6e1dc24827e30",
+  "version": "0.19.1+bundle.d7727070d6cd319f6362b09f7acf9149",
+  "description": "Photorealistic home design visualizer for exterior repainting, trim, windows, doors, roofs, and features, plus interior wall, cabinet, and countertop recolors. Identifies architectural styles, interprets user sketches or scribbles, and generates before-and-after images for clear comparisons.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

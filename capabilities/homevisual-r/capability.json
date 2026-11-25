@@ -1,0 +1,9 @@
+{
+  "name": "HomeVisual-R",
+  "slug": "homevisual-r",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md",
+  "nativePlugin": "adapters/chatgpt-plugin/plugin.json",
+  "nativeReleaseEvidence": "origin/source.json"
+}

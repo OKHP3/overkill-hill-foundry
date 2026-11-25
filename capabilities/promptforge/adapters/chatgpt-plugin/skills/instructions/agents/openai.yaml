@@ -1,0 +1,4 @@
+interface:
+  default_prompt: Compile a full Prompt Asset Package for a recurring task
+  display_name: PromptForge
+  short_description: Structured prompt-engineering workbench for compiling and valida

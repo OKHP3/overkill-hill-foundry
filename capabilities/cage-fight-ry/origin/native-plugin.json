@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-68b3432dfa4881919f12d22d3e2ccc29",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-68b3432dfa4881919f12d22d3e2ccc29",
+    "name": "Cage Fight-Rᵧ — OverKill Hill P³",
+    "description": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity.",
+    "previous_visibility": "Only me",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "location": "Markdown body following the YAML front matter",
+      "sha256_utf8": "4f63419fd31590ed1b127446ef3ed4e07ce3f40d668910e38053906684b98252",
+      "character_count": 5898
+    },
+    "conversation_starters": [
+      "Comparison: File A = […], vs File B = […]. Goal = [define goal]",
+      "Comparison: Text A = […], vs Text B = […]. Goal = [define goal]",
+      "Comparison: File A = […], vs Text B = […]. Goal = [define goal]",
+      "Comparison: Text A = […], vs File B = […]. Goal = [define goal]",
+      "Maturation: File A = […], vs contemporary best practices. Goal = [define goal]",
+      "Maturation: Text A = […], vs contemporary best practices. Goal = [define goal]",
+      "How can I donate or support The GPT Found‑Rᵧ project?"
+    ],
+    "starters_text_sha256_utf8": "bde90c5cecf9abb93343a49cb2a1a09608ce7ff4236f304f7681f773402b389c",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The captured controls expose ordered toggle states; their labels were unavailable.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": [
+      "Cage Fight‑Rᵧ Operator Guide.md",
+      "Prompting Best Practices 2025-08.md",
+      "gpt_5_prompting_best_practices_rag.md"
+    ]
+  },
+  "release": {
+    "plugin_id": "plugin_b258b6c712c8819194d6aaa981e2bbe8",
+    "release_id": "pluginrel_71e280eeb4e48191946ceedf76e999ef",
+    "version": "0.15.1+bundle.07663b7b70ace549003cf9e014eda7af",
+    "created_at": "2026-11-25T01:49:43.280852Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 681263,
+    "archive_sha256": "2600d5ebe89d2e9ada78ea9048b1917dfc307bdf22f8b3aca167a2d16c5d0b0a",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "9759252755b33138519690734d08be9148e1775c1793b47e2cb8ff795299840e",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "9759252755b33138519690734d08be9148e1775c1793b47e2cb8ff795299840e",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "f4deebd4c19e306107790d27f654d888180d54f2fe40bfb2c73a8799eada5126",
+        "package_path": "plugin.json",
+        "package_sha256": "f4deebd4c19e306107790d27f654d888180d54f2fe40bfb2c73a8799eada5126",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "58c55f7d16be0ecdb8c7b55ebb2b06253b72b3fe921906ce9870554f7c6897ec",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "58c55f7d16be0ecdb8c7b55ebb2b06253b72b3fe921906ce9870554f7c6897ec",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "0d148ed8fae454597f8ee3a68f39eb01e7b0ecd16d7aeeff2530f8f55859bb2e",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "0d148ed8fae454597f8ee3a68f39eb01e7b0ecd16d7aeeff2530f8f55859bb2e",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "9da5e8815975fb8841460a858dc918e7ea629738a3410d9953d9e42021267e8a",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "cc29988a4cb701e7d70453cf36c1d93ca046292bdc7bdd9ae925ba91b59686fc",
+        "handling": "Package paths use the repository filename convention. Original upload names are retained."
+      },
+      {
+        "release_path": "skills/instructions/references/Cage Fight‑Rᵧ Operator Guide.md",
+        "release_sha256": "6c74bf429e368fb4e0dd35113c7f4fd1317eb1215757e24c440fe35cbbd0d9aa",
+        "package_path": "skills/instructions/references/cage-fight-ry-operator-guide.md",
+        "package_sha256": "6c74bf429e368fb4e0dd35113c7f4fd1317eb1215757e24c440fe35cbbd0d9aa",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Prompting Best Practices 2025-08.md",
+        "release_sha256": "b20c632887f10fa88f8afad601e0339ae471aacbb88e303e8a8b351457ac596b",
+        "package_path": "skills/instructions/references/prompting-best-practices-2025-08.md",
+        "package_sha256": "b20c632887f10fa88f8afad601e0339ae471aacbb88e303e8a8b351457ac596b",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/gpt_5_prompting_best_practices_rag.md",
+        "release_sha256": "0f1201aacd819fdebb96a9794cffe3fe6720728c826d58836a32ae59754f0971",
+        "package_path": "skills/instructions/references/gpt-5-prompting-best-practices-rag.md",
+        "package_sha256": "0f1201aacd819fdebb96a9794cffe3fe6720728c826d58836a32ae59754f0971",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "f35b9a891e5f6d24955e721e5fec915472c940e7deab75ae2222f39d8d87070d",
+      "source": "Plugin Creator file readback for this release. This file is present in the Creator file listing."
+    },
+    "default_prompts": [
+      "Comparison: File A = […], vs File B = […]. Goal = [define goal]",
+      "Comparison: Text A = […], vs Text B = […]. Goal = [define goal]",
+      "Comparison: File A = […], vs Text B = […]. Goal = [define goal]"
+    ],
+    "exact_archive": "adapters/chatgpt-plugin.tgz"
+  },
+  "knowledge": [
+    {
+      "editor_filename": "Cage Fight‑Rᵧ Operator Guide.md",
+      "package_path": "skills/instructions/references/cage-fight-ry-operator-guide.md",
+      "sha256": "6c74bf429e368fb4e0dd35113c7f4fd1317eb1215757e24c440fe35cbbd0d9aa",
+      "existing_public_source": "custom-gpts/proto/cage-fight-ry/cage-fight-ry-operator-guide.md",
+      "existing_public_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+    },
+    {
+      "editor_filename": "Prompting Best Practices 2025-08.md",
+      "package_path": "skills/instructions/references/prompting-best-practices-2025-08.md",
+      "sha256": "b20c632887f10fa88f8afad601e0339ae471aacbb88e303e8a8b351457ac596b",
+      "existing_public_source": "custom-gpts/proto/cage-fight-ry/prompting-best-practices-2025-08.md",
+      "existing_public_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+    },
+    {
+      "editor_filename": "gpt_5_prompting_best_practices_rag.md",
+      "package_path": "skills/instructions/references/gpt-5-prompting-best-practices-rag.md",
+      "sha256": "0f1201aacd819fdebb96a9794cffe3fe6720728c826d58836a32ae59754f0971",
+      "existing_public_source": "custom-gpts/proto/cage-fight-ry/gpt_5_prompting_best_practices_rag.md",
+      "existing_public_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+    }
+  ],
+  "verification": {
+    "source_checks": [
+      "Editor instructions occur verbatim in the packaged skill body.",
+      "Compared the editor upload names with the native knowledge index and verified each archived file digest.",
+      "Read the native release, metadata and file list from the owned plugin."
+    ],
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Owner-directed migration of the captured GPT and its native release. The icon is the native release asset. All three uploaded documents exactly match previously published source blobs in the FoundRy proto archive. The original attribution and public brand contact are retained."
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "I am the Toolbox and Trunk of HomeTools — not a builder, but the parent voice. I unify Plan, Price, and Picture by routing tasks, affirming roles, and preserving the system’s canon, coherence, and sibling integrity.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "What does each HomeTool actually do?",
+          "Who handles home cost estimation?",
+          "Which child GPT should I talk to for a layout?"
+        ],
+        "developerName": "cardholder",
+        "displayName": "Homestead-R — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "I am the Toolbox and Trunk of HomeTools — not a builder, but the parent voice. I unify Plan, Price, and Picture by routing tasks, affirming roles, and preserving the system’s canon, coherence, and sibling integrity.",
+        "shortDescription": "I am the Toolbox and Trunk of HomeTools — not a builder, but the parent voice. I unify Plan, Price, and Picture by routing tasks, affirming roles, and preserving the system’s canon, coherence, and sibling integrity."
+      }
+    }
+  },
+  "name": "gpt-118ab421b250a59245f1a72448f314fb",
+  "version": "0.14.1+bundle.5a18114f2fce9633930e3dcf221cd924"
+}
