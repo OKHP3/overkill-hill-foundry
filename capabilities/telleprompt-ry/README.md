@@ -200,5 +200,5 @@ TellEPrompt-Rᵧ is the **declarative memory layer** of the Found-Rᵧ pipeline 
 | [`structrefino-ry/`](../structrefino-ry/) | StructRefino-Rᵧ (Gleam-R) scaffolds and forges; TellEPrompt-Rᵧ (Anvil-R) interprets and documents — adjacent, non-overlapping |
 | [`scaffrosto-ry/`](../scaffrosto-ry/) | ScafFrosto-Rᵧ is TellEPrompt-Rᵧ's direct descendant; it inherits the prompt sequence log format for full thread cryostasis |
 | [`canonsweep-r/`](../canonsweep-r/) | CanonSweep-R performs compliance audits; TellEPrompt-Rᵧ produces the declarative exports that are audited |
-| [`dataledgers/`](../dataledgers/) | TellEPrompt-Rᵧ's knowledge base consists of all 8 v2 dataLedger files; every output routes to one or more of them |
+| [`dataledgers/`](../../dataledgers/) | TellEPrompt-Rᵧ's knowledge base consists of all 8 v2 dataLedger files; every output routes to one or more of them |
 | [`gpt-crucible/`](../gpt-crucible/) | GPT Crucible operates at Cast-R; TellEPrompt-Rᵧ formalizes and registers what Crucible initiates |

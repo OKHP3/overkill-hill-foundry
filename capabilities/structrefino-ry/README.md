@@ -189,4 +189,4 @@ StructRefino-Rᵧ is the **forge bench** of the Found-Rᵧ pipeline — where GP
 | [`tonestrik-ry/`](../tonestrik-ry/) | ToneStrik-Rᵧ validates prompt tone post-build; StructRefino-Rᵧ audits structural and schema compliance |
 | [`gpt-auditor/`](../gpt-auditor/) | GPT Auditor performs full GPT compliance review; StructRefino-Rᵧ scaffolds and prepares what will be audited |
 | [`gpt-crucible/`](../gpt-crucible/) | GPT Crucible is a Cast-R phase builder; StructRefino-Rᵧ refines and exports what Crucible initiates |
-| [`dataledgers/`](../dataledgers/) | StructRefino-Rᵧ routes all outputs to the 8 canonical ledgers and requires ledger-compliance on every export |
+| [`dataledgers/`](../../dataledgers/) | StructRefino-Rᵧ routes all outputs to the 8 canonical ledgers and requires ledger-compliance on every export |

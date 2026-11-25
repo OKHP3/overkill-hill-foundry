@@ -119,7 +119,7 @@ These standalone prompts are specialized logic nodes that complement the Merge B
 
 | Folder | Relationship |
 |---|---|
-| [`gpt-wizard/`](../gpt-wizard/) | The design consultation transcript and master instruction template that informed the architecture of this promptchain; `gpt-wizard/` is the reference library, `misc-prompts/` is the operational chain derived from it |
-| [`gpt-auditor/`](../gpt-auditor/) | The audit tool that consumes outputs from this chain and validates finished GPT configurations |
-| [`phenomould-ry/`](../phenomould-ry/) | The active successor GPT that this chain is used to build and maintain; PhenoMould-Rᵧ is the primary deployment target for Builder v01.5 output |
-| [`scaffrosto-ry/`](../scaffrosto-ry/) | ScafFrosto-Rᵧ templates provide the structural scaffold that Block B (Instruction Scaffold & PME Finalizer) draws from |
+| [`gpt-wizard/`](../capabilities/gpt-wizard/) | The design consultation transcript and master instruction template that informed the architecture of this promptchain; `gpt-wizard/` is the reference library, `misc-prompts/` is the operational chain derived from it |
+| [`gpt-auditor/`](../capabilities/gpt-auditor/) | The audit tool that consumes outputs from this chain and validates finished GPT configurations |
+| [`phenomould-ry/`](../capabilities/phenomould-ry/) | The active successor GPT that this chain is used to build and maintain; PhenoMould-Rᵧ is the primary deployment target for Builder v01.5 output |
+| [`scaffrosto-ry/`](../capabilities/scaffrosto-ry/) | ScafFrosto-Rᵧ templates provide the structural scaffold that Block B (Instruction Scaffold & PME Finalizer) draws from |

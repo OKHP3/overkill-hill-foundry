@@ -138,7 +138,7 @@ ScafFrosto-Rᵧ is the **preservation and resurrection layer** of the Found-Rᵧ
 | [`canonsweep-r/`](../canonsweep-r/) | CanonSweep-R performs compliance audits; ScafFrosto-Rᵧ incorporates its routine into the freeze sequence |
 | [`gpt-auditor/`](../gpt-auditor/) | GPT Auditor validates a GPT's current config; ScafFrosto-Rᵧ preserves the thread history behind it |
 | [`phenomould-ry/`](../phenomould-ry/) | PhenoMould-Rᵧ casts new GPTs; ScafFrosto-Rᵧ can preserve and reawaken the threads that informed them |
-| [`dataledgers/`](../dataledgers/) | ScafFrosto-Rᵧ is the heaviest consumer of the dataLedger network — it reads all 8 ledgers twice and routes output to 7 of them |
+| [`dataledgers/`](../../dataledgers/) | ScafFrosto-Rᵧ is the heaviest consumer of the dataLedger network — it reads all 8 ledgers twice and routes output to 7 of them |
 
 ---
 
