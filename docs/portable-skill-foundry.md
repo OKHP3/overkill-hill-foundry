@@ -106,10 +106,8 @@ the public website, MurderBird, sibling FoundRys or unrelated governed children.
    source repositories available until parity and recovery are proven; archival
    and redirects are separate closeout actions. Do not auto-delete old projects.
 
-The initial migration registry is empty intentionally: the new direction names
-the three FoundRys but does not identify each external GPT repository or its
-regional destination. The 16 legacy source folders in README are an existing
-local catalog, not a verified external repository migration inventory.
+The [migration registry](../registry/capability-migrations.json) records each source,
+its pinned revision, its destination and the evidence for the transfer.
 
 Migration records use these fields (illustrative only; do not enter a placeholder
 repository in the live registry):

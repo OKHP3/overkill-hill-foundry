@@ -106,11 +106,19 @@ def inventory(root):
     rows = list(packages.values())
     root_package = json.loads((root / "package.json").read_text(encoding="utf-8"))
     rows.append({"name": "pnpm", "kind": "package manager", "current": [root_package["packageManager"].split("@", 1)[1]], "lookup": "npm", "source": "https://registry.npmjs.org/pnpm", "evidence": ["package.json#packageManager"]})
-    for line in (root / "scripts/requirements.txt").read_text(encoding="utf-8").splitlines():
-        if not line.strip() or line.startswith("#"):
-            continue
-        name, version = line.split("==")
-        rows.append({"name": name, "kind": "Python dependency", "current": [version], "lookup": "pypi", "source": f"https://pypi.org/pypi/{name}/json", "evidence": ["scripts/requirements.txt"]})
+    manifests = ["scripts/requirements.txt", *(p for p in files if Path(p).match("capabilities/*/requirements*.txt"))]
+    python_packages = {}
+    for manifest in manifests:
+        inputs.add(manifest)
+        for line in (root / manifest).read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.startswith("#"):
+                continue
+            name, version = line.split("==")
+            row = python_packages.setdefault(name, {"name": name, "kind": "Python dependency", "current": [], "lookup": "pypi", "source": f"https://pypi.org/pypi/{name}/json", "evidence": []})
+            if version not in row["current"]:
+                row["current"].append(version)
+            row["evidence"].append(manifest)
+    rows.extend(python_packages.values())
     replit = tomllib.loads((root / ".replit").read_text(encoding="utf-8"))
     runtime, actions, runners = {"Node.js": [], "Python": []}, {}, set()
     for module in replit["modules"]:

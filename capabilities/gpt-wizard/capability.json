@@ -1,0 +1,7 @@
+{
+  "name": "GPT Wizard",
+  "slug": "gpt-wizard",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md"
+}

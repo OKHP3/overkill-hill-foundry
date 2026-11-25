@@ -13,6 +13,27 @@ hosted_capabilities:
     lifecycle_status: prototype
     visibility: public
     relationship: Public repository scaffold; separate capability release graduation required
+  - name: Homestead-R
+    type: capability
+    lifecycle_status: concept
+    visibility: public
+    local_path: capabilities/homesteadr
+    former_repository: OKHP3/foundry-hmt01-homestead-r
+    relationship: Consolidated FoundRy capability
+  - name: PathScrib-R
+    type: capability
+    lifecycle_status: research
+    visibility: public
+    local_path: capabilities/pathscribr
+    former_repository: OKHP3/foundry-psr00-pathscrib-r
+    relationship: Consolidated FoundRy capability
+  - name: Un-Nocked Truth
+    type: capability
+    lifecycle_status: concept
+    visibility: public
+    local_path: capabilities/un-nocked-truth
+    former_repository: OKHP3/foundry-unt00-un-nocked-truth
+    relationship: Consolidated FoundRy capability
 repositories:
   - name: OverKill-Hill
     type: site

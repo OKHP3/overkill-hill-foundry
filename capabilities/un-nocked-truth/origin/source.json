@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-repository",
+  "reference": "https://github.com/OKHP3/foundry-unt00-un-nocked-truth",
+  "sourceRevision": "ea0dbe8daec52cedc9ac6978da1a4848d4b1c889",
+  "sourceTree": "2f46ae04589e314ab94c8f3a358fd38a28edd8fe",
+  "importCommit": "05930258c4d0c835e4ce5c734f037171bae96af7",
+  "importPath": "capabilities/un-nocked-truth",
+  "trackedFiles": 288,
+  "licenseReview": "Original MIT license retained in LICENSE, with package-specific licenses and notices retained at their source paths.",
+  "publicSourceReview": "Owner approved the transfer into public FoundRy. The original Git history and source notices are preserved.",
+  "originalRefs": {
+    "refs/heads/main": "ea0dbe8daec52cedc9ac6978da1a4848d4b1c889"
+  },
+  "renamedPaths": {
+    "assets/identity/chatgpt-image-oct-18,-2025,-09_23_20-pm.png": "assets/identity/chatgpt-image-oct-18-2025-09-23-20-pm.png",
+    "assets/identity/overkill-hill-p³-square-icon-un-nocked-truth.png": "assets/identity/overkill-hill-p3-square-icon-un-nocked-truth.png"
+  },
+  "githubRecords": "github-records.json",
+  "githubLogs": "github-logs.json",
+  "githubRecordSha256": {
+    "github-records.json": "832e8ba2b5901007fcb52b444284ca2d01fd912c2c59462a598bf8dcf7638699",
+    "github-logs.json": "769b55a1b5bc2198a5e9aef6215130eaa8e55117f3fdb36e304fce9e63275e36",
+    "github-checks.json": "6aef2919854579a1d8ea74309cd49284f15a238d18881bbc3083499cbb439e97"
+  },
+  "githubChecks": "github-checks.json",
+  "nativeGitHubRecovery": {
+    "file": "github-native.enc",
+    "format": "OpenSSL enc AES-256-CBC, PBKDF2-SHA256, 600000 iterations, 8-byte salt containing a gzip-compressed tar archive",
+    "sha256": "f443d5574197b1bdf7b88414c14390e2da8c07fe4ee7bd9c1d071c0c06fef4be",
+    "contents": {
+      "action-logs/33443646708.zip": "f7501315a11379e349b0a079a0ac51d146ff67303cdc5a1eed1afddced82672e",
+      "action-logs/33443649968.zip": "26e022569d8cd5fa43a422e16af9a9282b0ac74cdfc6b643dc6bb65c9a846bdf",
+      "action-logs/34164825571.zip": "330428c609c961d6c53fe892680b1b8867975f2faf5125bba600fb9b1df6b816",
+      "action-logs/34164825852.zip": "c8caeb125b892182cdbe7f2f3b6fede8472a89209d550b497761fcf268192940",
+      "action-logs/34901350403.zip": "be0c8e82bdf5772302114bcc2b18bbc4b74e222dda6c9103cd10e0b09b1f80f7",
+      "action-logs/34901350954.zip": "91338d26485abbee74cb5149edec66fffc6defc69feacbba02fce0c07197ce47",
+      "action-logs/35659837775.zip": "936809083c6e449da20a123314624664dcf5380611c6181915f2411fff28cd21",
+      "action-logs/35659837829.zip": "007ea501f319a361e57fe8a2a11c875409ea0d2cf29b3a4eafd8636377d29bb0",
+      "action-logs/36489099070.zip": "c99bed3c3a78e15e263f25c448c98a95cec2eec071f030f79634a77d7f67ae2c",
+      "action-logs/36489099387.zip": "32a71ac6e21a391e280f82c2fac0e91028f28b5227e6c54625fff156837b6597",
+      "action-logs/37379136198.zip": "4546b4a862c0f4726ca024d0296a4454ee0181b36548ecea95751f8739d15d83",
+      "action-logs/37379136199.zip": "3c471c87e33d2f199ab326ba0f88795c053e8f0a996e269302fffeb6a67f7159",
+      "action-logs/38521352058.zip": "61a294a52872e3a7f8148ca5744bab5b7191249f7e53ad6167a7c1b5e9e40d65",
+      "action-logs/38521352269.zip": "8559596a1e654d3213f914f726187a538148ceae36f77423ff9de1eaab2d4ddb",
+      "action-logs/39331017575.zip": "f3b7fbd7d3966a0c2c49d8382e375e5832dc6852ffe0dc9ad5faf3ba78a28ebf",
+      "action-logs/40408261569.zip": "fc553341d57389df787d5c03af84ef9899c1c19eb52640e5d1fe3d9467750549",
+      "action-logs/41532602620.zip": "95840d83e6b8c2eea2999937cc5f67f95acbe3c216bfbc328edc4570d04e8860",
+      "action-logs/42706934206.zip": "40c3b2644baf87a9870e8f813a05842b3d0ffaea438e55688d565d21750203b6",
+      "action-logs/43964804723.zip": "4a21b3663d5611a90e48b9c46fe39cec373a475d2ae7720326b40a48464d7ebd",
+      "action-logs/45274406910.zip": "ae66b33041cff2ed8bc305f0a6ab7cfad82c997ec97a56038bd46470df6219d3",
+      "github-private-recovery.json": "7db38e17fc721af33932dfcccc1b67bdea1d382e0ae0613c8ce03cbfe6988c24"
+    }
+  }
+}

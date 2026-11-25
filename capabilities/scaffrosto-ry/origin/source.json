@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-directory",
+  "reference": "https://github.com/OKHP3/overkill-hill-foundry/tree/619e942d69cfe535695e609bbb71a50e3bc14c49/scaffrosto-ry",
+  "sourceRevision": "619e942d69cfe535695e609bbb71a50e3bc14c49",
+  "sourceTree": "2845901e2f0f8cd18ae2df6dc63b2e9a01daf1d3",
+  "importCommit": "74d7ab51b860d104d987ce7bb1f08cc4532efbbe",
+  "importPath": "capabilities/scaffrosto-ry",
+  "trackedFiles": 1,
+  "licenseReview": "Same FoundRy repository license and original attribution.",
+  "publicSourceReview": "Relocated within the same public repository."
+}

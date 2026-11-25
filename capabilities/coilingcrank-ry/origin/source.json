@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-directory",
+  "reference": "https://github.com/OKHP3/overkill-hill-foundry/tree/619e942d69cfe535695e609bbb71a50e3bc14c49/coilingcrank-ry",
+  "sourceRevision": "619e942d69cfe535695e609bbb71a50e3bc14c49",
+  "sourceTree": "d41413d8059f83e023e6ab9bf04eb1b2e040f9b1",
+  "importCommit": "74d7ab51b860d104d987ce7bb1f08cc4532efbbe",
+  "importPath": "capabilities/coilingcrank-ry",
+  "trackedFiles": 1,
+  "licenseReview": "Same FoundRy repository license and original attribution.",
+  "publicSourceReview": "Relocated within the same public repository."
+}

@@ -1,0 +1,7 @@
+{
+  "name": "CanonSweep-R",
+  "slug": "canonsweep-r",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md"
+}

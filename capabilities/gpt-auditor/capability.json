@@ -1,0 +1,7 @@
+{
+  "name": "GPT Auditor",
+  "slug": "gpt-auditor",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md"
+}

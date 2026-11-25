@@ -47,3 +47,18 @@ updates:
         update-types:
           - patch
           - minor
+
+  - package-ecosystem: pip
+    directory: "/capabilities/homesteadr"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - python
+
+  - package-ecosystem: pip
+    directory: "/capabilities/un-nocked-truth"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5

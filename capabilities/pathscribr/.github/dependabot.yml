@@ -1,0 +1,10 @@
+version: 2
+# No Python dependency manifests are tracked. Nested skill package.json files
+# declare no dependencies; there is no root npm manifest or workspace.
+# Add pip/npm jobs at the actual manifest directories when dependencies are added.
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
