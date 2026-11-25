@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "project": "GPT-UNT00",
+    "surface": "ChatGPT project Sources",
+    "retrieval": "Download",
+    "downloadDateUtc": "2026-11-25",
+    "scope": "Shared project sources for the four Archery for Anyone GPTs. The source list identifies project membership only."
+  },
+  "uploadOccurrences": 17,
+  "uniqueOriginalNames": 13,
+  "uniqueContents": 13,
+  "currentFilesReused": 7,
+  "originalsRestored": 6,
+  "contentReview": "All thirteen distinct files match first-party FoundRy Git history. The six PDFs credit ChatGPT Deep Research. Review covered the full document text, source citations, DOCX package metadata and media, and PDF attachment and action checks. The files concern GPT authoring, coordination and defensive prompt review. Contact examples in the templates are illustrative. The four repeated downloads match their original file hashes.",
+  "files": [
+    {
+      "originalName": "Optimal Instruction Block Structure for a Custom GPT.pdf",
+      "bytes": 73945,
+      "sha256": "e25e1954f241071d69b0809ba56064e2d6c658336e1264689bcdfcec4d3edea1",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/optimal-instruction-block-structure-for-a-custom-gpt.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/optimal-instruction-block-structure-for-a-custom-gpt.pdf",
+        "blob": "ce1e796868b86ac09c3afc6d588dcc39baa970a3"
+      },
+      "occurrences": [
+        {
+          "position": 1,
+          "occurrence": 1,
+          "downloadName": "Optimal Instruction Block Structure for a Custom GPT.pdf"
+        },
+        {
+          "position": 11,
+          "occurrence": 2,
+          "downloadName": "Optimal Instruction Block Structure for a Custom GPT (1).pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+      "bytes": 142917,
+      "sha256": "ab8176b028e7681addccb1432a4074864935cd0cb8f3e6b1528325b87267bd4b",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-template-gpt5-era-best-practices.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-template-gpt5-era-best-practices.pdf",
+        "blob": "ff78e0562e35a84cc938177c94a224a4ac548373"
+      },
+      "occurrences": [
+        {
+          "position": 2,
+          "occurrence": 1,
+          "downloadName": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "🏗️ Custom GPT Instruction Block — Master Template.md",
+      "bytes": 46056,
+      "sha256": "7b3152526509c1b67b518b35771890a3399b4e31a1324d4889907877919f8484",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-master-template.md",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-master-template.md",
+        "blob": "cd8cbc02eba670f3d1e7c4a624c440779e4723a9"
+      },
+      "occurrences": [
+        {
+          "position": 3,
+          "occurrence": 1,
+          "downloadName": "🏗️ Custom GPT Instruction Block — Master Template.md"
+        }
+      ]
+    },
+    {
+      "originalName": "🏗️ Custom GPT Instruction Block — Master Template.pdf",
+      "bytes": 146607,
+      "sha256": "66a7a5fe7f416e57f0ae22c0f82fe46c8d8e9f05529f4abe674568890a3d0f4f",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-master-template.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/custom-gpt-instruction-block-master-template.pdf",
+        "blob": "06b48c560f3f4fc69c8c7ceb1a83fa6fa146e6b3"
+      },
+      "occurrences": [
+        {
+          "position": 4,
+          "occurrence": 1,
+          "downloadName": "🏗️ Custom GPT Instruction Block — Master Template.pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "🏗️ Custom GPT Instruction Block — Master Template.docx",
+      "bytes": 38799,
+      "sha256": "a0d305fbdac42e94a7e0fadb22af8ab5afe219f1052cf12bcc04260146f5e0e8",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/custom-gpt-instruction-block-master-template.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/🏗️ Custom GPT Instruction Block — Master Template.docx",
+        "blob": "0d0ca537fa2e978306ee26f1b71880fe58406b2c"
+      },
+      "occurrences": [
+        {
+          "position": 5,
+          "occurrence": 1,
+          "downloadName": "🏗️ Custom GPT Instruction Block — Master Template.docx"
+        }
+      ]
+    },
+    {
+      "originalName": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).docx",
+      "bytes": 44292,
+      "sha256": "2e7eae789971a7b326d415ebe772bdc6e4eca44be606d185edc410421fc1f0ed",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/custom-gpt-instruction-block-template-gpt-5-era-best-practices.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).docx",
+        "blob": "edd47b1a35f90909ff63c5d9de3fb6d506ffad0c"
+      },
+      "occurrences": [
+        {
+          "position": 6,
+          "occurrence": 1,
+          "downloadName": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).docx"
+        }
+      ]
+    },
+    {
+      "originalName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+      "bytes": 47696,
+      "sha256": "c2f7c07e354d41a20641d65fa938919c6178b04bfc38517d2cafa72709d78a6d",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf",
+        "blob": "673bae0bdc6cc826ec17d2900a0d093c5df3e184"
+      },
+      "occurrences": [
+        {
+          "position": 7,
+          "occurrence": 1,
+          "downloadName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf"
+        },
+        {
+          "position": 12,
+          "occurrence": 2,
+          "downloadName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations (1).pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "Optimal Instruction Block Structure for a Custom GPT.docx",
+      "bytes": 24804,
+      "sha256": "292dc8b29b877eb1c17935aae2e92f50aec996cd9781ac7d7b896c871b9a8265",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/optimal-instruction-block-structure-for-a-custom-gpt.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/Optimal Instruction Block Structure for a Custom GPT.docx",
+        "blob": "a019c5910fb1404da27ca3df613e489182cd1346"
+      },
+      "occurrences": [
+        {
+          "position": 8,
+          "occurrence": 1,
+          "downloadName": "Optimal Instruction Block Structure for a Custom GPT.docx"
+        },
+        {
+          "position": 13,
+          "occurrence": 2,
+          "downloadName": "Optimal Instruction Block Structure for a Custom GPT (1).docx"
+        }
+      ]
+    },
+    {
+      "originalName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.docx",
+      "bytes": 20284,
+      "sha256": "4bacd6a8295396270bcbf37766d491838dd38865396b417f338392f9c066c041",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/coordinating-multiple-gpts-current-capabilities-and-limitations.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/Coordinating Multiple GPTs_ Current Capabilities and Limitations.docx",
+        "blob": "345caaeb4ab4b52f3110eb9fa2cb7eb86ec4ca58"
+      },
+      "occurrences": [
+        {
+          "position": 9,
+          "occurrence": 1,
+          "downloadName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.docx"
+        },
+        {
+          "position": 10,
+          "occurrence": 2,
+          "downloadName": "Coordinating Multiple GPTs_ Current Capabilities and Limitations (1).docx"
+        }
+      ]
+    },
+    {
+      "originalName": "Detecting Semantic Interference in Prompt Engineering_ Methodologies and Ideal Practices.docx",
+      "bytes": 102988,
+      "sha256": "d21108b38a2efde71f3bca2cf92008fe6304271f34c352b81d2c75f0f5fa3095",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/detecting-semantic-interference-in-prompt-engineering-methodologies-and-ideal-practices.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/Detecting Semantic Interference in Prompt Engineering_ Methodologies and Ideal Practices.docx",
+        "blob": "65d2ffeb08ea1c48ca4112146b3c845f38d8da34"
+      },
+      "occurrences": [
+        {
+          "position": 14,
+          "occurrence": 1,
+          "downloadName": "Detecting Semantic Interference in Prompt Engineering_ Methodologies and Ideal Practices.docx"
+        }
+      ]
+    },
+    {
+      "originalName": "Detecting Semantic Interference in Prompt Engineering_ Methodologies and Ideal Practices.pdf",
+      "bytes": 98796,
+      "sha256": "bd3f28d8afc4fffd17501358fbdb6659c924f2eb6a0adc31e50eb1b34e96b28b",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/detecting-semantic-interference-in-prompt-engineering-methodologies-and-ideal-practices.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/detecting-semantic-interference-in-prompt-engineering-methodologies-and-ideal-practices.pdf",
+        "blob": "4810dfafd5c584b47aa640853eab28adaa2e33f7"
+      },
+      "occurrences": [
+        {
+          "position": 15,
+          "occurrence": 1,
+          "downloadName": "Detecting Semantic Interference in Prompt Engineering_ Methodologies and Ideal Practices.pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "Maximizing the Prompt Equilibrium Framework.pdf",
+      "bytes": 94838,
+      "sha256": "6cdf87c0633620844facb52dd7510860b9357be0322cd7537f15728057582d9a",
+      "canonicalPath": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/maximizing-the-prompt-equilibrium-framework.pdf",
+      "disposition": "existing-file",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+        "path": "capabilities/pathscribr/adapters/chatgpt-plugin/skills/instructions/references/maximizing-the-prompt-equilibrium-framework.pdf",
+        "blob": "2b67bb334131fa5d465b8378e0e541f2bc0a06dd"
+      },
+      "occurrences": [
+        {
+          "position": 16,
+          "occurrence": 1,
+          "downloadName": "Maximizing the Prompt Equilibrium Framework.pdf"
+        }
+      ]
+    },
+    {
+      "originalName": "Maximizing the Prompt Equilibrium Framework (Deep Research Analysis).docx",
+      "bytes": 31228,
+      "sha256": "e8cbbe5f408ee330eea1a7ca01d94f78b08aaa4594032406385eea8f9daf8b7c",
+      "canonicalPath": "capabilities/un-nocked-truth/assets/project-sources/maximizing-the-prompt-equilibrium-framework-deep-research-analysis.docx",
+      "disposition": "restored-from-project",
+      "publicSuitability": "cleared",
+      "verifiedGitSource": {
+        "commit": "b8b62d8a5183c4417bc75f3f591beeae038d1e20",
+        "path": "Writings/Maximizing the Prompt Equilibrium Framework (Deep Research Analysis).docx",
+        "blob": "0479498c9c4eaf4eb1bd9aa43d5733d1925333fd"
+      },
+      "occurrences": [
+        {
+          "position": 17,
+          "occurrence": 1,
+          "downloadName": "Maximizing the Prompt Equilibrium Framework (Deep Research Analysis).docx"
+        }
+      ],
+      "alsoObservedAsChatAttachment": [
+        {
+          "project": "GPT-UNT00",
+          "chat": "Notion Project Setup",
+          "attachmentName": "Maximizing the Prompt Equilibrium Framework (Deep Research Analysis).docx",
+          "verification": "The directly downloaded chat attachment matched this project-source file byte for byte."
+        }
+      ]
+    }
+  ]
+}

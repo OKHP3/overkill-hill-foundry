@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "project": "GPT-UNT00",
+  "chat": "Un-NOCKed Truth - Logo",
+  "downloadDateUtc": "2026-11-25",
+  "provenance": "ChatGPT labeled these four uploads “User attachment.” Each image displays the OverKill Hill P³ wordmark and matches an existing public FoundRy file byte for byte. The source chat establishes their use as design references.",
+  "images": [
+    {
+      "ordinal": 1,
+      "attachmentLabel": "User attachment",
+      "hostDownloadName": "ChatGPT Image Nov 24, 2026, 09_34_03 PM.png",
+      "visualSubject": "Bird perched on a CRT computer",
+      "projectRole": "Uploaded reference for the logo design discussion.",
+      "bytes": 2534592,
+      "sha256": "6c6cf2775a8956cc9f96e0fa1ec590c49ad55feedfca862a7ae9d353b74068d6",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "canonicalPath": "capabilities/phenomould-ry/adapters/chatgpt-plugin/skills/instructions/references/overkill-hill-p3-square.png",
+      "verifiedCommit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+      "brandLibrarySource": {
+        "repository": "OKHP3/overkill-hill",
+        "commit": "67e22c63fe38be05656db97d80af9bf5a427107c",
+        "path": "assets/img/library/over-kill-hill-p3-title-low-right-bird-perch-comp-square-1024.png"
+      }
+    },
+    {
+      "ordinal": 2,
+      "attachmentLabel": "User attachment",
+      "hostDownloadName": "ChatGPT Image Nov 24, 2026, 09_34_26 PM.png",
+      "visualSubject": "Bird perched above a burning house",
+      "projectRole": "Uploaded reference for the logo design discussion.",
+      "bytes": 2377472,
+      "sha256": "b7bd09dddd6db08c66def17491a9b0585e9f86a93d84a872f886b8115ff919ef",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "canonicalPath": "capabilities/homesteadr/assets/hometools/overkill-hill-p3-square-icon-hometools.png",
+      "verifiedCommit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85"
+    },
+    {
+      "ordinal": 3,
+      "attachmentLabel": "User attachment",
+      "hostDownloadName": "ChatGPT Image Nov 24, 2026, 09_34_32 PM.png",
+      "visualSubject": "Burning house",
+      "projectRole": "Uploaded reference for the logo design discussion.",
+      "bytes": 2616287,
+      "sha256": "e3539c36bd8482f753843acb9a8061976d94747c9d8aa9ec7260d51ba4fc41f6",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "canonicalPath": "capabilities/homesteadr/assets/hometools/overkill-hill-p3-square-icon-hometools-alt.png",
+      "verifiedCommit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85"
+    },
+    {
+      "ordinal": 4,
+      "attachmentLabel": "User attachment",
+      "hostDownloadName": "ChatGPT Image Nov 24, 2026, 09_34_38 PM.png",
+      "visualSubject": "Bird perched on a flaming crucible",
+      "projectRole": "Uploaded reference for the logo design discussion.",
+      "bytes": 2585485,
+      "sha256": "d76f20b110f0eed2616d7643ae9b82f587902e134b68c6681ac1763c4a5a4667",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "canonicalPath": "custom-gpts/proto/gpt-crucible/overkill-hill-p3-crucible-gpt-builder-tool.png",
+      "verifiedCommit": "417fedcd3328240492fbf83ac78d7c06bd9fdc85",
+      "brandLibrarySource": {
+        "repository": "OKHP3/overkill-hill",
+        "commit": "67e22c63fe38be05656db97d80af9bf5a427107c",
+        "path": "assets/img/library/over-kill-hill-p3-title-right-low-bird-crucible-square-1024.png"
+      }
+    }
+  ]
+}

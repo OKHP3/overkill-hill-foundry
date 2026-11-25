@@ -3,7 +3,7 @@
 ## Archery for Anyone
 
 This FoundRy capability is the project home for four Archery for Anyone GPTs.
-Each component directory records its original ChatGPT name and ID.
+Each component directory contains its original ChatGPT identity, saved editor settings, and a record of transferred material and outstanding assets. The [project asset guide](docs/project-assets.md) links the shared authoring documents, logo artwork and design references.
 
 - [Un-NOCKed Truth](un-nocked-truth/)
 - [Geared-Up](geared-up/)
