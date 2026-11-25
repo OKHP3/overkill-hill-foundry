@@ -1,5 +1,5 @@
 {
-  "reviewed_on": "2026-10-01",
+  "reviewed_on": "2026-11-24",
   "repository_runtime": "documentation-only",
   "technologies": [
     {
@@ -13,21 +13,21 @@
       "name": "PyYAML",
       "role": "referenced Python validation dependency; no owning dependency manifest is present",
       "in_place_version": "unknown; imported but not declared",
-      "latest_stable_as_of_review": "6.0.3",
+      "latest_stable_as_of_review": "6.0.4",
       "source": "https://pypi.org/project/PyYAML/"
     },
     {
       "name": "Mermaid",
       "role": "documented process-diagram output format",
       "in_place_version": "unknown; no renderer or dependency is checked in",
-      "latest_stable_as_of_review": "12.2.0",
+      "latest_stable_as_of_review": "12.3.0",
       "source": "https://github.com/mermaid-js/mermaid/releases"
     },
     {
       "name": "PlantUML",
       "role": "documented diagram syntax and output format",
       "in_place_version": "unknown; no renderer is checked in",
-      "latest_stable_as_of_review": "1.2026.9",
+      "latest_stable_as_of_review": "1.2026.10",
       "source": "https://plantuml.com/news"
     },
     {
@@ -76,14 +76,14 @@
       "name": "Node.js LTS",
       "role": "bundled helper tests in seven private dependency-free packages",
       "in_place_version": "unknown; no repository runtime pin",
-      "latest_stable_as_of_review": "24.22.1",
+      "latest_stable_as_of_review": "26.13.1",
       "source": "https://nodejs.org/dist/index.json"
     },
     {
       "name": "npm",
       "role": "bundled helper tests in seven private dependency-free packages",
       "in_place_version": "unknown; no repository runtime pin",
-      "latest_stable_as_of_review": "12.2.1",
+      "latest_stable_as_of_review": "12.2.3",
       "source": "https://registry.npmjs.org/npm/latest"
     }
   ],
@@ -96,5 +96,5 @@
     "requirements.txt",
     "pyproject.toml"
   ],
-  "release_baselines_checked_on": "2026-10-26"
+  "release_baselines_checked_on": "2026-11-24"
 }

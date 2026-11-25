@@ -7,7 +7,7 @@ application or GPT implementation in this checkout.
 ## Start here
 
 - [HomeTools prompt and image assets](assets/hometools/)
-- [Technology inventory](docs/TECHNOLOGY-INVENTORY.md)
+- [Technology inventory](docs/technology-inventory.md)
 - [Repository guidance](AGENTS.md)
 - [Local Agent Skills catalog](.agents/skills/README.md)
 

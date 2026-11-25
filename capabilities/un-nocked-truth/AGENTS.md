@@ -4,7 +4,7 @@
 
 **Suite:** FoundRy
 **Project name:** UNT00, Un-Nocked Truth
-**Repository:** https://github.com/OKHP3/foundry-unt00-un-nocked-truth
+**Repository:** https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/un-nocked-truth
 **License:** MIT, Copyright 2026 OverKill Hill P³
 
 **Confirmed purpose:** Existing project metadata describes this repository as a FoundRy GPT tool for logical analysis and argument integrity checking.
@@ -41,8 +41,8 @@ Do not infer a product runtime, API contract, model behavior, data flow, deploym
 - `.agents/skills/`: local agent skills and their supporting references, assets, scripts, tests, evaluations, and benchmark records. These are guidance resources, not application code.
 - `.agents/prompts/`: reusable onboarding and migration prompts.
 - `skills/okhp3-skill-promotion/`: publication mirror of the local promotion package. Treat mirror synchronization as an explicit, evidence-backed operation.
-- `assets/identity/chatgpt-image-oct-18,-2025,-09_23_20-pm.png`: 1024 by 1024 RGB PNG asset.
-- `assets/identity/overkill-hill-p³-square-icon-un-nocked-truth.png`: 1024 by 1024 RGB PNG asset.
+- `assets/identity/chatgpt-image-oct-18-2025-09-23-20-pm.png`: 1024 by 1024 RGB PNG asset.
+- `assets/identity/overkill-hill-p3-square-icon-un-nocked-truth.png`: 1024 by 1024 RGB PNG asset.
 - `LICENSE`: MIT license.
 - `.gitattributes`: automatic text normalization.
 
@@ -106,8 +106,8 @@ The previous guide included an AutoCAD R10 constraint. No repository evidence co
 
 These links are inherited project metadata. They were not used to infer implementation details for this repository:
 
-- [foundry-psr00-pathscrib-r](https://github.com/OKHP3/foundry-psr00-pathscrib-r)
-- [foundry-hmt01-homestead-r](https://github.com/OKHP3/foundry-hmt01-homestead-r)
+- [foundry-psr00-pathscrib-r](https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/pathscribr)
+- [foundry-hmt01-homestead-r](https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/homesteadr)
 - [foundry-are00-abrahamic-reference-engine](https://github.com/OKHP3/foundry-are00-abrahamic-reference-engine)
 
 ## Open questions

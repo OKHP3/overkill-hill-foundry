@@ -82,7 +82,7 @@ def main() -> int:
     if problems:
         print(
             f"Technology inventory needs review: {'; '.join(problems)}. "
-            f"Update {inventory_path.name} and docs/maintenance/TECHNOLOGY.md after checking "
+            f"Update {inventory_path.name} and docs/maintenance/technology.md after checking "
             "the linked authoritative sources."
         )
         return 2 if incomplete else 1

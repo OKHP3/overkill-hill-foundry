@@ -15,7 +15,7 @@ The ledgers also document a `narrative -> diagram` path. Supported output format
 - [`docs/ledgers/dataledger_registry_v3.md`](docs/ledgers/dataledger_registry_v3.md): conceptual agent registry.
 - [`docs/ledgers/dataledger_parameters_v3.md`](docs/ledgers/dataledger_parameters_v3.md): modes, formats, QA levels, and execution flow.
 - [`docs/ledgers/dataledger_system_v3.md`](docs/ledgers/dataledger_system_v3.md) and [`docs/ledgers/dataledger_hydration_v3.md`](docs/ledgers/dataledger_hydration_v3.md): authority, load order, and hydration state.
-- [`docs/maintenance/TECHNOLOGY.md`](docs/maintenance/TECHNOLOGY.md): reviewed technology inventory and update policy.
+- [`docs/maintenance/technology.md`](docs/maintenance/technology.md): reviewed technology inventory and update policy.
 
 The repository map is intentionally small: `docs/` contains project specifications and maintenance documentation, while `knowledge/` contains the process-modeling casebooks and RAG references.
 

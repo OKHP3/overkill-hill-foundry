@@ -6,7 +6,7 @@ Canonical agent guidance for the FoundRy HMT01 Homestead-R repository.
 
 - **Suite:** FoundRy
 - **Repository:** `foundry-hmt01-homestead-r`
-- **Remote:** `https://github.com/OKHP3/foundry-hmt01-homestead-r`
+- **Remote:** `https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/homesteadr`
 - **Declared type:** GPT tool
 - **Declared purpose:** Homestead and property management
 - **License:** MIT, as recorded in `LICENSE`
@@ -26,7 +26,7 @@ Treat the project as a creative asset and prompt source unless new repository ev
 ## Repository layout
 
 - `README.md`: Repository landing page with current status, content map, start-here links, and implementation boundaries.
-- `docs/TECHNOLOGY-INVENTORY.md`: Evidence-based technology inventory, checked stable versions, and update policy.
+- `docs/technology-inventory.md`: Evidence-based technology inventory, checked stable versions, and update policy.
 - `requirements-dev.txt`: Explicit PyYAML development dependency for the seeded skill validator.
 - `.github/dependabot.yml`: Weekly Dependabot monitoring for Python dependencies and future GitHub Actions.
 - `assets/hometools/`: Paired HomeTools prompts and 1024 x 1024 visual assets.
@@ -38,8 +38,8 @@ There are no nested Git repositories or clearly independent application projects
 
 The prior project metadata identifies these related FoundRy repositories:
 
-- `foundry-unt00-un-nocked-truth`: https://github.com/OKHP3/foundry-unt00-un-nocked-truth
-- `foundry-psr00-pathscrib-r`: https://github.com/OKHP3/foundry-psr00-pathscrib-r
+- `foundry-unt00-un-nocked-truth`: https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/un-nocked-truth
+- `foundry-psr00-pathscrib-r`: https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/pathscribr
 - `foundry-are00-abrahamic-reference-engine`: https://github.com/OKHP3/foundry-are00-abrahamic-reference-engine
 
 Do not assume shared code, interfaces, or release dependencies without checking the related repository directly.
@@ -70,7 +70,7 @@ For guidance or prompt changes, use checks appropriate to the changed files:
 git status --short
 git diff --check
 rg --files -g '!node_modules' -g '!vendor'
-file assets/hometools/overkill-hill-p³-square-icon-hometools.png assets/hometools/overkill-hill-p³-square-icon-hometools-alt-.png
+file assets/hometools/overkill-hill-p3-square-icon-hometools.png assets/hometools/overkill-hill-p3-square-icon-hometools-alt.png
 ```
 
 Review changed Markdown for factual alignment and inspect changed images at their native dimensions when visual identity is affected. No HMT01 application test suite exists at present; some repository-local skills have their own tests.

@@ -4,7 +4,7 @@
 
 - **Suite:** FoundRy
 - **Tool:** GPT-PSR00, PathScrib-R
-- **Repository:** `https://github.com/OKHP3/foundry-psr00-pathscrib-r`
+- **Repository:** `https://github.com/OKHP3/overkill-hill-foundry/tree/main/capabilities/pathscribr`
 - **License:** MIT, see [LICENSE](LICENSE)
 - **Current repository status:** Documentation, knowledge assets, Agent Skills, evaluation fixtures, and small Python utilities are present. No executable application or service is checked in.
 - **Lifecycle:** Active maintenance. Recent history includes technology inventory maintenance and agent guidance updates through 2026-10-08.
@@ -50,7 +50,7 @@ This is a single Git repository. No nested Git repositories were found.
 - `skills/okhp3-skill-promotion/`: exact publication mirror of the local promotion skill, generated from `.agents/skills/okhp3-skill-promotion/`.
 - `.github/workflows/technology-inventory.yml`: scheduled and manually dispatched technology-inventory review.
 - `.github/scripts/check-technology-inventory.py`: checks inventory age and selected release baselines.
-- `docs/maintenance/TECHNOLOGY.md` and `docs/maintenance/technology-inventory.json`: technology inventory and its machine-readable source of truth.
+- `docs/maintenance/technology.md` and `docs/maintenance/technology-inventory.json`: technology inventory and its machine-readable source of truth.
 - `README.md`: short project overview and orientation guide.
 - `CLAUDE.md`: a pointer to this file, `@AGENTS.md`.
 

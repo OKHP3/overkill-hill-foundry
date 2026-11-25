@@ -1,0 +1,31 @@
+name: PathScrib-R technology inventory
+
+on:
+  pull_request:
+    paths:
+      - 'capabilities/pathscribr/**'
+      - '.github/workflows/pathscribr-technology-inventory.yml'
+  schedule:
+    - cron: "17 9 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: capabilities/pathscribr
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+      - name: Verify release evidence behavior
+        run: python .github/scripts/test_technology_inventory.py
+      - name: Check inventory review age
+        run: python .github/scripts/check-technology-inventory.py --max-age-days 90
