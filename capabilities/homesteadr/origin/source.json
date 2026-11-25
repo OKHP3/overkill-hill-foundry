@@ -22,5 +22,34 @@
     "github-records.json": "e58ce51a4b7cc66cfeb7d50732cf8ffbfb14e2a648c5c468dd9660167e9df35c",
     "github-checks.json": "9a5cf4b4db0db5c22d1b4c91e8eb3a9874c29fa51f235e3ef6ead0bc1478d966"
   },
-  "githubChecks": "github-checks.json"
+  "githubChecks": "github-checks.json",
+  "nativeGitHubRecovery": {
+    "file": "github-native.enc",
+    "format": "OpenSSL enc AES-256-CBC, PBKDF2-SHA256, 600000 iterations, 8-byte salt containing a gzip-compressed tar archive",
+    "sha256": "e7f37d32142319fa14d9b895a09a13566f873340e64ee7c96139707974357d68",
+    "contents": {
+      "actions-logs/33357955368.zip": "d55ec5054614dff6557ecaac9a0612ae5509e89a63bcd7b6d4adab0af8396698",
+      "actions-logs/33357955402.zip": "5e6e0a66f92f9f5fc923353c19ba865adec1682825677ce15a273aa23980866d",
+      "actions-logs/34083987026.zip": "02ab275c4323210ec845a963e258f3c277612e757dd238d3a1138aa330c0046f",
+      "actions-logs/34083987102.zip": "a892d1938799c32fede24de360c706ca350450ba89ac99b2806f5af2b9566590",
+      "actions-logs/34806742510.zip": "2c8de3584017be925aa695fd1bafab2bf42a58cbe3d989a505eb813615ef3a98",
+      "actions-logs/34806742512.zip": "dfc856387004f57e441698ec4c3604bdf7444f766f20c8d944791edf8a6c38c1",
+      "actions-logs/35561685782.zip": "4a45e4067b05dc66074f7a2b3d0113cf5cffd5b0ceacff580ae4116b066f613c",
+      "actions-logs/35561687179.zip": "4452c94aa88e8a5c8e9d704466de02ced002c2101c112325dbc8a00a62455850",
+      "actions-logs/36378438005.zip": "3be1156f6995598a08778df77e6f8aa2c0cc30b41163695a85c9b363ee09f853",
+      "actions-logs/36378450962.zip": "17c923b79331a95dbdd0cdaaf2466403af7bfd05a491cdf07b0623c35fcd8b98",
+      "actions-logs/37264429427.zip": "cb77843c651da5f1686ab734ad956477f646022b50ae8fd58d5ee40a4718f324",
+      "actions-logs/37264429582.zip": "6507ce4a3d8f4a1a6c841cff50dff48e5c0c1cffbdd118b54534df8b658d959a",
+      "actions-logs/38260956879.zip": "c49e8ccf58582212352bb71f93d07f08940a24a85deca56251d0a22752416a69",
+      "actions-logs/38261144882.zip": "8cf69fd515b7d8ae3368a4d5837c83021a4b2ea84a5a9ef92716530e62c47207",
+      "actions-logs/39200896817.zip": "04d4c749085156e0f597eac87812bca72eae29d5c9b1ebfc998b1c77db6ec8b5",
+      "actions-logs/39200959032.zip": "0df5fe65c1eaf274f1b8460a6536d8aacf43ef8c3ed2588d5600f801cb850e9f",
+      "actions-logs/40269792842.zip": "1072f9819d444b153b7f17405d37faf515b0d5428dc68127c03f37c6fc753bf3",
+      "actions-logs/41389516726.zip": "4295e7114487be525d02afb8ce775830c05e547d4e21512216eaa9e5cf51582a",
+      "actions-logs/42562493497.zip": "8e6d8a23e48deb2f31c65bee1ca5e8638f4a3b0728e49b2e1c5d6fe81e41c09f",
+      "actions-logs/43804848180.zip": "040122639d110d742f60fdff8d4fc41e952b9dd6b9fd048b51636a4f999c7b86",
+      "actions-logs/45112755399.zip": "a172935b47a51cc32a6ad822981cc31232897327b9f10af6e86cdb56b73700c2",
+      "github-native-private.json": "2a32b16f56327fc7e77f794f3bacdeb25dd9f1f434375028a6f619d75bbf4749"
+    }
+  }
 }
