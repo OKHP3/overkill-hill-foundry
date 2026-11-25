@@ -7,6 +7,7 @@ review_interval_days: 180
 capability_project_root: capabilities
 capability_migration_contract: docs/portable-skill-foundry.md
 capability_migration_registry: registry/capability-migrations.json
+native_plugin_catalog: capabilities/README.md#native-chatgpt-plugins
 hosted_capabilities:
   - name: ReFolDec
     type: capability

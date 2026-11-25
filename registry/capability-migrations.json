@@ -206,6 +206,58 @@
       "import_evidence": "capabilities/un-nocked-truth/origin/source.json",
       "source_review": "capabilities/un-nocked-truth/origin/source.json#publicSourceReview",
       "license_review": "capabilities/un-nocked-truth/origin/source.json#licenseReview"
+    },
+    {
+      "slug": "promptforge",
+      "owner": "OKHP3",
+      "source": "https://chatgpt.com/gpts/editor/g-69761edbd5688191b543e904b59023bb",
+      "source_revision": "sha256:7816c6f210316984c6dfe2bf6b1ca133b6da3560a9002300b30b1e456441de25",
+      "destination": "capabilities/promptforge",
+      "import_method": "reviewed-snapshot",
+      "status": "imported",
+      "import_evidence": "capabilities/promptforge/origin/source.json",
+      "source_review": "capabilities/promptforge/origin/source.json#verification",
+      "license_review": "capabilities/promptforge/origin/source.json#rights_review",
+      "native_plugin": "capabilities/promptforge/adapters/chatgpt-plugin/plugin.json"
+    },
+    {
+      "slug": "floorplan-r",
+      "owner": "OKHP3",
+      "source": "https://chatgpt.com/gpts/editor/g-68a1df4fe8088191afb0f8054e10cde3",
+      "source_revision": "sha256:121b50f36d9036e97b4b0dad41d9a1825dc85f1bd491be1c9321302ad23e4284",
+      "destination": "capabilities/floorplan-r",
+      "import_method": "reviewed-snapshot",
+      "status": "imported",
+      "import_evidence": "capabilities/floorplan-r/origin/source.json",
+      "source_review": "capabilities/floorplan-r/origin/source.json#verification",
+      "license_review": "capabilities/floorplan-r/origin/source.json#rights_review",
+      "native_plugin": "capabilities/floorplan-r/adapters/chatgpt-plugin/plugin.json"
+    },
+    {
+      "slug": "homeestimate-r",
+      "owner": "OKHP3",
+      "source": "https://chatgpt.com/gpts/editor/g-68a226a89d048191b8d899e516795bb9",
+      "source_revision": "sha256:5d96ec3b5726315b1736bbc47a1fa84ca7fc1e28cc21ed2775f4d5ccb092eb7b",
+      "destination": "capabilities/homeestimate-r",
+      "import_method": "reviewed-snapshot",
+      "status": "imported",
+      "import_evidence": "capabilities/homeestimate-r/origin/source.json",
+      "source_review": "capabilities/homeestimate-r/origin/source.json#verification",
+      "license_review": "capabilities/homeestimate-r/origin/source.json#rights_review",
+      "native_plugin": "capabilities/homeestimate-r/adapters/chatgpt-plugin/plugin.json"
+    },
+    {
+      "slug": "homevisual-r",
+      "owner": "OKHP3",
+      "source": "https://chatgpt.com/gpts/editor/g-68a1d132a474819199273e9a6a5d7bdb",
+      "source_revision": "sha256:c36de3837f86d30903bd3f99f3f2478b5d18dc85cbf126022d2b9992a6d04e5a",
+      "destination": "capabilities/homevisual-r",
+      "import_method": "reviewed-snapshot",
+      "status": "imported",
+      "import_evidence": "capabilities/homevisual-r/origin/source.json",
+      "source_review": "capabilities/homevisual-r/origin/source.json#verification",
+      "license_review": "capabilities/homevisual-r/origin/source.json#rights_review",
+      "native_plugin": "capabilities/homevisual-r/adapters/chatgpt-plugin/plugin.json"
     }
   ]
 }
