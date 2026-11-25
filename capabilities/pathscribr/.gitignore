@@ -1,0 +1,13 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+
+# Operating-system metadata
+.DS_Store
+desktop.ini
+
+# Local temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
