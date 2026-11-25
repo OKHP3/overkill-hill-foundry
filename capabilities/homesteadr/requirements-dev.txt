@@ -1,2 +1,2 @@
 # Used by .agents/skills/skill-creator/scripts/quick_validate.py
-PyYAML==6.0.3
+PyYAML==6.0.4
