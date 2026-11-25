@@ -14,6 +14,8 @@ folders. Each external import below includes an exact source-tree revision in
 | foundry-psr00-pathscrib-r | [PathScrib-R](pathscribr/) | Business process facilitation, casebooks and modeling guidance |
 | foundry-unt00-un-nocked-truth | [Un-Nocked Truth](un-nocked-truth/) | Argument-integrity concept, project tooling and identity assets |
 
+Un-Nocked Truth also hosts the four [Archery for Anyone components](un-nocked-truth/#archery-for-anyone).
+
 Follow the [migration contract](../docs/portable-skill-foundry.md). Track each
 approved source and destination in the
 [migration registry](../registry/capability-migrations.json), referenced by the

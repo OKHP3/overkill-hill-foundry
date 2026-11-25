@@ -3,5 +3,11 @@
   "slug": "un-nocked-truth",
   "status": "imported",
   "source": "origin/source.json",
-  "entryPoint": "README.md"
+  "entryPoint": "README.md",
+  "components": [
+    "un-nocked-truth/source.json",
+    "geared-up/source.json",
+    "dialed-in/source.json",
+    "hunted-down/source.json"
+  ]
 }
