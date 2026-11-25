@@ -1,2 +1,6 @@
 # Keep the byte-exact generated Markdown fixture stable on Windows checkouts.
 artifacts/custom-gpt-creator/tests/fixtures/github-markdown-fixture.v1.md text eol=lf
+
+# Native plugin receipts identify the distributed bytes, including text line endings.
+capabilities/*/adapters/chatgpt-plugin/** -text
+capabilities/*/adapters/chatgpt-plugin.tgz binary

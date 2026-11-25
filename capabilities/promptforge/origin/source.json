@@ -107,7 +107,8 @@
       "Compile a full Prompt Asset Package for a recurring task",
       "Refactor this existing prompt to the PromptForge house standard",
       "Lint and score this prompt package; patch critical issues"
-    ]
+    ],
+    "exact_archive": "adapters/chatgpt-plugin.tgz"
   },
   "knowledge": [],
   "verification": {
