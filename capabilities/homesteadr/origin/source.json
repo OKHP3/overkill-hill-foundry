@@ -19,6 +19,8 @@
   },
   "githubRecords": "github-records.json",
   "githubRecordSha256": {
-    "github-records.json": "e58ce51a4b7cc66cfeb7d50732cf8ffbfb14e2a648c5c468dd9660167e9df35c"
-  }
+    "github-records.json": "e58ce51a4b7cc66cfeb7d50732cf8ffbfb14e2a648c5c468dd9660167e9df35c",
+    "github-checks.json": "9a5cf4b4db0db5c22d1b4c91e8eb3a9874c29fa51f235e3ef6ead0bc1478d966"
+  },
+  "githubChecks": "github-checks.json"
 }

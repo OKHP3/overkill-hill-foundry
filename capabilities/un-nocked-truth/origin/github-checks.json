@@ -1,0 +1,30 @@
+{
+  "source": "OKHP3/foundry-unt00-un-nocked-truth",
+  "source_main": "ea0dbe8daec52cedc9ac6978da1a4848d4b1c889",
+  "coverage": "Checked every source-main commit for all check runs and commit statuses. The action runs, job steps and their 28 annotations are in github-records.json and github-logs.json.",
+  "commits_queried": 21,
+  "total_distinct_checks": 37,
+  "action_job_checks": 36,
+  "commit_statuses": [],
+  "additional_checks": [
+    {
+      "id": 88425410565,
+      "name": ".github/dependabot.yml",
+      "head_sha": "2fb6d798d885877f40fd2c90c13dbfc4c11b612a",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-07-20T17:31:13Z",
+      "completed_at": "2026-07-20T17:31:14Z",
+      "html_url": "https://github.com/OKHP3/foundry-unt00-un-nocked-truth/runs/88425410565",
+      "app": "dependabot",
+      "check_suite_id": 80601254155,
+      "output": {
+        "title": "Dependabot config file validation",
+        "summary": "All changes look good",
+        "text": null,
+        "annotations_count": 0
+      },
+      "annotations": []
+    }
+  ]
+}

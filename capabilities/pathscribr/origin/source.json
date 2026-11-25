@@ -33,6 +33,8 @@
   "githubLogs": "github-logs.json",
   "githubRecordSha256": {
     "github-records.json": "238f6ee7c5667e2c62151580d5708aa3a669578bb9f1404aee4ff9f79ac1f44f",
-    "github-logs.json": "4fb3ceec60b0fab11b36b9d4b9aa1443ed354c1d4e719ded0e3772b1b3c79883"
-  }
+    "github-logs.json": "4fb3ceec60b0fab11b36b9d4b9aa1443ed354c1d4e719ded0e3772b1b3c79883",
+    "github-checks.json": "5edf9e08d28ad08a307b9576e4e565dd715fb44bfcff0408f1bd6b6e2d3c4e76"
+  },
+  "githubChecks": "github-checks.json"
 }
