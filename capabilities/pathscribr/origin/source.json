@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-repository",
+  "reference": "https://github.com/OKHP3/foundry-psr00-pathscrib-r",
+  "sourceRevision": "f64f612714b6b1bc95b2021941b33edf71b2719a",
+  "sourceTree": "edfd13f01e7f4020e1fa8a7f9213297ec6a085cc",
+  "importCommit": "3a7c0c928ea8045a654c8e328b0771615a9ce7bb",
+  "importPath": "capabilities/pathscribr",
+  "trackedFiles": 312,
+  "licenseReview": "Original MIT license retained in LICENSE, with package-specific licenses and notices retained at their source paths.",
+  "publicSourceReview": "Owner approved the transfer into public FoundRy. The original Git history and source notices are preserved.",
+  "originalRefs": {
+    "refs/heads/main": "f64f612714b6b1bc95b2021941b33edf71b2719a",
+    "refs/pull/1/head": "6779636bd290d34cdd7aec3e6ae957122145ace9",
+    "refs/pull/2/head": "60e101fb5eaaca977d0417490ba7faecb909ad60",
+    "refs/pull/3/head": "0f95873ecd023de6940d5e49d31980b2ab1df65d",
+    "refs/pull/4/head": "873cc9c4afc84b01c8b9a0eec9189be5b1f81f1b",
+    "refs/pull/5/head": "f2d2cf6c6b8968fb7e311016c627c5176bd8e1eb",
+    "refs/pull/6/head": "18334bee666d61f99cee4030814ba7962c3ac634"
+  },
+  "renamedPaths": {
+    "docs/maintenance/TECHNOLOGY.md": "docs/maintenance/technology.md",
+    "knowledge/casebooks/bpmn-2.0-guide-for-business-analysts-and-process-architects.pdf": "knowledge/casebooks/bpmn-2-0-guide-for-business-analysts-and-process-architects.pdf",
+    "knowledge/casebooks/common-process-modeling-pitfalls-&-fixes.pdf": "knowledge/casebooks/common-process-modeling-pitfalls-and-fixes.pdf",
+    "knowledge/casebooks/cross-functional-&-cross-system-process-design.pdf": "knowledge/casebooks/cross-functional-and-cross-system-process-design.pdf",
+    "knowledge/casebooks/governance-&-process-ownership_-roles,-version-control,-and-maturity.pdf": "knowledge/casebooks/governance-and-process-ownership-roles-version-control-and-maturity.pdf",
+    "knowledge/casebooks/measurement-&-kpi-framework-for-processes.pdf": "knowledge/casebooks/measurement-and-kpi-framework-for-processes.pdf",
+    "knowledge/casebooks/mermaid.js-notation-guide-for-process-modeling.pdf": "knowledge/casebooks/mermaid-js-notation-guide-for-process-modeling.pdf",
+    "knowledge/casebooks/risk,-compliance-&-controls-in-process-design.pdf": "knowledge/casebooks/risk-compliance-and-controls-in-process-design.pdf",
+    "knowledge/rag/rag-—-plant-uml-syntax-(path-scrib‑r).pdf": "knowledge/rag/rag-plant-uml-syntax-path-scrib-r.pdf"
+  },
+  "githubRecords": "github-records.json",
+  "githubLogs": "github-logs.json",
+  "githubRecordSha256": {
+    "github-records.json": "238f6ee7c5667e2c62151580d5708aa3a669578bb9f1404aee4ff9f79ac1f44f",
+    "github-logs.json": "4fb3ceec60b0fab11b36b9d4b9aa1443ed354c1d4e719ded0e3772b1b3c79883"
+  }
+}

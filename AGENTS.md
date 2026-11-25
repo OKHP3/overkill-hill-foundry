@@ -52,9 +52,6 @@ This relay governs repositories matching these families:
 Known child examples include:
 
 - `foundry-are00-abrahamic-reference-engine`
-- `foundry-hmt01-homestead-r`
-- `foundry-psr00-pathscrib-r`
-- `foundry-unt00-un-nocked-truth`
 - `mermaid-theme-builder`
 - `mermaid-diagram-bpmn`
 - `mac-studio-local-ai-workbench`
@@ -64,6 +61,10 @@ Known child examples include:
 - `magnus-progenitor-saga`
 - `vault-codacies-biases-as-constants`
 - `bimdb-building-information-modeling-database`
+
+Homestead-R, PathScrib-R and Un-Nocked Truth are now hosted under
+`capabilities/`. Their former repository identities and source revisions are
+listed in [the migration registry](registry/capability-migrations.json).
 
 ## 4. Required Child Repo Files
 

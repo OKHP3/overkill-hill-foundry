@@ -1,0 +1,7 @@
+{
+  "name": "GPT Crucible",
+  "slug": "gpt-crucible",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md"
+}

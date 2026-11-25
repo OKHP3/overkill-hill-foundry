@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-repository",
+  "reference": "https://github.com/OKHP3/foundry-unt00-un-nocked-truth",
+  "sourceRevision": "ea0dbe8daec52cedc9ac6978da1a4848d4b1c889",
+  "sourceTree": "2f46ae04589e314ab94c8f3a358fd38a28edd8fe",
+  "importCommit": "05930258c4d0c835e4ce5c734f037171bae96af7",
+  "importPath": "capabilities/un-nocked-truth",
+  "trackedFiles": 288,
+  "licenseReview": "Original MIT license retained in LICENSE, with package-specific licenses and notices retained at their source paths.",
+  "publicSourceReview": "Owner approved the transfer into public FoundRy. The original Git history and source notices are preserved.",
+  "originalRefs": {
+    "refs/heads/main": "ea0dbe8daec52cedc9ac6978da1a4848d4b1c889"
+  },
+  "renamedPaths": {
+    "assets/identity/chatgpt-image-oct-18,-2025,-09_23_20-pm.png": "assets/identity/chatgpt-image-oct-18-2025-09-23-20-pm.png",
+    "assets/identity/overkill-hill-p³-square-icon-un-nocked-truth.png": "assets/identity/overkill-hill-p3-square-icon-un-nocked-truth.png"
+  },
+  "githubRecords": "github-records.json",
+  "githubLogs": "github-logs.json",
+  "githubRecordSha256": {
+    "github-records.json": "832e8ba2b5901007fcb52b444284ca2d01fd912c2c59462a598bf8dcf7638699",
+    "github-logs.json": "769b55a1b5bc2198a5e9aef6215130eaa8e55117f3fdb36e304fce9e63275e36"
+  }
+}

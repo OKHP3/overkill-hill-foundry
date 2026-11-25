@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-directory",
+  "reference": "https://github.com/OKHP3/overkill-hill-foundry/tree/619e942d69cfe535695e609bbb71a50e3bc14c49/telleprompt-ry",
+  "sourceRevision": "619e942d69cfe535695e609bbb71a50e3bc14c49",
+  "sourceTree": "9b8dbf24e241040529ed04a3394d4e06461d8533",
+  "importCommit": "74d7ab51b860d104d987ce7bb1f08cc4532efbbe",
+  "importPath": "capabilities/telleprompt-ry",
+  "trackedFiles": 3,
+  "licenseReview": "Same FoundRy repository license and original attribution.",
+  "publicSourceReview": "Relocated within the same public repository."
+}

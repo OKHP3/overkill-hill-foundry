@@ -1,0 +1,7 @@
+{
+  "name": "thread-scourer",
+  "slug": "thread-scourer",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md"
+}

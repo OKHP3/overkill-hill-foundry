@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "git-repository",
+  "reference": "https://github.com/OKHP3/foundry-hmt01-homestead-r",
+  "sourceRevision": "a63ec7bac7efd90e3614472f4923a80ed555c167",
+  "sourceTree": "03dfa5ab9c869db6ad0c060078dc26f16e2d268d",
+  "importCommit": "cede7451a25a4c42dc3b93386c55a26382253a93",
+  "importPath": "capabilities/homesteadr",
+  "trackedFiles": 272,
+  "licenseReview": "Original MIT license retained in LICENSE, with package-specific licenses and notices retained at their source paths.",
+  "publicSourceReview": "Owner approved the transfer into public FoundRy. The original Git history and source notices are preserved.",
+  "originalRefs": {
+    "refs/heads/main": "a63ec7bac7efd90e3614472f4923a80ed555c167"
+  },
+  "renamedPaths": {
+    "assets/hometools/overkill-hill-p³-square-icon-hometools-alt-.png": "assets/hometools/overkill-hill-p3-square-icon-hometools-alt.png",
+    "assets/hometools/overkill-hill-p³-square-icon-hometools.png": "assets/hometools/overkill-hill-p3-square-icon-hometools.png",
+    "docs/TECHNOLOGY-INVENTORY.md": "docs/technology-inventory.md"
+  },
+  "githubRecords": "github-records.json",
+  "githubRecordSha256": {
+    "github-records.json": "e58ce51a4b7cc66cfeb7d50732cf8ffbfb14e2a648c5c468dd9660167e9df35c"
+  }
+}

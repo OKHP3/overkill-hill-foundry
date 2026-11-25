@@ -181,6 +181,9 @@ its editorial publication and distribution copies. See
 
 ## Capability catalog
 
+[Homestead-R](capabilities/homesteadr/), [PathScrib-R](capabilities/pathscribr/) and
+[Un-Nocked Truth](capabilities/un-nocked-truth/) now live in this FoundRy.
+
 Sixteen retained capability folders document the FoundRy lineage: prompt forging,
 GPT construction, validation, assessment, and shared ledgers. Their historical
 **Active** labels mean maintained material, not verified executable services.
