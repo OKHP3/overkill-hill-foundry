@@ -1,6 +1,10 @@
 # PathScrib-R
 
-PathScrib-R is the FoundRy GPT-PSR00 business process facilitation tool. This repository is currently documentation-only. It defines the process-facilitation persona, conceptual agents, execution modes, output contracts, RAG references, RIS playbooks, and reusable Agent Skills that support related context and knowledge workflows.
+PathScrib-R is the FoundRy GPT-PSR00 business process facilitation tool. Its source documents the process-facilitation persona, conceptual agents, execution modes, output contracts, RAG references, RIS playbooks, and reusable Agent Skills that support related context and knowledge workflows.
+
+## ChatGPT plugin
+
+The [private PathScrib-R plugin](https://chatgpt.com/plugins/plugin_4b2efa52df648191b7e05f737c295c48) was migrated from the original GPT on November 24, 2026. The [adapter](adapters/chatgpt-plugin/) contains the native skill, all 18 knowledge files, and the OverKill Hill icon. The [source record](origin/native-plugin.json) retains all 12 original conversation starters and the release checksums. The [original archive](adapters/chatgpt-plugin.tgz) preserves the filenames and bytes supplied by ChatGPT.
 
 ## Documented workflow
 

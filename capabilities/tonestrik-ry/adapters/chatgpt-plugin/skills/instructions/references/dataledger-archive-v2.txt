@@ -1,0 +1,5 @@
+# dataLedger_archive_v2.txt
+# Canonical Version: v2.0.0
+# Phase: ALL
+# Purpose: Store outdated shaping attempts, redundant functions, or instruction fragments.
+

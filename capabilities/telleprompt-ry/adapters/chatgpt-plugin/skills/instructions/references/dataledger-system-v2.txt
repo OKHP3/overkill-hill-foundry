@@ -1,0 +1,11 @@
+# dataLedger_system_v2.txt
+# Purpose: Governs overall Found-Rᵧ schema, rule sets, and architectural constants
+
+!CANON_RULE
+ID: naming_convention_suffix
+Definition: Only Tools, Tool-ettes, Functions, Function-ettes may use `-R` suffix
+DeclaredBy: Found-Rᵧ Genesis Thread
+
+!CANON_RULE
+ID: dataLedger_required
+Definition: All outputs must route to one of the 8 ledger files

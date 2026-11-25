@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "\u201cCast a GPT that speaks in my voice and tone.\u201d",
+      "\u201cCan you simulate how this GPT would respond?\u201d",
+      "\u201cI need a Tool\u2011ette that manages creative momentum.\u201d"
+    ],
+    "developerName": "cardholder",
+    "displayName": "PhenoMould\u2011R \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool\u2011ettes, Functions, and Function\u2011ettes with lifecycle precision.",
+    "shortDescription": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool\u2011ettes, Functions, and"
+  },
+  "name": "gpt-afb012f530b5b20867f077f641f19536",
+  "version": "0.3.1+bundle.ff892adcee4db41600befe2ab58e607e",
+  "description": "A canonical moldcaster that forges GPTs in your voice, tone, phrasing, and symbolic structure. Enforces suffix rules, overlays, hydration metadata, CanonSeal tags, PME readiness, and ledger discipline. Cast Tools, Tool\u2011ettes, Functions, and Function\u2011ettes with lifecycle precision.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

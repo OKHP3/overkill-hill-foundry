@@ -1,0 +1,12 @@
+# dataLedger_registry_v2.txt
+# Purpose: Tracks all declared Tools-R, Tool-ettes-R, Functions, and Function-ettes-R.
+
+!TOOL_DECLARATION
+ID: Found-Rᵧ
+Type: Toolbox GPT (Trunk)
+Version: 1.0.0
+DeclaredFunctions:
+  - Fn.Navigator.MapPhase.1.0.0
+  - Fn.CrossCast.MatchLogicReuse.1.0.0
+PhaseScope: ALL
+RegisteredBy: 🏰 Found-Rᵧ – Core

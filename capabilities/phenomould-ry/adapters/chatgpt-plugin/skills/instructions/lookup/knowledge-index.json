@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "name": "GPT Interrogation Agent v1.0.md",
+      "path": "references/gpt-interrogation-agent-v1-0.md"
+    },
+    {
+      "name": "OverKill Hill P³ Square.png",
+      "path": "references/overkill-hill-p3-square.png"
+    },
+    {
+      "name": "PhenoMould-R Capabilities.md",
+      "path": "references/phenomould-r-capabilities.md"
+    },
+    {
+      "name": "dataLedger_hydration_v3.md",
+      "path": "references/dataledger-hydration-v3.md"
+    },
+    {
+      "name": "dataLedger_narrative_v3.md",
+      "path": "references/dataledger-narrative-v3.md"
+    },
+    {
+      "name": "dataLedger_parameters_v3.md",
+      "path": "references/dataledger-parameters-v3.md"
+    },
+    {
+      "name": "dataLedger_persona_v3.md",
+      "path": "references/dataledger-persona-v3.md"
+    },
+    {
+      "name": "dataLedger_registry_v3.md",
+      "path": "references/dataledger-registry-v3.md"
+    },
+    {
+      "name": "dataLedger_system_v3.md",
+      "path": "references/dataledger-system-v3.md"
+    },
+    {
+      "name": "dehydration manifest v3.0.md",
+      "path": "references/dehydration-manifest-v3-0.md"
+    },
+    {
+      "name": "gpt_manifest_PhenoMould-R.yaml",
+      "path": "references/gpt-manifest-phenomould-r.yaml"
+    }
+  ],
+  "guidelines": "Resolve each files[].path relative to the directory containing this skill's SKILL.md (the skill root), not this index's lookup/ directory or the current working directory. Use that directory for filesystem reads or append the path unchanged to the skill's root resource URI. This index is not a complete inventory of the plugin's files. If a needed file is absent from this index or cannot be found or read at its indexed path, continue normal file discovery using the skill's available file listing or installed files; do not stop or conclude that the file is unavailable based on this index alone. This index is primarily a GPT migration helper that maps original GPT upload names to packaged filenames in the plugin."
+}

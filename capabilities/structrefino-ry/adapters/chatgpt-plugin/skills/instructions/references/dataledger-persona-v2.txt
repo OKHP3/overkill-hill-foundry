@@ -1,0 +1,4 @@
+# dataLedger_persona_v2.txt
+# Phase: ⚒️ Anvil-R
+# Purpose: Stage persona overlays for validation, prior to full tone binding in Quench-R.
+

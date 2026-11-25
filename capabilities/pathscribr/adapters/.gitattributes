@@ -1,0 +1,3 @@
+# The inherited source repository sets text=auto. Keep native release bytes exact.
+chatgpt-plugin/** -text
+chatgpt-plugin.tgz binary

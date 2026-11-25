@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-686087eb9ce48191ab0ca0807bb12139",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-686087eb9ce48191ab0ca0807bb12139",
+    "name": "StructRefino‑Rᵧ — OverKill Hill P³",
+    "description": "StructRefino‑Rᵧ is a PME-ready meta-forge built by OverKill Hill P³ to blueprint, simulate, and refine Custom GPTs. It scaffolds logic, enforces overlay and suffix law, traces prompt lineage, and recursively constructs schema-stable AI agents across any domain.",
+    "previous_visibility": "Anyone with the link",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "native_skill_contains_verbatim_text": true,
+      "sha256_utf8": "3919944d3ed3d10d4790d4c642d6a22bb66c33613646f4da40befefdae88e7c8",
+      "character_count": 7925
+    },
+    "conversation_starters": [
+      "Build me a custom GPT scaffold for a research assistant",
+      "Compare two GPT prompt versions and show structural drift",
+      "Simulate this prompt to test tone and overlay behavior",
+      "Trace the lineage of this GPT back to its origin fork",
+      "Create a MetaPrompt that generates interview-style GPTs",
+      "Generate a Tool-ette for summarizing legal documents",
+      "Reclaim a broken GPT and restore its schema integrity",
+      "Swap to BLEED GLEE MODE and reinforce overlay fidelity",
+      "Activate ToneDNA and extract voice traits from this prompt",
+      "Construct a YAML metadata block for export and PME",
+      "Forge an overlay from this tone + suffix contract combination",
+      "How can I donate or support The GPT Found‑Rᵧ project?"
+    ],
+    "starters_text_sha256_utf8": "29aee5714280ad14e8082b4e338a7773ff7eeaab8dc620a16aa813b6cd8393fb",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The captured editor exposed the toggle states in order without their labels.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": [
+      "dataLedger_registry_v2.txt",
+      "dataLedger_ideation_v2.txt",
+      "dataLedger_parameters_v2.txt",
+      "dataLedger_persona_v2.txt",
+      "dataLedger_processing_v2.txt",
+      "dataLedger_system_v2.txt",
+      "dataLedger_archive_v2.txt",
+      "dataLedger_narrative_v2.txt",
+      "OverKill Hill P³ - Crucible – GPT Builder Tool.png"
+    ]
+  },
+  "release": {
+    "plugin_id": "plugin_d0697e9d08908191b162babf9e472aab",
+    "release_id": "pluginrel_30bb38cd4f7c8191876fc1191b283138",
+    "version": "0.10.1+bundle.ffef5b4e33953c1681803cc0de396cd7",
+    "created_at": "2026-11-25T02:09:54.574994Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 3140106,
+    "archive_sha256": "7ff16f94454ebca6f7c54fa4c0cb03c7ac2bcbb89f63ccb026a3f31afe7ec904",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "d16bf602e0549ca7990bb216784d7fcd0f5605832bd9fbb39257eb9a1e140459",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "a870641053f3e6b3c5c5768caa525c354567f8a5376aa1ab6483d3f4a9b678f4",
+        "package_path": "plugin.json",
+        "package_sha256": "a870641053f3e6b3c5c5768caa525c354567f8a5376aa1ab6483d3f4a9b678f4",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "bb3155c17eb59129f358e67f9a07dcfdde33d593689d9c9e3e9a30b4084fdd5f",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "bb3155c17eb59129f358e67f9a07dcfdde33d593689d9c9e3e9a30b4084fdd5f",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "cc56ab0ae286f56fd08a4ad4273a518b34973b16dec8cf8a099e65a2442e8a3d",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "cc56ab0ae286f56fd08a4ad4273a518b34973b16dec8cf8a099e65a2442e8a3d",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "804fe18d4120d4250d7c7c7a0c79adca742e4c0e6b06f8691671c9dec36d9130",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "6299d760745c510e67abdb958567a5a1a8c034d189eda886830cea1f156a3ef8",
+        "handling": "Original upload names and order preserved. Paths point to repository-safe filenames."
+      },
+      {
+        "release_path": "skills/instructions/references/OverKill Hill P³ - Crucible – GPT Builder Tool.png",
+        "release_sha256": "d76f20b110f0eed2616d7643ae9b82f587902e134b68c6681ac1763c4a5a4667",
+        "package_path": "skills/instructions/references/overkill-hill-p3-crucible-gpt-builder-tool.png",
+        "package_sha256": "d76f20b110f0eed2616d7643ae9b82f587902e134b68c6681ac1763c4a5a4667",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_archive_v2.txt",
+        "release_sha256": "6eb185b77091f184b4d8c8b4a6b7b0b0f8b74b9486893b3c9c6a527ddde6f17d",
+        "package_path": "skills/instructions/references/dataledger-archive-v2.txt",
+        "package_sha256": "6eb185b77091f184b4d8c8b4a6b7b0b0f8b74b9486893b3c9c6a527ddde6f17d",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_ideation_v2.txt",
+        "release_sha256": "e4c3d96be3b9c5934768cedc55bf3dedf0cef83c5ababee31b6e8bc6c72172d2",
+        "package_path": "skills/instructions/references/dataledger-ideation-v2.txt",
+        "package_sha256": "e4c3d96be3b9c5934768cedc55bf3dedf0cef83c5ababee31b6e8bc6c72172d2",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_narrative_v2.txt",
+        "release_sha256": "70e6bc4d029b4127a7d41d945c95ff87e4a7f650983f624c96878fad02dae492",
+        "package_path": "skills/instructions/references/dataledger-narrative-v2.txt",
+        "package_sha256": "70e6bc4d029b4127a7d41d945c95ff87e4a7f650983f624c96878fad02dae492",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_parameters_v2.txt",
+        "release_sha256": "778b88a1a676f148693ef0f20f9adad2cd336d3588b70b1b006bf6ad414528ff",
+        "package_path": "skills/instructions/references/dataledger-parameters-v2.txt",
+        "package_sha256": "778b88a1a676f148693ef0f20f9adad2cd336d3588b70b1b006bf6ad414528ff",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_persona_v2.txt",
+        "release_sha256": "5f7d44dea80cb4ca61ca5244739c90ae4668d8a220e5b2d2100287518ee63155",
+        "package_path": "skills/instructions/references/dataledger-persona-v2.txt",
+        "package_sha256": "5f7d44dea80cb4ca61ca5244739c90ae4668d8a220e5b2d2100287518ee63155",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_processing_v2.txt",
+        "release_sha256": "c4d3af8956a01745ef7fe1fdbfc6c0033fb1a65a7e3e7b46b213c3b9019d0460",
+        "package_path": "skills/instructions/references/dataledger-processing-v2.txt",
+        "package_sha256": "c4d3af8956a01745ef7fe1fdbfc6c0033fb1a65a7e3e7b46b213c3b9019d0460",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_registry_v2.txt",
+        "release_sha256": "30460b254b193441b367c7c5f740379b530ba709d91c12b88c42a9295c45d498",
+        "package_path": "skills/instructions/references/dataledger-registry-v2.txt",
+        "package_sha256": "30460b254b193441b367c7c5f740379b530ba709d91c12b88c42a9295c45d498",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_system_v2.txt",
+        "release_sha256": "055a7611e0c83e0ae01d5a9863d6722c57322ba334231a5eadc66efa376ad825",
+        "package_path": "skills/instructions/references/dataledger-system-v2.txt",
+        "package_sha256": "055a7611e0c83e0ae01d5a9863d6722c57322ba334231a5eadc66efa376ad825",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "440017cfa134e1a9fff754ce7962f482bd5b8682aab110eacb64cd8ac842bf35",
+      "source": "Plugin Creator release file readback."
+    },
+    "default_prompts": [
+      "Build me a custom GPT scaffold for a research assistant",
+      "Compare two GPT prompt versions and show structural drift",
+      "Simulate this prompt to test tone and overlay behavior"
+    ],
+    "exact_archive": "adapters/chatgpt-plugin.tgz"
+  },
+  "knowledge": [
+    {
+      "editor_filename": "OverKill Hill P³ - Crucible – GPT Builder Tool.png",
+      "native_path": "skills/instructions/references/OverKill Hill P³ - Crucible – GPT Builder Tool.png",
+      "package_path": "skills/instructions/references/overkill-hill-p3-crucible-gpt-builder-tool.png",
+      "sha256": "d76f20b110f0eed2616d7643ae9b82f587902e134b68c6681ac1763c4a5a4667",
+      "source_review": {
+        "git_path": "custom-gpts/proto/gpt-crucible/overkill-hill-p3-crucible-gpt-builder-tool.png",
+        "git_revision": "8a40c671a1f693cdcd5d1021f8cf572454627083"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_archive_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_archive_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-archive-v2.txt",
+      "sha256": "6eb185b77091f184b4d8c8b4a6b7b0b0f8b74b9486893b3c9c6a527ddde6f17d",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_archive_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_ideation_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_ideation_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-ideation-v2.txt",
+      "sha256": "e4c3d96be3b9c5934768cedc55bf3dedf0cef83c5ababee31b6e8bc6c72172d2",
+      "source_review": {
+        "review": "First-party FoundRy phase ledger template. The complete file consists of a filename, phase and purpose describing the owner’s GPT authoring workflow."
+      }
+    },
+    {
+      "editor_filename": "dataLedger_narrative_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_narrative_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-narrative-v2.txt",
+      "sha256": "70e6bc4d029b4127a7d41d945c95ff87e4a7f650983f624c96878fad02dae492",
+      "source_review": {
+        "review": "First-party FoundRy phase ledger template. The complete file consists of a filename, phase and purpose describing the owner’s GPT authoring workflow."
+      }
+    },
+    {
+      "editor_filename": "dataLedger_parameters_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_parameters_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-parameters-v2.txt",
+      "sha256": "778b88a1a676f148693ef0f20f9adad2cd336d3588b70b1b006bf6ad414528ff",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_parameters_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_persona_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_persona_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-persona-v2.txt",
+      "sha256": "5f7d44dea80cb4ca61ca5244739c90ae4668d8a220e5b2d2100287518ee63155",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_persona_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_processing_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_processing_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-processing-v2.txt",
+      "sha256": "c4d3af8956a01745ef7fe1fdbfc6c0033fb1a65a7e3e7b46b213c3b9019d0460",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_processing_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_registry_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_registry_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-registry-v2.txt",
+      "sha256": "30460b254b193441b367c7c5f740379b530ba709d91c12b88c42a9295c45d498",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_registry_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    },
+    {
+      "editor_filename": "dataLedger_system_v2.txt",
+      "native_path": "skills/instructions/references/dataLedger_system_v2.txt",
+      "package_path": "skills/instructions/references/dataledger-system-v2.txt",
+      "sha256": "055a7611e0c83e0ae01d5a9863d6722c57322ba334231a5eadc66efa376ad825",
+      "source_review": {
+        "git_path": "foundry/_dataLedgers/Past Versions/dataLedger_system_v2.txt",
+        "git_revision": "aa80ef3d826be6507b11951079f9328ffea1d32d"
+      }
+    }
+  ],
+  "verification": {
+    "source_upload_count": 9,
+    "native_index_count": 9,
+    "unrepresented_duplicate_occurrences": {},
+    "unexpected_index_occurrences": {},
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Per-file evidence is recorded under knowledge. The native release supplies the owner-directed editor instructions and icon."
+}

@@ -1,0 +1,9 @@
+# dataLedger_narrative_v2.txt
+# Purpose: Stores finalized, narratively sound GPT instructions, metaphors, overlays, and user-facing text blocks.
+# Phase: ✨ Gleam-R
+
+!CLAUSE: !RUNG_STATE
+ID: Overlay.Voice.SmithTone
+OverlayType: Persona
+Usage: Replaces GPT-native friendliness with directive, forge-style dialect
+Status: Finalized

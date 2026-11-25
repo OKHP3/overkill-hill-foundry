@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "name": "Canon Ruling Order by dataLedger_v3 v4.2.md",
+      "path": "references/canon-ruling-order-by-dataledger-v3-v4-2.md"
+    },
+    {
+      "name": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+      "path": "references/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf"
+    },
+    {
+      "name": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+      "path": "references/custom-gpt-instruction-block-template-gpt-5-era-best-practices.pdf"
+    },
+    {
+      "name": "GPT-5 Era Custom GPT Instruction Blocks – __Canonical Design Masterfile__.pdf",
+      "path": "references/gpt-5-era-custom-gpt-instruction-blocks-canonical-design-masterfile.pdf"
+    },
+    {
+      "name": "Maximizing the Prompt Equilibrium Framework.pdf",
+      "path": "references/maximizing-the-prompt-equilibrium-framework.pdf"
+    },
+    {
+      "name": "Optimal Instruction Block Structure for a Custom GPT.pdf",
+      "path": "references/optimal-instruction-block-structure-for-a-custom-gpt.pdf"
+    },
+    {
+      "name": "RAG and RIS Implementation Bundle.pdf",
+      "path": "references/rag-and-ris-implementation-bundle.pdf"
+    },
+    {
+      "name": "Viability and Compliance of the RIS System and Canonical Ledger Approach.pdf",
+      "path": "references/viability-and-compliance-of-the-ris-system-and-canonical-ledger-approach.pdf"
+    },
+    {
+      "name": "dataLedger_hydration_v3.md",
+      "path": "references/dataledger-hydration-v3.md"
+    },
+    {
+      "name": "dataLedger_parameters_v3.md",
+      "path": "references/dataledger-parameters-v3.md"
+    },
+    {
+      "name": "dataLedger_persona_v3.md",
+      "path": "references/dataledger-persona-v3.md"
+    },
+    {
+      "name": "dataLedger_registry_v3.md",
+      "path": "references/dataledger-registry-v3.md"
+    },
+    {
+      "name": "dataLedger_system_v3.md",
+      "path": "references/dataledger-system-v3.md"
+    },
+    {
+      "name": "🏗️ Custom GPT Instruction Block — Master Template.pdf",
+      "path": "references/custom-gpt-instruction-block-master-template.pdf"
+    }
+  ],
+  "guidelines": "Resolve each files[].path relative to the directory containing this skill's SKILL.md (the skill root), not this index's lookup/ directory or the current working directory. Use that directory for filesystem reads or append the path unchanged to the skill's root resource URI. This index is not a complete inventory of the plugin's files. If a needed file is absent from this index or cannot be found or read at its indexed path, continue normal file discovery using the skill's available file listing or installed files; do not stop or conclude that the file is unavailable based on this index alone. This index is primarily a GPT migration helper that maps original GPT upload names to packaged filenames in the plugin."
+}

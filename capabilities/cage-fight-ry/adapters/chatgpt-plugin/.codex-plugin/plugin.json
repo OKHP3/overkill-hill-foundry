@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Comparison: File A = [\u2026], vs File B = [\u2026]. Goal = [define goal]",
+      "Comparison: Text A = [\u2026], vs Text B = [\u2026]. Goal = [define goal]",
+      "Comparison: File A = [\u2026], vs Text B = [\u2026]. Goal = [define goal]"
+    ],
+    "developerName": "cardholder",
+    "displayName": "Cage Fight-R\u1d67 \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity.",
+    "shortDescription": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity."
+  },
+  "name": "gpt-d4091787ad6700581900e9c20299fcea",
+  "version": "0.15.1+bundle.07663b7b70ace549003cf9e014eda7af",
+  "description": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

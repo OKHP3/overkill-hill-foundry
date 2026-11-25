@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "Comparison: File A = […], vs File B = […]. Goal = [define goal]",
+          "Comparison: Text A = […], vs Text B = […]. Goal = [define goal]",
+          "Comparison: File A = […], vs Text B = […]. Goal = [define goal]"
+        ],
+        "developerName": "cardholder",
+        "displayName": "Cage Fight-Rᵧ — OverKill Hill P³",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity.",
+        "shortDescription": "Iteratively compares, scores, and hybridizes (A vs B) or optimizes a single corpus (A$) with strict goal alignment, operator control, and structural fidelity."
+      }
+    }
+  },
+  "name": "gpt-d4091787ad6700581900e9c20299fcea",
+  "version": "0.15.1+bundle.07663b7b70ace549003cf9e014eda7af"
+}

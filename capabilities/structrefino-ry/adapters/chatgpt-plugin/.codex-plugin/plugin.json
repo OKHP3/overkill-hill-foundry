@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Developer Tools",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Build me a custom GPT scaffold for a research assistant",
+      "Compare two GPT prompt versions and show structural drift",
+      "Simulate this prompt to test tone and overlay behavior"
+    ],
+    "developerName": "cardholder",
+    "displayName": "StructRefino\u2011R\u1d67 \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "StructRefino\u2011R\u1d67 is a PME-ready meta-forge built by OverKill Hill P\u00b3 to blueprint, simulate, and refine Custom GPTs. It scaffolds logic, enforces overlay and suffix law, traces prompt lineage, and recursively constructs schema-stable AI agents across any domain.",
+    "shortDescription": "StructRefino\u2011R\u1d67 is a PME-ready meta-forge built by OverKill Hill P\u00b3 to blueprint, simulate, and refine Custom GPTs. It scaffolds logic, enforces overlay and suffix law, traces prompt lineage, and recursively constructs schema-stable AI agen"
+  },
+  "name": "gpt-54942ebccd0acb416e5cd8954fb6bfaa",
+  "version": "0.10.1+bundle.ffef5b4e33953c1681803cc0de396cd7",
+  "description": "StructRefino\u2011R\u1d67 is a PME-ready meta-forge built by OverKill Hill P\u00b3 to blueprint, simulate, and refine Custom GPTs. It scaffolds logic, enforces overlay and suffix law, traces prompt lineage, and recursively constructs schema-stable AI agents across any domain.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

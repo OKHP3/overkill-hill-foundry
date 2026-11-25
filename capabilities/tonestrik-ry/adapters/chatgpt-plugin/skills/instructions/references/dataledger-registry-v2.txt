@@ -1,0 +1,4 @@
+# dataLedger_registry_v2.txt
+# Phase: ALL
+# Purpose: Register finalized Tools-R, Functions, and GPTs created during the shaping phase.
+

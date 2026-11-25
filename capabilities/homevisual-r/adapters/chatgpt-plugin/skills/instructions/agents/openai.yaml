@@ -1,0 +1,5 @@
+interface:
+  default_prompt: Can you show my house with white-painted brick and dark trim?
+  display_name: HomeVisual-R — OverKill Hill P³
+  short_description: Photorealistic home design visualizer for exterior repainting,
+    t

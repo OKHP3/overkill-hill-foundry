@@ -1,0 +1,23 @@
+canonical_gpt:
+  name: "PhenoMould\u2011R \u2014 OverKill Hill P\xB3"
+  suffix: -R
+  type: Tool
+  emoji: "\U0001FA9A"
+  cast_phase: "Cast\u2011R \u2192 Anvil\u2011R"
+  canon_seal: "PhenoMould\u2011R.v2.0.locked"
+  overlay: ForgeDialect.A1
+  persona: Watchkeeper.Core
+  hydration_manifest: dehydration manifest v3.0.md
+  instruction_block_status: PME_READY
+  version: '2.0'
+  date_created: '2025-07-30'
+  bound_project: "The GPT Found\u2011R\u1D67"
+  author: "OverKill Hill P\xB3"
+  registry_ledger: dataLedger_registry_v3.md
+  linked_ledgers:
+  - dataLedger_registry_v3.md
+  - dataLedger_persona_v3.md
+  - dataLedger_parameters_v3.md
+  - dataLedger_system_v3.md
+  - dataLedger_hydration_v3.md
+  - dataLedger_narrative_v3.md

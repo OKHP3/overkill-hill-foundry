@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Show me a process map in Mermaid for an employee onboarding workflow.",
+      "Validate this BPMN diagram for syntax and best-practice errors.",
+      "Generate a PlantUML sequence diagram for customer support escalation."
+    ],
+    "developerName": "cardholder",
+    "displayName": "PathScrib-R \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "PathScrib-R is your AI partner for process design, validation, and improvement. Capture workflows through guided interviews, auto-generate diagrams (Mermaid, BPMN, PlantUML), run QA checks, and surface best-practice fixes\u2014clear, neutral, and built for continuous improvement.",
+    "shortDescription": "PathScrib-R is your AI partner for process design, validation, and improvement. Capture workflows through guided interviews, auto-generate diagrams (Mermaid, BPMN, PlantUML), run QA checks, and surface best-practice fixes\u2014clear, neutral, an"
+  },
+  "name": "gpt-c79b5f247650358899ed3c48b9dbb1e3",
+  "version": "0.6.1+bundle.c11b679c30152b1b71cea4c68da81286",
+  "description": "PathScrib-R is your AI partner for process design, validation, and improvement. Capture workflows through guided interviews, auto-generate diagrams (Mermaid, BPMN, PlantUML), run QA checks, and surface best-practice fixes\u2014clear, neutral, and built for continuous improvement.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "editor": {
+    "gpt_id": "g-68a1d132a474819199273e9a6a5d7bdb",
+    "editor_url": "https://chatgpt.com/gpts/editor/g-68a1d132a474819199273e9a6a5d7bdb",
+    "name": "HomeVisual-R — OverKill Hill P³",
+    "description": "Photorealistic home design visualizer for exterior repainting, trim, windows, doors, roofs, and features, plus interior wall, cabinet, and countertop recolors. Identifies architectural styles, interprets user sketches or scribbles, and generates before-and-after images for clear comparisons.",
+    "previous_visibility": "Anyone with the link",
+    "instructions": {
+      "file": "adapters/chatgpt-plugin/skills/instructions/SKILL.md",
+      "location": "Markdown body following the YAML front matter",
+      "sha256_utf8": "d6d3dcc597a6bbefb89dfe6400b4759cdd6cf0b52be9a3538aa4785dcedbc36d",
+      "character_count": 5335
+    },
+    "conversation_starters": [
+      "Can you show my house with white-painted brick and dark trim?",
+      "Here’s a photo with scribbles—can you visualize the changes I marked?",
+      "What would this house look like with a larger front window instead of two small ones?",
+      "Can you identify the architectural style of this house from the photo I uploaded?",
+      "Show me my kitchen with new cabinet and countertop colors.",
+      "Replace my current front door with this new one from a photo.",
+      "Can you recolor the walls of this room to a lighter shade?",
+      "Visualize this house with shutters removed and a porch railing added.",
+      "Give me a modern scheme with black windows and a lighter roof.",
+      "How can I donate or support this project?",
+      "Can you tell me more about OverKill Hill P³?",
+      "Are there any other complimentary GPTs?"
+    ],
+    "starters_text_sha256_utf8": "f13824731b7581b7b487cce618f2626f194b85d171adecbffbb4bf6d576990fd",
+    "capability_controls_as_captured": [
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "false",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      },
+      {
+        "enabled": "true",
+        "label": null
+      }
+    ],
+    "capability_control_note": "The recorded controls provide ordered toggle states. Their labels were unavailable in the capture.",
+    "action_controls_as_captured": "Actions\nAdd action",
+    "knowledge_upload_names": [
+      "Canon Ruling Order by dataLedger_v3 v4.2.md",
+      "dataLedger_system_v3.md",
+      "dataLedger_hydration_v3.md",
+      "dataLedger_parameters_v3.md",
+      "dataLedger_persona_v3.md",
+      "dataLedger_registry_v3.md",
+      "Optimal Instruction Block Structure for a Custom GPT.pdf",
+      "Viability and Compliance of the RIS System and Canonical Ledger Approach.pdf",
+      "Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+      "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+      "RAG and RIS Implementation Bundle.pdf",
+      "🏗️ Custom GPT Instruction Block — Master Template.pdf",
+      "Maximizing the Prompt Equilibrium Framework.pdf",
+      "GPT-5 Era Custom GPT Instruction Blocks – __Canonical Design Masterfile__.pdf"
+    ]
+  },
+  "release": {
+    "plugin_id": "plugin_cf1e93b5fd0c819188870f0e871464a1",
+    "release_id": "pluginrel_4d810d5168f88191a001327f1abe7916",
+    "version": "0.19.1+bundle.d7727070d6cd319f6362b09f7acf9149",
+    "created_at": "2026-11-25T02:08:20.621816Z",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "archive_format": "tar.gz",
+    "archive_bytes": 1634630,
+    "archive_sha256": "c36de3837f86d30903bd3f99f3f2478b5d18dc85cbf126022d2b9992a6d04e5a",
+    "exact_archive": "adapters/chatgpt-plugin.tgz",
+    "package_directory": "adapters/chatgpt-plugin",
+    "archive_files": [
+      {
+        "release_path": "assets/gpt-icon.png",
+        "release_sha256": "1336dc8c100a7356703fb560bbc049973a7721b61bad8f42e461f38d23f45071",
+        "package_path": "assets/gpt-icon.png",
+        "package_sha256": "1336dc8c100a7356703fb560bbc049973a7721b61bad8f42e461f38d23f45071",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "plugin.json",
+        "release_sha256": "173593ac1dd34e1d3e5262f51d2c3eb357ec5e7cfd9ad4c771b18daa81a0ff38",
+        "package_path": "plugin.json",
+        "package_sha256": "173593ac1dd34e1d3e5262f51d2c3eb357ec5e7cfd9ad4c771b18daa81a0ff38",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/SKILL.md",
+        "release_sha256": "d15dacbcb89205535c209310b17fd0a9587f6265a481016da64672dc63617c91",
+        "package_path": "skills/instructions/SKILL.md",
+        "package_sha256": "d15dacbcb89205535c209310b17fd0a9587f6265a481016da64672dc63617c91",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/agents/openai.yaml",
+        "release_sha256": "f50ad193fc162b1c5adca0476347aa2765109ae0bcd3ad7b2b13f6f0cfed97d4",
+        "package_path": "skills/instructions/agents/openai.yaml",
+        "package_sha256": "f50ad193fc162b1c5adca0476347aa2765109ae0bcd3ad7b2b13f6f0cfed97d4",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/lookup/knowledge-index.json",
+        "release_sha256": "8c6daccea024c50de433c2830cb915d6470452b4d280b99d54cd503641d29a73",
+        "package_path": "skills/instructions/lookup/knowledge-index.json",
+        "package_sha256": "72503e0ec95eab11a374a81f5f0dbadcf1889316f8eb31597e664db9fd0feec8",
+        "handling": "Original display names are retained. The index resolves the source names to the repository filenames."
+      },
+      {
+        "release_path": "skills/instructions/references/Canon Ruling Order by dataLedger_v3 v4.2.md",
+        "release_sha256": "7e9bbc38f20e0a93a1bd7bd579bc6ed85e367a3286d759356489a6b6d27e7083",
+        "package_path": "skills/instructions/references/canon-ruling-order-by-dataledger-v3-v4-2.md",
+        "package_sha256": "7e9bbc38f20e0a93a1bd7bd579bc6ed85e367a3286d759356489a6b6d27e7083",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+        "release_sha256": "c2f7c07e354d41a20641d65fa938919c6178b04bfc38517d2cafa72709d78a6d",
+        "package_path": "skills/instructions/references/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf",
+        "package_sha256": "c2f7c07e354d41a20641d65fa938919c6178b04bfc38517d2cafa72709d78a6d",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+        "release_sha256": "ab8176b028e7681addccb1432a4074864935cd0cb8f3e6b1528325b87267bd4b",
+        "package_path": "skills/instructions/references/custom-gpt-instruction-block-template-gpt-5-era-best-practices.pdf",
+        "package_sha256": "ab8176b028e7681addccb1432a4074864935cd0cb8f3e6b1528325b87267bd4b",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/GPT-5 Era Custom GPT Instruction Blocks – __Canonical Design Masterfile__.pdf",
+        "release_sha256": "66b1d62155803a238e14c1508d6c6527931340446442a6dd8be2798f2a74069e",
+        "package_path": "skills/instructions/references/gpt-5-era-custom-gpt-instruction-blocks-canonical-design-masterfile.pdf",
+        "package_sha256": "66b1d62155803a238e14c1508d6c6527931340446442a6dd8be2798f2a74069e",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Maximizing the Prompt Equilibrium Framework.pdf",
+        "release_sha256": "6cdf87c0633620844facb52dd7510860b9357be0322cd7537f15728057582d9a",
+        "package_path": "skills/instructions/references/maximizing-the-prompt-equilibrium-framework.pdf",
+        "package_sha256": "6cdf87c0633620844facb52dd7510860b9357be0322cd7537f15728057582d9a",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Optimal Instruction Block Structure for a Custom GPT.pdf",
+        "release_sha256": "e25e1954f241071d69b0809ba56064e2d6c658336e1264689bcdfcec4d3edea1",
+        "package_path": "skills/instructions/references/optimal-instruction-block-structure-for-a-custom-gpt.pdf",
+        "package_sha256": "e25e1954f241071d69b0809ba56064e2d6c658336e1264689bcdfcec4d3edea1",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/RAG and RIS Implementation Bundle.pdf",
+        "release_sha256": "d919af551b680b50ae5236d14d0c2a981dad58cea246869b1fc1bd9b5089318f",
+        "package_path": "skills/instructions/references/rag-and-ris-implementation-bundle.pdf",
+        "package_sha256": "d919af551b680b50ae5236d14d0c2a981dad58cea246869b1fc1bd9b5089318f",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/Viability and Compliance of the RIS System and Canonical Ledger Approach.pdf",
+        "release_sha256": "4780ee68c09cc26e9b697d14ecbed20c586eabfa4bdad05f1545b0bbbb4b0c53",
+        "package_path": "skills/instructions/references/viability-and-compliance-of-the-ris-system-and-canonical-ledger-approach.pdf",
+        "package_sha256": "4780ee68c09cc26e9b697d14ecbed20c586eabfa4bdad05f1545b0bbbb4b0c53",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+        "release_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+        "package_sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+        "release_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+        "package_sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_persona_v3.md",
+        "release_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+        "package_sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_registry_v3.md",
+        "release_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+        "package_sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/dataLedger_system_v3.md",
+        "release_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "package_path": "skills/instructions/references/dataledger-system-v3.md",
+        "package_sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+        "handling": "Exact native release bytes."
+      },
+      {
+        "release_path": "skills/instructions/references/🏗️ Custom GPT Instruction Block — Master Template.pdf",
+        "release_sha256": "66a7a5fe7f416e57f0ae22c0f82fe46c8d8e9f05529f4abe674568890a3d0f4f",
+        "package_path": "skills/instructions/references/custom-gpt-instruction-block-master-template.pdf",
+        "package_sha256": "66a7a5fe7f416e57f0ae22c0f82fe46c8d8e9f05529f4abe674568890a3d0f4f",
+        "handling": "Exact native release bytes."
+      }
+    ],
+    "creator_file_listing_addition": {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "f713b4d821ad71b1e676f875e8d4b6aa05f4cfa0701bf5da459ba26f0a8fd7ec",
+      "source": "Plugin Creator returned this host manifest separately from the native archive."
+    },
+    "default_prompts": [
+      "Can you show my house with white-painted brick and dark trim?",
+      "Here’s a photo with scribbles—can you visualize the changes I marked?",
+      "What would this house look like with a larger front window instead of two small ones?"
+    ]
+  },
+  "knowledge": [
+    {
+      "editor_filename": "Canon Ruling Order by dataLedger_v3 v4.2.md",
+      "native_path": "skills/instructions/references/Canon Ruling Order by dataLedger_v3 v4.2.md",
+      "package_path": "skills/instructions/references/canon-ruling-order-by-dataledger-v3-v4-2.md",
+      "sha256": "7e9bbc38f20e0a93a1bd7bd579bc6ed85e367a3286d759356489a6b6d27e7083",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/Canon Ruling by dataLedger/Canon Ruling Order by dataLedger_v3 v4.2.md",
+          "git_blob": "a8bb4ce143e7622fc3c333a6cdbd7b08f172269f"
+        }
+      ]
+    },
+    {
+      "editor_filename": "Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+      "native_path": "skills/instructions/references/Coordinating Multiple GPTs_ Current Capabilities and Limitations.pdf",
+      "package_path": "skills/instructions/references/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf",
+      "sha256": "c2f7c07e354d41a20641d65fa938919c6178b04bfc38517d2cafa72709d78a6d",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/coordinating-multiple-gpts-current-capabilities-and-limitations.pdf",
+          "git_blob": "673bae0bdc6cc826ec17d2900a0d093c5df3e184"
+        }
+      ]
+    },
+    {
+      "editor_filename": "Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+      "native_path": "skills/instructions/references/Custom GPT Instruction Block Template (GPT‑5 Era Best Practices).pdf",
+      "package_path": "skills/instructions/references/custom-gpt-instruction-block-template-gpt-5-era-best-practices.pdf",
+      "sha256": "ab8176b028e7681addccb1432a4074864935cd0cb8f3e6b1528325b87267bd4b",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/custom-gpt-instruction-block-template-gpt5-era-best-practices.pdf",
+          "git_blob": "ff78e0562e35a84cc938177c94a224a4ac548373"
+        }
+      ]
+    },
+    {
+      "editor_filename": "GPT-5 Era Custom GPT Instruction Blocks – __Canonical Design Masterfile__.pdf",
+      "native_path": "skills/instructions/references/GPT-5 Era Custom GPT Instruction Blocks – __Canonical Design Masterfile__.pdf",
+      "package_path": "skills/instructions/references/gpt-5-era-custom-gpt-instruction-blocks-canonical-design-masterfile.pdf",
+      "sha256": "66b1d62155803a238e14c1508d6c6527931340446442a6dd8be2798f2a74069e",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/gpt-5-era-custom-gpt-instruction-blocks-canonical-design-master-file.pdf",
+          "git_blob": "275bbecb6398eba2639090edf79159123abe8068"
+        }
+      ]
+    },
+    {
+      "editor_filename": "Maximizing the Prompt Equilibrium Framework.pdf",
+      "native_path": "skills/instructions/references/Maximizing the Prompt Equilibrium Framework.pdf",
+      "package_path": "skills/instructions/references/maximizing-the-prompt-equilibrium-framework.pdf",
+      "sha256": "6cdf87c0633620844facb52dd7510860b9357be0322cd7537f15728057582d9a",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/maximizing-the-prompt-equilibrium-framework.pdf",
+          "git_blob": "2b67bb334131fa5d465b8378e0e541f2bc0a06dd"
+        }
+      ]
+    },
+    {
+      "editor_filename": "Optimal Instruction Block Structure for a Custom GPT.pdf",
+      "native_path": "skills/instructions/references/Optimal Instruction Block Structure for a Custom GPT.pdf",
+      "package_path": "skills/instructions/references/optimal-instruction-block-structure-for-a-custom-gpt.pdf",
+      "sha256": "e25e1954f241071d69b0809ba56064e2d6c658336e1264689bcdfcec4d3edea1",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/optimal-instruction-block-structure-for-a-custom-gpt.pdf",
+          "git_blob": "ce1e796868b86ac09c3afc6d588dcc39baa970a3"
+        }
+      ]
+    },
+    {
+      "editor_filename": "RAG and RIS Implementation Bundle.pdf",
+      "native_path": "skills/instructions/references/RAG and RIS Implementation Bundle.pdf",
+      "package_path": "skills/instructions/references/rag-and-ris-implementation-bundle.pdf",
+      "sha256": "d919af551b680b50ae5236d14d0c2a981dad58cea246869b1fc1bd9b5089318f",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/rag-and-ris-implementation-bundle.pdf",
+          "git_blob": "40cc896ea197d36662ddbfe72bb5790c75e23a07"
+        }
+      ]
+    },
+    {
+      "editor_filename": "Viability and Compliance of the RIS System and Canonical Ledger Approach.pdf",
+      "native_path": "skills/instructions/references/Viability and Compliance of the RIS System and Canonical Ledger Approach.pdf",
+      "package_path": "skills/instructions/references/viability-and-compliance-of-the-ris-system-and-canonical-ledger-approach.pdf",
+      "sha256": "4780ee68c09cc26e9b697d14ecbed20c586eabfa4bdad05f1545b0bbbb4b0c53",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/viability-and-compliance-of-the-ris-system-and-canonical-ledger-approach.pdf",
+          "git_blob": "8202f7c288272f5922c2913ca65dc39a7f8815f4"
+        }
+      ]
+    },
+    {
+      "editor_filename": "dataLedger_hydration_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_hydration_v3.md",
+      "package_path": "skills/instructions/references/dataledger-hydration-v3.md",
+      "sha256": "84e02f6dd1b099fc71339f8f566e99a869878ef3196ed3d0880ed30dea9c5ba8",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/dataLedger_hydration_v3.md",
+          "git_blob": "31f938fbd196c60386a7b6c40dad27cec30ca173"
+        }
+      ]
+    },
+    {
+      "editor_filename": "dataLedger_parameters_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_parameters_v3.md",
+      "package_path": "skills/instructions/references/dataledger-parameters-v3.md",
+      "sha256": "6cd115b5e1d49098d045de3a5a0c5ac80841ddfee8a08d89c44b7bbb326d29a6",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/dataLedger_parameters_v3.md",
+          "git_blob": "d2661240347c931a0bc4cbf2322ca84fe910f497"
+        }
+      ]
+    },
+    {
+      "editor_filename": "dataLedger_persona_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_persona_v3.md",
+      "package_path": "skills/instructions/references/dataledger-persona-v3.md",
+      "sha256": "8bcc954a856b10864970060f2bf2095c7cef2b9765576b430c69ce682b7272bd",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/dataLedger_persona_v3.md",
+          "git_blob": "6ad1d3989726628e77ca577fda0c69fae9887461"
+        }
+      ]
+    },
+    {
+      "editor_filename": "dataLedger_registry_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_registry_v3.md",
+      "package_path": "skills/instructions/references/dataledger-registry-v3.md",
+      "sha256": "4a5b4dabe63b1ab479a9130c999c5a23980f6d527cd19211e49f6238601ee4f3",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/dataLedger_registry_v3.md",
+          "git_blob": "2c0f3abb9eedadee80f49f09195cc276780acfb0"
+        }
+      ]
+    },
+    {
+      "editor_filename": "dataLedger_system_v3.md",
+      "native_path": "skills/instructions/references/dataLedger_system_v3.md",
+      "package_path": "skills/instructions/references/dataledger-system-v3.md",
+      "sha256": "dc0902db91a8071a8f04e884b453ffec9dde0d9460c12ae8ff125da17b5ec0ad",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "foundry/_dataLedgers/dataLedger_system_v3.md",
+          "git_blob": "0b8df7d0476a95dcdba54e350b06d432a3026a8f"
+        }
+      ]
+    },
+    {
+      "editor_filename": "🏗️ Custom GPT Instruction Block — Master Template.pdf",
+      "native_path": "skills/instructions/references/🏗️ Custom GPT Instruction Block — Master Template.pdf",
+      "package_path": "skills/instructions/references/custom-gpt-instruction-block-master-template.pdf",
+      "sha256": "66a7a5fe7f416e57f0ae22c0f82fe46c8d8e9f05529f4abe674568890a3d0f4f",
+      "existing_public_sources": [
+        {
+          "revision": "aa80ef3d826be6507b11951079f9328ffea1d32d",
+          "path": "Writings/custom-gpt-instruction-block-master-template.pdf",
+          "git_blob": "06b48c560f3f4fc69c8c7ceb1a83fa6fa146e6b3"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "source_checks": [
+      "Original editor instructions are present verbatim in the packaged skill body.",
+      "All editor upload labels, including multiplicities, match the native knowledge index.",
+      "Every uploaded payload exactly matches a historic FoundRy Git blob.",
+      "Every file returned by Plugin Creator is accounted for by path and size; all archived entries also have a SHA-256 digest."
+    ],
+    "runtime_execution": "No host invocation recorded."
+  },
+  "rights_review": "Owner-directed migration to public FoundRy. Every uploaded reference has byte-identical source evidence in the FoundRy Git history. The native icon and editor instructions belong to the captured project. The instructions include the existing public OverKill brand contact."
+}

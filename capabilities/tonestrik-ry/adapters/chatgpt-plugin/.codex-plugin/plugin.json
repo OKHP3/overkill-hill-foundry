@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Developer Tools",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Can you segment logic and payload in this prompt for PME readiness?",
+      "Audit this prompt for drift, tone, and suffix compliance.",
+      "Does this variant follow ForgeDialect.A1 without tone collapse?"
+    ],
+    "developerName": "cardholder",
+    "displayName": "ToneStrik\u2011R\u1d67 \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "ToneStrik\u2011R\u1d67 is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME\u2011ready prompts across Forge lifecycle phases.",
+    "shortDescription": "ToneStrik\u2011R\u1d67 is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME\u2011ready promp"
+  },
+  "name": "gpt-179fe70ffa7774e8c4e982e81892cdfa",
+  "version": "0.6.1+bundle.48381688999fa46772725a5e716f4d14",
+  "description": "ToneStrik\u2011R\u1d67 is a prompt validation tool that segments logic from payload, compares rewritten variants, audits tone, suffix, and overlay fidelity, and applies growth-only locks. Ensures precision, prevents drift, and exports PME\u2011ready prompts across Forge lifecycle phases.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

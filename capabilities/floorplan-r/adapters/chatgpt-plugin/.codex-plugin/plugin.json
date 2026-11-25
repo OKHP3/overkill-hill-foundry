@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Sketch a 3-bedroom, 2-bath ranch at ~1800 sqft",
+      "Flip the garage to the left side and update",
+      "Add a home office off the entryway"
+    ],
+    "developerName": "cardholder",
+    "displayName": "FloorPlan-R \u2014 OverKill Hill P\u00b3",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "Conceptual home floorplans from plain specs or photos: adjacency (Mermaid), scaled SVG mockups, editable layouts, DXF/SVG export. Accept style cues from reference images. Rapid iteration for couples/teams. Hands off to @HomeVisual-R for 3D/exterior renderings, @HomeEstimate-R for cost/budget.",
+    "shortDescription": "Conceptual home floorplans from plain specs or photos: adjacency (Mermaid), scaled SVG mockups, editable layouts, DXF/SVG export. Accept style cues from reference images. Rapid iteration for couples/teams. Hands off to @HomeVisual-R for 3D/"
+  },
+  "name": "gpt-23e327cf62bc658eeff803a0691e9737",
+  "version": "0.28.1+bundle.a45d583a9da2fddd05b5f49c8723d254",
+  "description": "Conceptual home floorplans from plain specs or photos: adjacency (Mermaid), scaled SVG mockups, editable layouts, DXF/SVG export. Accept style cues from reference images. Rapid iteration for couples/teams. Hands off to @HomeVisual-R for 3D/exterior renderings, @HomeEstimate-R for cost/budget.",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

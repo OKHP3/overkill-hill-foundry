@@ -1,0 +1,4 @@
+interface:
+  default_prompt: Sketch a 3-bedroom, 2-bath ranch at ~1800 sqft
+  display_name: FloorPlan-R — OverKill Hill P³
+  short_description: 'Conceptual home floorplans from plain specs or photos: adjacency'

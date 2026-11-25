@@ -1,0 +1,4 @@
+# dataLedger_ideation_v2.txt
+# Phase: 🪨 Mine-R
+# Purpose: Reference source for symbolic prompts and conceptual inputs used in shaping instructions.
+

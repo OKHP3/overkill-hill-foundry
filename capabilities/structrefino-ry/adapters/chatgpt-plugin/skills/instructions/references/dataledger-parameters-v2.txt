@@ -1,0 +1,4 @@
+# dataLedger_parameters_v2.txt
+# Phase: ⚒️ Anvil-R
+# Purpose: Define rule parameters for instruction shaping, function mount logic, and tone enforcement.
+

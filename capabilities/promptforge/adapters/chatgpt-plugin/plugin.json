@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "Structured prompt-engineering workbench for compiling and validating reusable prompt assets.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Productivity",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "Compile a full Prompt Asset Package for a recurring task",
+          "Refactor this existing prompt to the PromptForge house standard",
+          "Lint and score this prompt package; patch critical issues"
+        ],
+        "developerName": "cardholder",
+        "displayName": "PromptForge",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Structured prompt-engineering workbench for compiling and validating reusable prompt assets.",
+        "shortDescription": "Structured prompt-engineering workbench for compiling and validating reusable prompt assets."
+      }
+    }
+  },
+  "name": "gpt-70c5a2fbde6af576f8a43dbd066acfef",
+  "version": "0.8.1+bundle.8f4c8721c4662acd2e701376fbec9ec5"
+}

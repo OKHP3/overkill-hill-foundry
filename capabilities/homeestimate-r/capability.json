@@ -1,0 +1,9 @@
+{
+  "name": "HomeEstimate-R",
+  "slug": "homeestimate-r",
+  "status": "imported",
+  "source": "origin/source.json",
+  "entryPoint": "README.md",
+  "nativePlugin": "adapters/chatgpt-plugin/plugin.json",
+  "nativeReleaseEvidence": "origin/source.json"
+}

@@ -19,7 +19,28 @@ approved source and destination in the
 [migration registry](../registry/capability-migrations.json), referenced by the
 [main registry](../registry/index.yaml).
 
-### Recovering source records
+## Native ChatGPT plugins
+
+Each project below has a private ChatGPT plugin created from its legacy GPT. Upload counts include repeated filenames from the original editor.
+
+| Capability | Original starters | Original knowledge uploads |
+| --- | ---: | ---: |
+| [PromptForge](promptforge/) | 12 | 0 |
+| [Cage Fight-Rᵧ](cage-fight-ry/) | 7 | 3 |
+| [PathScrib-R](pathscribr/) | 12 | 18 |
+| [Homestead-R](homesteadr/) | 12 | 15 |
+| [HomeEstimate-R](homeestimate-r/) | 12 | 14 |
+| [FloorPlan-R](floorplan-r/) | 12 | 11 |
+| [HomeVisual-R](homevisual-r/) | 12 | 14 |
+| [PhenoMould-R](phenomould-ry/) | 12 | 11 |
+| [PromptAscend-R](promptascend-r/) | 0 | 19 |
+| [ToneStrik-Rᵧ](tonestrik-ry/) | 12 | 8 |
+| [TellEPrompt-Rᵧ](telleprompt-ry/) | 12 | 8 |
+| [StructRefino-Rᵧ](structrefino-ry/) | 12 | 9 |
+
+The 12 native archives contain all 130 indexed uploads and all 12 original instruction blocks. ChatGPT kept 33 of the 127 starters as defaults. Each project’s source record preserves its complete starter list. The archives retain the original filenames alongside the readable repository packages.
+
+## Recovering source records
 
 Each imported project's `origin/source.json` identifies its original commit
 and the FoundRy import commit containing a byte-identical subtree. Use the
