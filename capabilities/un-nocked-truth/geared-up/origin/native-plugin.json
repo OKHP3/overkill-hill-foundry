@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "source_type": "authenticated-gpt-editor-and-native-plugin-release",
+  "sourceIdentity": "../source.json",
+  "editorSettings": "../editor-settings.json",
+  "verifiedOn": "2026-11-27",
+  "release": {
+    "plugin_id": "plugin_809328089b5881919eeaa9a06ec3b6b0",
+    "name": "gpt-a0b9453bbc316c3239e18b032235edcd",
+    "description": "Instructions for Geared-Up: Archery for Anyone.",
+    "version": "0.2.1+bundle.79392a78176f716495ddb1434ea36b59",
+    "current_release_id": "pluginrel_bd706a89bc2c8191bd04c4ee20853ab2",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "releaseCreatedAt": "2026-11-27T23:10:10.678452Z",
+    "pluginUrl": "https://chatgpt.com/plugins/plugin_809328089b5881919eeaa9a06ec3b6b0"
+  },
+  "sourceVerification": {
+    "editorInstructionCharacters": 0,
+    "editorConversationStarters": 0,
+    "editorKnowledgeUploads": 0,
+    "editorCustomActions": 0,
+    "skillBodyCharacters": 0,
+    "manifestDefaultPrompts": 0,
+    "knowledgeIndexEntries": 0,
+    "runtimeExecution": "Not tested."
+  },
+  "archive": {
+    "file": "native-plugin.tgz",
+    "format": "tar+gzip",
+    "bytes": 627873,
+    "sha256": "335c2bd0a4e7ef49a9f2972baf76407145f947dfd3de8b8e4692308105ce5343",
+    "adapterPath": "../adapters/chatgpt-plugin",
+    "verification": "All five regular archive members match the paths and sizes reported by Plugin Creator. The four text members also match independent API reads. The PNG decoded successfully.",
+    "entries": [
+      {
+        "path": "assets/gpt-icon.png",
+        "bytes": 626107,
+        "sha256": "07e5a9bf1feec244ec5d6a52ea5fe8f467f3e754b6bd317b414d9dcd63e01ef8"
+      },
+      {
+        "path": "plugin.json",
+        "bytes": 874,
+        "sha256": "6326eec93b06ae20016a9a9637617807ca36ed98061faca11f7d836a299d659e"
+      },
+      {
+        "path": "skills/instructions/SKILL.md",
+        "bytes": 160,
+        "sha256": "c61dc66475660281fddacbdd0243cb3f6a1c04392ebfb7ef11e0f269b449f4c7"
+      },
+      {
+        "path": "skills/instructions/agents/openai.yaml",
+        "bytes": 130,
+        "sha256": "e3f54cb407266fe8047e075660cd4097de6aefb39e367b4422ad9d09e6974626"
+      },
+      {
+        "path": "skills/instructions/lookup/knowledge-index.json",
+        "bytes": 757,
+        "sha256": "46943e3bc2c5c154419a16fa3cc930f441031e401eb98fb6b96fbc1f25aae081"
+      }
+    ],
+    "sourceDownloadName": "package.tar.gz"
+  },
+  "additionalReleaseFiles": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "bytes": 741,
+      "sha256": "e7f0042422edfeb8fd26138ae90564d0e9db11a53e700f5b4cb2b384f6556fee",
+      "source": "Plugin Creator get_plugin_files",
+      "note": "Listed and readable through Plugin Creator for the same release. Absent from the downloaded tar archive."
+    }
+  ],
+  "releaseIcon": {
+    "path": "assets/gpt-icon.png",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "sha256": "07e5a9bf1feec244ec5d6a52ea5fe8f467f3e754b6bd317b414d9dcd63e01ef8",
+    "rgbPixelSha256": "d03c885c979bf656ab984a581d53c91f07c45949e889988492b43573365893ed"
+  }
+}

@@ -5,9 +5,11 @@ The four component folders hold the saved editor settings, selected original tex
 | Component | Material recovered from the editor or draft |
 | --- | --- |
 | [00 · Un-NOCKed Truth](../un-nocked-truth/) | Eight original editorial and safety lines and one of six saved starters. |
-| [01 · Geared-Up](../geared-up/) | Empty saved description, instructions and starters. The separate Basics draft supplies the proposed name and tagline and records seven proposed starters. |
+| [01 · Geared-Up](../geared-up/) | The editor had a blank description, blank instructions and zero starters. The unpublished Basics draft proposed a name, a tagline and seven starters. The private native release preserves the empty configuration. |
 | [02 · Dialed-In](../dialed-in/) | Nine original editorial and safety lines and a comparison with the Basics draft. Five starters were present in the editor. |
 | [03 · Hunted-Down](../hunted-down/) | Ten original editorial and safety lines and a comparison with the Basics draft. Six starters were present in the editor. |
+
+On November 27, 2026, Geared-Up had a verified private, user-scoped native release and its original GPT editor was locked. Its source archive contains five files, including the release icon. The expanded adapter also includes a sixth file, the compatibility manifest returned by the release API. Un-NOCKed Truth, Dialed-In and Hunted-Down remain legacy GPTs without native releases or source archives. [Geared-Up release receipt](../geared-up/origin/native-plugin.json) · [Source archive](../geared-up/origin/native-plugin.tgz) · [Expanded adapter](../geared-up/adapters/chatgpt-plugin/)
 
 ## Shared authoring documents
 
@@ -35,10 +37,10 @@ Four uploaded reference images also matched existing public FoundRy artwork byte
 - [Burning house](../../homesteadr/assets/hometools/overkill-hill-p3-square-icon-hometools-alt.png)
 - [Bird perched on a flaming crucible](../../../custom-gpts/proto/gpt-crucible/overkill-hill-p3-crucible-gpt-builder-tool.png)
 
-All four GPT cards displayed the same 512 × 512 profile image. The browser could display it but declined the native download of the inline image. Its original file bytes remain unverified.
+On November 24, the four GPT cards displayed visually similar 512 × 512 profile images. The browser displayed the images but declined the inline download. On November 27, the Geared-Up release supplied its original 512 × 512 RGBA icon (626,107 bytes). The other three cards' image bytes remain unverified. [Geared-Up release icon](../geared-up/adapters/chatgpt-plugin/assets/gpt-icon.png)
 
 ## Shared editorial settings
 
 The project instructions paired Rowan, a calm and helpful voice, with Quinn, a terse and technical voice. They specified the user commands “Use Rowan” and “Use Quinn”, the tone labels `A` and `CD`, and a clear educational Markdown format. The design also referred to a shared glossary and acronym list. Neither appeared among the 17 project uploads or in the four editors' Knowledge lists.
 
-The source review covered the four editors, the project settings, the Sources tab and the 12 listed project conversations. The full conversation transcripts, full project instructions, and operational archery coaching and hunting prompts remain in ChatGPT. Each component README distinguishes saved editor material from draft proposals. The four records document the legacy project and its assets. No native plugin was created for these components.
+The November 24 source review covered the four editors, the project settings, the Sources tab and the 12 listed project conversations. The full conversation transcripts, full project instructions, and operational archery coaching and hunting prompts remain in ChatGPT. Each component README distinguishes saved editor material from draft proposals. The subsequent Geared-Up migration used only its saved editor configuration.
