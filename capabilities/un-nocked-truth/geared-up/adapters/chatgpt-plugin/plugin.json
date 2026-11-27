@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "cardholder",
+    "url": "https://overkillhill.com"
+  },
+  "description": "Instructions for Geared-Up: Archery for Anyone.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [],
+        "developerName": "cardholder",
+        "displayName": "Geared-Up: Archery for Anyone",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Instructions for Geared-Up: Archery for Anyone.",
+        "shortDescription": "Instructions for Geared-Up: Archery for Anyone."
+      }
+    }
+  },
+  "name": "gpt-a0b9453bbc316c3239e18b032235edcd",
+  "version": "0.2.1+bundle.79392a78176f716495ddb1434ea36b59"
+}

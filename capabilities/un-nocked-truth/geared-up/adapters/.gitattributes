@@ -1,0 +1,4 @@
+# Keep the release files byte-identical on every checkout.
+chatgpt-plugin/** -text
+# The native skill represents its empty body with a final blank line.
+chatgpt-plugin/skills/instructions/SKILL.md whitespace=-blank-at-eof

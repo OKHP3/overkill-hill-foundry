@@ -9,9 +9,9 @@
 
 The Un-Nocked Truth capability owns the four Archery for Anyone GPT components listed in `capability.json`. The imported repository metadata also describes an earlier proposal for logical analysis and argument integrity checking.
 
-**Confirmed current state:** The repository contains project guidance, 35 local Agent Skill packages, three reusable project prompts, one publication mirror, four component editor records, six restored Word originals, two PNG assets, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. It contains no application source, executable product entry point, product test suite, product build configuration, deployment configuration, or documented product runtime.
+**Confirmed current state:** The repository contains project guidance, 35 local Agent Skill packages, three reusable project prompts, one publication mirror, four component editor records, six restored Word originals, two shared PNG designs, a `requirements.txt` dependency manifest, a technology inventory, Dependabot configuration, and license metadata. Geared-Up also has a private native plugin release with a verified source archive and release icon. Hosted execution remains untested.
 
-**Inferred status:** The product remains at scaffold or asset-only stage, while the repository itself is an active Agent Skills incubation, evaluation, migration, and promotion workspace. Do not describe the tool as working or production-ready based on this repository alone.
+**Inferred status:** The earlier argument-integrity product remains at scaffold or asset-only stage, while the repository itself is an active Agent Skills incubation, evaluation, migration, and promotion workspace. Do not describe the tool as working or production-ready based on this repository alone.
 
 **Mission and vision:** The intended mission is inferred from the declared purpose: help a user inspect reasoning and claims for logical or integrity problems. Target users, analysis method, output contract, integrations, and longer-term vision are unknown and require owner input.
 
@@ -22,6 +22,7 @@ This directory is a capability within the OverKill Hill FoundRy repository. Each
 Current repository scope is limited to:
 
 - Project identity, component routing and editor records, shared authoring documents, design provenance and agent guidance.
+- Preserve Geared-Up's exact release archive under `geared-up/origin/`. Its expanded adapter also holds the release API's compatibility manifest. The November 24 editor record and the unpublished Basics draft have separate provenance. [Geared-Up release receipt](geared-up/origin/native-plugin.json)
 - Local Agent Skills under `.agents/skills/`, including evaluation and benchmark evidence where present.
 - Reusable project prompts under `.agents/prompts/`.
 - The publication mirror under `skills/okhp3-skill-promotion/`.
@@ -47,7 +48,7 @@ Do not infer a product runtime, API contract, model behavior, data flow, deploym
 - `LICENSE`: MIT license.
 - `.gitattributes`: automatic text normalization.
 
-No source or executable entry point is currently present.
+The earlier argument-integrity proposal has no executable entry point. Geared-Up's host package is under [its native adapter](geared-up/adapters/chatgpt-plugin/).
 
 ## Technology and workflow
 
